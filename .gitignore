@@ -36,3 +36,9 @@ usercache\.json
 usernamecache\.json
 
 WailaErrorOutput\.txt
+
+config/BlockDrops/modVersions\.txt
+
+config/dynamiclights_entityclasses\.cfg
+
+config/dynamiclights_onfire\.cfg

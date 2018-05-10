@@ -32,6 +32,7 @@ recipes.remove(<betterbuilderswands:wandstone>);
 recipes.remove(<ceramics:unfired_clay:5>);
 furnace.remove(<minecraft:brick>);
 recipes.remove(<immersiveengineering:stone_decoration>);
+recipes.remove(<immersiveengineering:stone_decoration:1>);
 furnace.remove(<ceramics:unfired_clay:5>);
 recipes.remove(<chickenchunks:chunk_loader>);
 recipes.remove(<chisel:auto_chisel>);
@@ -49,6 +50,11 @@ recipes.remove(<immersiveengineering:tool>);
 recipes.remove(<minecraft:hopper>);
 recipes.remove(<betterwithmods:unfired_pottery:4>);
 furnace.remove(<minecraft:netherbrick>);
+recipes.remove(<immersivetech:stone_decoration>);
+recipes.remove(<immersiveengineering:wooden_device0:2>);
+recipes.remove(<immersiveengineering:wooden_device0:1>);
+recipes.remove(<rustic:condenser>);
+recipes.remove(<immersiveengineering:stone_decoration:10>);
 
 //General recipes
 recipes.addShaped(<usefulnullifiers:overflownullifieritem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
@@ -201,7 +207,7 @@ recipes.addShaped(<immersivehempcraft:hempstone_block>*8, [[<ore:stone>, <ore:st
 
 MetalPress.addRecipe(<immersivehempcraft:hempstone_sheet>, <immersivehempcraft:hempstone_ball>, <immersiveengineering:mold>, 1000);
 
-CokeOven.addRecipe(<immersivehempcraft:hempstone_plate>, 2, <immersivehempcraft:hempstone_sheet>,1500);
+CokeOven.addRecipe(<immersivehempcraft:hempstone_plate>, 0, <immersivehempcraft:hempstone_sheet>,1500);
 
 
 Cauldron.addUnstoked([<immersivehempcraft:oil>*2, <minecraft:milk_bucket>], [<immersivehempcraft:butter>]);
@@ -217,23 +223,38 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1>*3, [[<minecraft:neth
                                                                 [<betterwithmods:material:17>, <rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 3600, Amplifier: 0}]}), <betterwithmods:material:17>],
                                                                 [<minecraft:netherbrick>, <betterwithmods:material:17>, <minecraft:netherbrick>]]);
 
-recipes.addShaped(<immersiveengineering:wooden_device0:2>, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
-                                                            [<bibliocraft:fancyworkbench>,  null, <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "ironwood"}, Name: "rustic:planks"}})]]);
-
+recipes.addShaped(<immersiveengineering:wooden_device0:2>, 
+[[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+[<bibliocraft:fancyworkbench>,  null, <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "ironwood"}, Name: "rustic:planks"}})]]);
 
 mods.rustic.CrushingTub.addRecipe(<liquid:concrete> * 125, null, <earthworks:item_adobe>);
 
-recipes.addShaped(<immersiveengineering:tool>, [[null, <ore:ingotLead>, <betterwithmods:rope>],
-                                                [null, <ore:stickAluminum>, <ore:ingotLead>],
-                                                [<ore:stickAluminum>,  null, null]]);
+recipes.addShaped(<immersiveengineering:tool>, 
+[[null, <ore:ingotLead>, <betterwithmods:rope>],
+[null, <ore:stickAluminum>, <ore:ingotLead>],
+[<ore:stickAluminum>,  null, null]]);
 
+recipes.addShaped(<immersiveengineering:stone_decoration:10>, 
+[[<ore:sandstone>, <tp:wub_ingot>],
+ [<tp:wub_ingot>, <ore:sandstone>]]);
 
+recipes.addShaped(<immersiveengineering:wooden_device1:1>, 
+[[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
+ [<immersiveengineering:material:11>, <betterwithmods:axle_generator>, <immersiveengineering:material:11>],
+ [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]]);
+
+//Immersive tech
+recipes.addShapeless(<immersivetech:stone_decoration>, [<immersiveengineering:stone_decoration>, <immersivehempcraft:hempstone_plate>]);
 
 //Mob grinding utils 
 recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[null, <minecraft:ender_eye>, null],
                                                            [null, <betterwithmods:material:28>, null],
                                                            [<ore:obsidian>, <hopperducts:gratedhopper>, <ore:obsidian>]]);
 
+//rustic
+recipes.addShaped(<rustic:condenser>, [[null, <earthworks:item_adobe>, null],
+                                       [<earthworks:item_adobe>, <minecraft:bucket>, <earthworks:item_adobe>],
+                                       [<earthworks:item_adobe>,  <minecraft:stained_hardened_clay>, <earthworks:item_adobe>]]);
 
 //Tooltips
 <minecraft:flint_and_steel>.addTooltip(format.darkGray("(Right-click a rock from immersivecraft with a flint to get it)"));

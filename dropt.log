@@ -1,19 +1,7 @@
 [INFO]  Located rule file: Unfired brick.json
-[ERROR] Unable to load rule file: Unfired brick.json
-[ERROR] java.io.EOFException: End of input at line 24 column 1 path $.rules[0].drops[1]
-[INFO]  No rule files loaded.
+[INFO]  Rule file loaded: Unfired brick.json
 [INFO]  Located rule file: Unfired brick.json
-[ERROR] Unable to load rule file: Unfired brick.json
-[ERROR] java.io.EOFException: End of input at line 24 column 1 path $.rules[0].drops[1]
-[INFO]  No rule files loaded.
-[INFO]  Located rule file: Unfired brick.json
-[ERROR] Unable to load rule file: Unfired brick.json
-[ERROR] java.io.EOFException: End of input at line 22 column 11 path $.rules[0].drops[1]
-[INFO]  No rule files loaded.
-[INFO]  Located rule file: Unfired brick.json
-[ERROR] Unable to load rule file: Unfired brick.json
-[ERROR] java.io.EOFException: End of input at line 22 column 10 path $.rules[0].drops[1]
-[INFO]  No rule files loaded.
+[INFO]  Rule file loaded: Unfired brick.json
 [INFO]  Located rule file: Unfired brick.json
 [INFO]  Rule file loaded: Unfired brick.json
 [INFO]  Located rule file: Unfired brick.json

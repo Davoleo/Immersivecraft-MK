@@ -145,6 +145,22 @@
           "isLocked": false,
           "isHidden": false,
           "layerIndex": 5
+        },
+        {
+          "xPos": 239,
+          "yPos": 63,
+          "width": 200.0,
+          "height": 57.0,
+          "feature": {
+            "class": "joshie.enchiridion.gui.book.features.FeatureText",
+            "properties": {
+              "text": "There are some new liquid\nunderground deposits, which you\ncan extract with a pumpjack, these\nare\nSteam Deposits and \nIron berry juice Deposits",
+              "size": 1.0
+            }
+          },
+          "isLocked": false,
+          "isHidden": false,
+          "layerIndex": 6
         }
       ],
       "pageNumber": 0,
@@ -798,8 +814,5 @@
       "pageNumber": 30,
       "isScrollable": false
     }
-  ],
-  "defaultIDs": [
-    "enchiridion_default_buttons"
   ]
 }

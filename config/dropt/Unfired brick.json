@@ -2,13 +2,13 @@
   "rules": [
     {
       "match": {
-        "drops": {
-          "items": [
+        "blocks": {
+          "blocks": [
             "betterwithmods:unfired_pottery:4"
           ]
         }
       },
-      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "replaceStrategy": "REPLACE_ALL",
       "drops": [
         {
           "selector": {

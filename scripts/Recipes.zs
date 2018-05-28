@@ -55,6 +55,12 @@ recipes.remove(<immersiveengineering:wooden_device0:2>);
 recipes.remove(<immersiveengineering:wooden_device0:1>);
 recipes.remove(<rustic:condenser>);
 recipes.remove(<immersiveengineering:stone_decoration:10>);
+recipes.remove(<betterwithmods:bucket>);
+recipes.remove(<minecraft:bucket>);
+
+//Oredictionary conversions
+recipes.addShapeless(<immersiveengineering:metal:3>*2, [<dimensionalores:ingot_silver>,<dimensionalores:ingot_silver>]);
+recipes.addShapeless(<dimensionalores:ingot_silver>*2, [<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]);
 
 //General recipes
 recipes.addShaped(<usefulnullifiers:overflownullifieritem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
@@ -144,9 +150,9 @@ AlloySmelter.addRecipe(<minecraft:brick>, <betterwithmods:unfired_pottery:4>, <i
 
 
 //Advanced Finders
-recipes.addShaped(<adfinders:minerals_finder>, [[<vc:viesoline_pellets>, <ore:dustRedstone>, <vc:viesoline_pellets>],
+recipes.addShaped(<adfinders:minerals_finder>, [[<vc:item_viesoline_pellets>, <ore:dustRedstone>, <vc:item_viesoline_pellets>],
                                                 [<ore:dustRedstone>, <sereneseasons:season_clock>, <ore:dustRedstone>],
-                                                [<vc:viesoline_pellets>, <ore:dustRedstone>, <vc:viesoline_pellets>]]);
+                                                [<vc:item_viesoline_pellets>, <ore:dustRedstone>, <vc:item_viesoline_pellets>]]);
 
 recipes.addShaped(<adfinders:metals_finder>, [[<ore:ingotCopper>, <tp:reinforced_obsidian_ingot>, <ore:ingotAluminum>],
                                                 [<tp:reinforced_obsidian_ingot>, <bibliocraft:compass>, <tp:reinforced_obsidian_ingot>],
@@ -163,6 +169,9 @@ recipes.addShaped(<betterwithmods:single_machine>, [[<ore:cobblestone>, <ore:gea
                                                    [<ore:cobblestone>, <rustic:crushing_tub>, <ore:cobblestone>]]);
 
 mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<minecraft:clay_ball>]);
+mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
+
+mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket>]);
 
 //Bibliocraft
 
@@ -211,6 +220,11 @@ CokeOven.addRecipe(<immersivehempcraft:hempstone_plate>, 0, <immersivehempcraft:
 
 
 Cauldron.addUnstoked([<immersivehempcraft:oil>*2, <minecraft:milk_bucket>], [<immersivehempcraft:butter>]);
+
+recipes.addShaped(<immersivehempcraft:seed_base>, [[<ceramics:clay_hard:6>, <ceramics:clay_hard:6>, <ceramics:clay_hard:6>],
+                                                   [<ceramics:clay_hard:6>, <ceramics:rainbow_clay>, <ceramics:clay_hard:6>],
+                                                   [<ceramics:clay_hard:6>, <ceramics:clay_hard:6>, <ceramics:clay_hard:6>]]);
+<immersivehempcraft:seed_base>.addTooltip(format.darkRed("(grows on a light-mix farmland)"));
 
 
 //Immersive Engineering

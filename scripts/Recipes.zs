@@ -62,7 +62,7 @@ recipes.remove(<minecraft:bucket>);
 recipes.addShapeless(<immersiveengineering:metal:3>*2, [<dimensionalores:ingot_silver>,<dimensionalores:ingot_silver>]);
 recipes.addShapeless(<dimensionalores:ingot_silver>*2, [<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]);
 
-//General recipes
+//General
 recipes.addShaped(<usefulnullifiers:overflownullifieritem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
                                                              [null, <storagedrawers:upgrade_void>, <ore:cobblestone>], 
                                                              [<immersiveengineering:material>, <minecraft:lava_bucket>, null]]);
@@ -139,6 +139,8 @@ recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
                                        [<ore:ingotZinc>, <immcraft:chest>, <ore:ingotZinc>],
                                        [null, <ore:ingotZinc>, null]]);
 
+<minecraft:banner:*>.addTooltip(format.white("(Press 'U' to see banner customization)"));
+
 
 //Furnace
 furnace.remove(<rustic:tallow>, <minecraft:rotten_flesh>);
@@ -172,6 +174,9 @@ mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_
 mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
 mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket>]);
+
+mods.betterwithmods.Cauldron.addStoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer>*5]);
+
 
 //Bibliocraft
 
@@ -265,10 +270,15 @@ recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[null, <minecraft:end
                                                            [null, <betterwithmods:material:28>, null],
                                                            [<ore:obsidian>, <hopperducts:gratedhopper>, <ore:obsidian>]]);
 
+//Not Enough Wands
+recipes.addShaped(<notenoughwands:acceleration_wand>, [[null, <minecraft:ender_eye>, null],
+                                                       [null, <betterwithmods:material:28>, null],
+                                                       [<ore:obsidian>, <hopperducts:gratedhopper>, <ore:obsidian>]]);
+
 //rustic
-recipes.addShaped(<rustic:condenser>, [[null, <earthworks:item_adobe>, null],
-                                       [<earthworks:item_adobe>, <minecraft:bucket>, <earthworks:item_adobe>],
-                                       [<earthworks:item_adobe>,  <minecraft:stained_hardened_clay>, <earthworks:item_adobe>]]);
+recipes.addShaped(<rustic:condenser>, [[<immersivehempcraft:fertilizer>, <betterwithmods:fertilizer>, null],
+                                       [<minecraft:dye:15>, <notenoughwands:advanced_wandcore>, null],
+                                       [null,  null, <notenoughwands:advanced_wandcore>]]);
 
 //Tooltips
 <minecraft:flint_and_steel>.addTooltip(format.darkGray("(Right-click a rock from immersivecraft with a flint to get it)"));

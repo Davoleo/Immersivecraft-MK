@@ -123,8 +123,12 @@ recipes.addShaped(<betterbuilderswands:wandstone>, [[null, null, <ore:cobbleston
                                                     [<tp:bsc_rod>, null, null]]);
 
 recipes.addShaped(<betterbuilderswands:wandiron>, [[null, null, <ore:ingotIron>],
-                                                    [null, <tp:bsc_rod>, null],
+                                                    [null, <betterbuilderswands:wandstone>, null],
                                                     [<tp:bsc_rod>, null, null]]);
+
+recipes.addShaped(<betterbuilderswands:wandunbreakable>, [[null, <vc:modules/item_module_type:22>, <minecraft:nether_star>],
+                                                          [null, <notenoughwands:building_wand>,<tp:infin_bucket>],
+                                                          [<immersiveengineering:material:2>, null, null]]);
 
 recipes.addShaped(<aroma1997sdimension:miningmultitool>, [[<ore:torch>, <ore:gearWood>, <ore:torch>],
                                                           [null, <tp:bone_pickaxe>, null],
@@ -271,14 +275,59 @@ recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[null, <minecraft:end
                                                            [<ore:obsidian>, <hopperducts:gratedhopper>, <ore:obsidian>]]);
 
 //Not Enough Wands
-recipes.addShaped(<notenoughwands:acceleration_wand>, [[null, <minecraft:ender_eye>, null],
-                                                       [null, <betterwithmods:material:28>, null],
-                                                       [<ore:obsidian>, <hopperducts:gratedhopper>, <ore:obsidian>]]);
+recipes.addShaped(<notenoughwands:acceleration_wand>,  [[<immersivehempcraft:fertilizer>, <betterwithmods:fertilizer>, null],
+                                                        [<minecraft:dye:15>, <notenoughwands:advanced_wandcore>, null],
+                                                        [null,  null, <notenoughwands:advanced_wandcore>]]);
+
+recipes.addShaped(<notenoughwands:building_wand>,[[<chisel:blockbronze:6>, <tp:fmf_block>, <stevescarts:upgrade:1>],
+                                                  [<corail_pillar_extension_chisel:lapis_0:9>, <stevescarts:cartmodule:12>, <earthworks:item_adobe>],
+                                                  [<betterbuilderswands:wandiron>,  <mob_grinding_utils:absorption_upgrade>, <notenoughwands:wandcore>]]);
+
+recipes.addShaped(<notenoughwands:displacement_wand>,  [[<immersiveengineering:metal_device1:2>, <stevescarts:modulecomponents:39>, null],
+                                                        [<vc:modules/item_module_type:4>, <notenoughwands:wandcore>, null],
+                                                        [null,  null, <notenoughwands:wandcore>]]);
+
+recipes.addShaped(<notenoughwands:illumination_wand>,  [[<torchmaster:mega_torch>, <stevescarts:modulecomponents:29>, <bonetorch:bonetorch>],
+                                                        [<torchmaster:dread_lamp>, <notenoughwands:wandcore>, null],
+                                                        [<minecraft:redstone_lamp>,  null, <notenoughwands:wandcore>]]);
+
+recipes.addShaped(<notenoughwands:moving_wand>,  [[<chisel:antiblock>, <minecraft:ender_pearl>, null],
+                                                  [<minecraft:item_frame>, <notenoughwands:wandcore>, null],
+                                                  [null,  null, <notenoughwands:wandcore>]]);
+<notenoughwands:moving_wand>.addTooltip(format.blue("(Use a hopper to insert this wand in the charging station)"));
+
+recipes.addShaped(<notenoughwands:protection_wand>,  [[<stevescarts:cartmodule:32>, <tp:hardened_stone>, null],
+                                                      [<tp:hardened_stone>, <notenoughwands:advanced_wandcore>, null],
+                                                      [null,  null, <notenoughwands:advanced_wandcore>]]);
+
+recipes.addShaped(<notenoughwands:swapping_wand>,  [[<stevescarts:cartmodule:32>, <chisel:offsettool>, null],
+                                                    [<stevescarts:modulecomponents:5>, <notenoughwands:wandcore>, null],
+                                                    [null,  null, <notenoughwands:wandcore>]]);
+
+recipes.addShaped(<notenoughwands:teleportation_wand>, [[<betterwithmods:material:40>, <tp:ender_dust>, null],
+                                                        [<chisel:offsettool>, <notenoughwands:advanced_wandcore>, null],
+                                                        [null,  null, <notenoughwands:advanced_wandcore>]]);
+
+//Open Glider
+recipes.addShaped(<openglider:hang_glider_basic>, 
+[[null, <vc:upgrades/item_upgrade_airship_balloon:1>, null],
+[<openglider:hang_glider_part>, <openglider:hang_glider_part:2>, <openglider:hang_glider_part:1>]]);
+
+recipes.addShaped(<openglider:hang_glider_advanced>, 
+[[null, <vc:upgrades/item_upgrade_airship_balloon:4>, null],
+[<openglider:hang_glider_part>, <openglider:hang_glider_basic>, <openglider:hang_glider_part:1>],
+[null,  <minecraft:elytra>, null]]);
 
 //rustic
-recipes.addShaped(<rustic:condenser>, [[<immersivehempcraft:fertilizer>, <betterwithmods:fertilizer>, null],
-                                       [<minecraft:dye:15>, <notenoughwands:advanced_wandcore>, null],
-                                       [null,  null, <notenoughwands:advanced_wandcore>]]);
+recipes.addShaped(<rustic:condenser>, [[null, <earthworks:item_adobe>, null],
+                                       [<earthworks:item_adobe>, <minecraft:bucket>, <earthworks:item_adobe>],
+                                       [<earthworks:item_adobe>,  <minecraft:stained_hardened_clay>, <earthworks:item_adobe>]]);
+
+//Steve's Carts
+recipes.addShaped(<stevescarts:cartmodule:32>, 
+[[<tp:reinforced_obsidian_ingot>, null, <tp:reinforced_obsidian_ingot>],
+[<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
+[null,  <stevescarts:modulecomponents:22>, null]]);
 
 //Tooltips
 <minecraft:flint_and_steel>.addTooltip(format.darkGray("(Right-click a rock from immersivecraft with a flint to get it)"));

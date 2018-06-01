@@ -7,7 +7,7 @@ import mods.immersiveengineering.CokeOven;
 //import mods.jei.RemoveAndHide
 
 
-//Removed
+//Remover
 recipes.remove(<usefulnullifiers:overflownullifieritem>);
 recipes.remove(<trapcraft:magnetic_chest>);
 recipes.remove(<endercompass:ender_compass>);
@@ -57,6 +57,41 @@ recipes.remove(<rustic:condenser>);
 recipes.remove(<immersiveengineering:stone_decoration:10>);
 recipes.remove(<betterwithmods:bucket>);
 recipes.remove(<minecraft:bucket>);
+recipes.remove(<openglider:hang_glider_basic>);
+recipes.remove(<openglider:hang_glider_advanced>);
+recipes.removeShaped(<betterbuilderswands:wandunbreakable>, [[null,null,<minecraft:nether_star>],
+                                                             [null, <ore:stickWood>, null],
+                                                             [<ore:stickWood>, null, null]]);
+recipes.remove(<notenoughwands:moving_wand>);
+recipes.remove(<notenoughwands:acceleration_wand>);
+recipes.remove(<notenoughwands:illumination_wand>);
+recipes.remove(<notenoughwands:displacement_wand>);
+recipes.remove(<notenoughwands:teleportation_wand>);
+recipes.remove(<notenoughwands:swapping_wand>);
+recipes.remove(<notenoughwands:protection_wand>);
+recipes.remove(<notenoughwands:building_wand>);
+recipes.remove(<notenoughwands:capturing_wand>);
+recipes.remove(<stevescarts:cartmodule:32>);
+recipes.remove(<extrarails:teleporting_rail>);
+recipes.remove(<chesttransporter:chesttransporter_copper>);
+recipes.remove(<tp:wub_pickaxe>);
+recipes.remove(<betterbuilderswands:wanddiamond>);
+recipes.remove(<chesttransporter:chesttransporter>);
+recipes.remove(<tp:birthday_pickaxe>);
+recipes.remove(<chesttransporter:chesttransporter_tin>);
+recipes.remove(<tp:obsidian_pickaxe>);
+recipes.remove(<chesttransporter:chesttransporter_iron>);
+recipes.remove(<tp:bsc_diamond_pickaxe>);
+recipes.remove(<tp:steel_ingot>);
+recipes.remove(<bibliocraft:framedchest:4>);
+recipes.remove(<bibliocraft:framedchest:3>);
+recipes.remove(<bibliocraft:framedchest:2>);
+recipes.remove(<bibliocraft:framedchest:1>);
+recipes.remove(<tp:bsc_gold_pickaxe>);
+recipes.remove(<tp:bsc_iron_pickaxe>);
+recipes.remove(<bibliocraft:framedchest:5>);
+recipes.remove(<prefab:item_warehouse>);
+recipes.remove(<prefab:item_advanced_warehouse>);
 
 //Oredictionary conversions
 recipes.addShapeless(<immersiveengineering:metal:3>*2, [<dimensionalores:ingot_silver>,<dimensionalores:ingot_silver>]);
@@ -179,7 +214,7 @@ mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwi
 
 mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket>]);
 
-mods.betterwithmods.Cauldron.addStoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer>*5]);
+mods.betterwithmods.Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer>*5]);
 
 
 //Bibliocraft
@@ -279,9 +314,9 @@ recipes.addShaped(<notenoughwands:acceleration_wand>,  [[<immersivehempcraft:fer
                                                         [<minecraft:dye:15>, <notenoughwands:advanced_wandcore>, null],
                                                         [null,  null, <notenoughwands:advanced_wandcore>]]);
 
-recipes.addShaped(<notenoughwands:building_wand>,[[<chisel:blockbronze:6>, <tp:fmf_block>, <stevescarts:upgrade:1>],
-                                                  [<corail_pillar_extension_chisel:lapis_0:9>, <stevescarts:cartmodule:12>, <earthworks:item_adobe>],
-                                                  [<betterbuilderswands:wandiron>,  <mob_grinding_utils:absorption_upgrade>, <notenoughwands:wandcore>]]);
+recipes.addShaped(<notenoughwands:building_wand>,[[<chisel:blockbronze:6>, <stevescarts:upgrade:1>, null],
+                                                  [<corail_pillar_extension_chisel:lapis_0:9>, <earthworks:item_adobe>, null],
+                                                  [<betterbuilderswands:wandiron>, null, <notenoughwands:wandcore>]]);
 
 recipes.addShaped(<notenoughwands:displacement_wand>,  [[<immersiveengineering:metal_device1:2>, <stevescarts:modulecomponents:39>, null],
                                                         [<vc:modules/item_module_type:4>, <notenoughwands:wandcore>, null],
@@ -294,7 +329,7 @@ recipes.addShaped(<notenoughwands:illumination_wand>,  [[<torchmaster:mega_torch
 recipes.addShaped(<notenoughwands:moving_wand>,  [[<chisel:antiblock>, <minecraft:ender_pearl>, null],
                                                   [<minecraft:item_frame>, <notenoughwands:wandcore>, null],
                                                   [null,  null, <notenoughwands:wandcore>]]);
-<notenoughwands:moving_wand>.addTooltip(format.blue("(Use a hopper to insert this wand in the charging station)"));
+<notenoughwands:moving_wand>.addTooltip(format.aqua("(Use a hopper to insert this wand in the charging station)"));
 
 recipes.addShaped(<notenoughwands:protection_wand>,  [[<stevescarts:cartmodule:32>, <tp:hardened_stone>, null],
                                                       [<tp:hardened_stone>, <notenoughwands:advanced_wandcore>, null],
@@ -307,6 +342,10 @@ recipes.addShaped(<notenoughwands:swapping_wand>,  [[<stevescarts:cartmodule:32>
 recipes.addShaped(<notenoughwands:teleportation_wand>, [[<betterwithmods:material:40>, <tp:ender_dust>, null],
                                                         [<chisel:offsettool>, <notenoughwands:advanced_wandcore>, null],
                                                         [null,  null, <notenoughwands:advanced_wandcore>]]);
+
+recipes.addShaped(<notenoughwands:teleportation_wand>, [[<minecraft:lead>, <immersiveengineering:toolupgrade:11>, null],
+                                                        [<mob_grinding_utils:mob_swab>, <notenoughwands:wandcore>, null],
+                                                        [null,  null, <notenoughwands:wandcore>]]);
 
 //Open Glider
 recipes.addShaped(<openglider:hang_glider_basic>, 

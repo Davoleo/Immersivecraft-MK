@@ -90,6 +90,8 @@ recipes.remove(<bibliocraft:framedchest:1>);
 recipes.remove(<tp:bsc_gold_pickaxe>);
 recipes.remove(<tp:bsc_iron_pickaxe>);
 recipes.remove(<bibliocraft:framedchest:5>);
+recipes.remove(<ropebridge:rope>);
+
 
 //Oredictionary conversions
 recipes.addShapeless(<immersiveengineering:metal:3>*2, [<dimensionalores:ingot_silver>,<dimensionalores:ingot_silver>]);
@@ -178,15 +180,10 @@ recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
 
 <minecraft:banner:*>.addTooltip(format.white("(Press 'U' to see banner customization)"));
 
-
-//Furnace
-furnace.remove(<rustic:tallow>, <minecraft:rotten_flesh>);
-
 //Kiln
 AlloySmelter.addRecipe(<rustic:tallow> *2, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>, 400);
 
 AlloySmelter.addRecipe(<minecraft:brick>, <betterwithmods:unfired_pottery:4>, <immcraft:sticks>, 1000);
-
 
 //Advanced Finders
 recipes.addShaped(<adfinders:minerals_finder>, [[<vc:item_viesoline_pellets>, <ore:dustRedstone>, <vc:item_viesoline_pellets>],
@@ -387,10 +384,31 @@ recipes.addShaped(<prefab:item_monster_masher>,
                                          [<tp:reinforced_obsidian>, <prefab:item_compressed_chest>,<tp:reinforced_obsidian>],
                                          [<prefab:block_compressed_stone:1>,  <prefab:block_compressed_stone:2>, <prefab:block_compressed_stone:4>]]);
 
+//Rope Bridge
+recipes.addShaped(<ropebridge:rope>, [[null, <betterwithmods:rope>, null],
+                                      [null, <betterwithmods:rope>, null],
+                                      [null,  <betterwithmods:rope>, null]]);
+
+recipes.addShaped(<ropebridge:bridge_builder_material.barrel>, [[<ore:ingotSteel>, <ore:ingotLead>, <ore:ingotSteel>],
+                                                                [<ropebridge:rope>, <ropebridge:rope>, <ropebridge:rope>],
+                                                                [<ore:ingotSteel>,  <ore:ingotLead>, <ore:ingotSteel>]]);
+
+recipes.addShaped(<ropebridge:bridge_builder_material.handle>, [[<ore:ingotTitanium>, null, <minecraft:flint_and_steel>],
+                                                                [<ropebridge:rope>, <immersiveengineering:bullet:2>.withTag({bullet: "dragonsbreath"}), null],
+                                                                [<ore:ingotTitanium>,  <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>]]);
+
 //rustic
 recipes.addShaped(<rustic:condenser>, [[null, <earthworks:item_adobe>, null],
                                        [<earthworks:item_adobe>, <minecraft:bucket>, <earthworks:item_adobe>],
                                        [<earthworks:item_adobe>,  <minecraft:stained_hardened_clay>, <earthworks:item_adobe>]]);
+
+mods.rustic.Condenser.addRecipe(<minecraft:leather>, <minecraft:magma>, [<minecraft:rotten_flesh>.withTag({oiled: 0 as byte}), <floricraft:dust_salt>, <chisel:waterstone1:5>]);
+
+recipes.addShaped(<rustic:iron_lattice>, [[null, <ore:stickIron>, null],
+                                          [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+                                          [null,  <ore:stickIron>, null]]);
+
+<rustic:grape_stem>.addTooltip(format.yellow("(Will only drop from grass if you're using hoes)"));
 
 //Steve's Carts
 recipes.addShaped(<stevescarts:cartmodule:32>, 

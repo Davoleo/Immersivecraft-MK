@@ -1,3 +1,10 @@
+/*************************************************
+ * Author: Davoleo
+ * Date: ##/##/##
+ * Hour: ##:##
+ * Copyright - © - Davoleo - 2018
+**************************************************/
+
 //imports
 import mods.immersiveengineering.AlloySmelter;
 import mods.immersiveengineering.MetalPress;
@@ -5,6 +12,8 @@ import crafttweaker.oredict.IOreDict;
 import mods.betterwithmods.Cauldron;
 import mods.immersiveengineering.CokeOven;
 //import mods.jei.RemoveAndHide
+
+print("MAIN_SCRIPT");
 
 
 //Remover
@@ -91,6 +100,7 @@ recipes.remove(<tp:bsc_gold_pickaxe>);
 recipes.remove(<tp:bsc_iron_pickaxe>);
 recipes.remove(<bibliocraft:framedchest:5>);
 recipes.remove(<ropebridge:rope>);
+recipes.remove(<ore:drawerBasic>);
 
 
 //Oredictionary conversions
@@ -385,7 +395,7 @@ recipes.addShaped(<prefab:item_monster_masher>,
                                          [<prefab:block_compressed_stone:1>,  <prefab:block_compressed_stone:2>, <prefab:block_compressed_stone:4>]]);
 
 //Rope Bridge
-recipes.addShaped(<ropebridge:rope>, [[null, <betterwithmods:rope>, null],
+recipes.addShaped(<ropebridge:rope> *3, [[null, <betterwithmods:rope>, null],
                                       [null, <betterwithmods:rope>, null],
                                       [null,  <betterwithmods:rope>, null]]);
 
@@ -408,6 +418,10 @@ recipes.addShaped(<rustic:iron_lattice>, [[null, <ore:stickIron>, null],
                                           [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
                                           [null,  <ore:stickIron>, null]]);
 
+recipes.addShaped(<rustic:rope> *3, [[null, <betterwithmods:shaft>, <betterwithmods:rope>],
+                                  [<betterwithmods:rope>, <betterwithmods:shaft>, null],
+                                  [null,  <betterwithmods:shaft>, <betterwithmods:rope>]]);
+
 <rustic:grape_stem>.addTooltip(format.yellow("(Will only drop from grass if you're using hoes)"));
 
 //Steve's Carts
@@ -415,6 +429,9 @@ recipes.addShaped(<stevescarts:cartmodule:32>,
 [[<tp:reinforced_obsidian_ingot>, null, <tp:reinforced_obsidian_ingot>],
 [<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
 [null,  <stevescarts:modulecomponents:22>, null]]);
+
+
+
 
 //Tooltips
 <minecraft:flint_and_steel>.addTooltip(format.darkGray("(Right-click a rock from immersivecraft with a flint to get it)"));

@@ -1,0 +1,328 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  RBLoadingPlugin (RealBench-1.12.2-1.3.3.jar)
+  CorePlugin (ForgeEndertech-1.12.2-4.3.10.0-build.0125.jar)
+  CTMCorePlugin (CTM-MC1.12-0.3.0.15.jar)
+  ItemPatchingLoader (ItemPhysic_Full_1.4.12_mc1.12.2.jar)
+  Do not report to Forge! Remove FoamFixAPI (or replace with FoamFixAPI-Lawful) and try again. (foamfix-0.9.9.1-1.12.2-anarchy.jar)
+  SignPictureCorePlugin (SignPicture-1.12.1-2.8.1-universal.jar)
+  SSLoadingPlugin (SereneSeasons-1.12.2-1.2.3-universal.jar)
+  CreativePatchingLoader (CreativeCore_v1.9.22_mc1.12.2.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.4.0.jar)
+  ForgelinPlugin (Forgelin-1.7.3.jar)
+  Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  ShetiPhian-ASM (ShetiPhian-ASM-1.12.0.jar)
+  BlurPlugin (Blur-1.0.4-14.jar)
+  CoreMod (Aroma1997Core-1.12.2-2.0.0.0.b155.jar)
+  IELoadingPlugin (ImmersiveEngineering-core-0.12-82.jar)
+  LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  LoadingPlugin (AdFinders-1.12.2-2.3.0.0-build.0125.jar)
+Contact their authors BEFORE contacting forge
+
+// This doesn't make any sense!
+
+Time: 6/15/18 8:29 PM
+Description: Initializing game
+
+java.lang.NoClassDefFoundError: kotlin/jvm/internal/Intrinsics
+	at net.shadowfacts.forgelin.KotlinAdapter.getNewInstance(KotlinAdapter.kt)
+	at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:588)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:593)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:225)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:466)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:377)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+Caused by: java.lang.ClassNotFoundException: kotlin.jvm.internal.Intrinsics
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+Caused by: java.lang.NullPointerException
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.shadowfacts.forgelin.KotlinAdapter.getNewInstance(KotlinAdapter.kt)
+	at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:588)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:593)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:225)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:466)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:377)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 959403000 bytes (914 MB) / 1207959552 bytes (1152 MB) up to 5804916736 bytes (5536 MB)
+	JVM Flags: 10 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx5505m -Xms256m -XX:PermSize=256m -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.4.2707 139 mods loaded, 139 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                             | Version                         | Source                                              | Signature                                |
+	|:----- |:------------------------------ |:------------------------------- |:--------------------------------------------------- |:---------------------------------------- |
+	| UC    | minecraft                      | 1.12.2                          | minecraft.jar                                       | None                                     |
+	| UC    | mcp                            | 9.42                            | minecraft.jar                                       | None                                     |
+	| UC    | FML                            | 8.0.99.99                       | forge-1.12.2-14.23.4.2707.jar                       | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UC    | forge                          | 14.23.4.2707                    | forge-1.12.2-14.23.4.2707.jar                       | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UC    | creativecoredummy              | 1.0.0                           | minecraft.jar                                       | None                                     |
+	| UC    | itemphysic                     | 1.4.0                           | minecraft.jar                                       | None                                     |
+	| UC    | foamfixcore                    | 7.7.4                           | minecraft.jar                                       | None                                     |
+	| UC    | crafttweaker                   | 4.1.8                           | CraftTweaker2-1.12-4.1.8.jar                        | None                                     |
+	| UC    | mtlib                          | 3.0.5                           | MTLib-3.0.5.jar                                     | None                                     |
+	| UC    | modtweaker                     | 4.0.12                          | modtweaker-4.0.12.jar                               | None                                     |
+	| UC    | jei                            | 4.10.0.198                      | jei_1.12.2-4.10.0.198.jar                           | None                                     |
+	| UC    | immersiveengineering           | 0.12-82                         | ImmersiveEngineering-0.12-82.jar                    | 4cb49fcde3b43048c9889e0a3d083225da926334 |
+	| UC    | alternatingflux                | 0.12-4                          | alternatingflux-0.12-4.jar                          | None                                     |
+	| UC    | ambientsounds                  | 2.0.0                           | AmbientSounds_v2.3_mc1.12.2.jar                     | None                                     |
+	| UC    | ctm                            | MC1.12-0.3.0.15                 | CTM-MC1.12-0.3.0.15.jar                             | None                                     |
+	| UC    | betterwithmods                 | ${version}                      | BetterWithMods-1.12-2.1.24.jar                      | None                                     |
+	| UC    | appleskin                      | 1.0.9                           | AppleSkin-mc1.12-1.0.9.jar                          | None                                     |
+	| UC    | aroma1997core                  | 2.0.0.0.b155                    | Aroma1997Core-1.12.2-2.0.0.0.b155.jar               | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| UC    | aroma1997sdimension            | 2.0.0.2.b77                     | Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b77.jar | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| UC    | aromabackup                    | 2.1.1.3.b103                    | AromaBackup-1.12.2-2.1.1.3.b103.jar                 | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| UC    | aromabackuprecovery            | 2.1.1.3.b103                    | AromaBackup-1.12.2-2.1.1.3.b103.jar                 | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| UC    | athenaeum                      | 1.12.2-1.14.0                   | athenaeum-1.12.2-1.14.0.jar                         | None                                     |
+	| UC    | betterbuilderswands            | 0.11.1                          | BetterBuildersWands-1.12-0.11.1.245+69d0d70.jar     | None                                     |
+	| UC    | betterthanmending              | 1.1.1                           | BetterThanMending-1.1.1.jar                         | None                                     |
+	| UC    | betterunderground              | 1.1.6                           | betterunderground-1.1.6.jar                         | None                                     |
+	| UC    | bibliocraft                    | 2.4.4                           | BiblioCraft[v2.4.4][MC1.12.2].jar                   | None                                     |
+	| UC    | blur                           | 1.0.4-14                        | Blur-1.0.4-14.jar                                   | None                                     |
+	| UC    | bonsaitrees                    | 1.0.5                           | bonsaitrees-1.0.5-b77.jar                           | None                                     |
+	| UC    | bookshelf                      | 2.3.552                         | Bookshelf-1.12.2-2.3.552.jar                        | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UC    | carryon                        | 1.9                             | CarryOn MC1.12.2 v1.9.jar                           | None                                     |
+	| UC    | ceramics                       | 1.12-1.3.4                      | Ceramics-1.12-1.3.4.jar                             | None                                     |
+	| UC    | chameleon                      | 1.12-4.1.3                      | Chameleon-1.12-4.1.3.jar                            | None                                     |
+	| UC    | chesttransporter               | 2.8.8                           | ChestTransporter-1.12.2-2.8.8.jar                   | None                                     |
+	| UC    | codechickenlib                 | 3.1.9.344                       | CodeChickenLib-1.12.2-3.1.9.344-universal.jar       | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UC    | chickenchunks                  | 2.4.1.71                        | ChickenChunks-1.12.2-2.4.1.71-universal.jar         | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UC    | chisel                         | MC1.12.2-0.2.0.31               | Chisel-MC1.12.2-0.2.0.31.jar                        | None                                     |
+	| UC    | clayworldgen                   | 1.1.0-1.12                      | ClayWorldGen-1.1.0-1.12.0.jar                       | None                                     |
+	| UC    | corail_pillar_extension_chisel | 4.0.0                           | corail_pillar_extension_chisel-4.0.0-1.12.jar       | None                                     |
+	| UC    | cosmeticarmorreworked          | 1.12.2-v1                       | CosmeticArmorReworked-1.12.2-v1.jar                 | aaaf83332a11df02406e9f266b1b65c1306f0f76 |
+	| UC    | craftablesaddles               | 1.3                             | Craftable Saddles[1.12]-1.3.jar                     | None                                     |
+	| UC    | ctgui                          | 1.0.0                           | CraftTweaker2-1.12-4.1.8.jar                        | None                                     |
+	| UC    | crafttweakerjei                | 2.0.2                           | CraftTweaker2-1.12-4.1.8.jar                        | None                                     |
+	| UC    | creativecore                   | 1.9.9                           | CreativeCore_v1.9.22_mc1.12.2.jar                   | None                                     |
+	| UC    | custommainmenu                 | 2.0.8                           | CustomMainMenu-MC1.12.2-2.0.8.jar                   | None                                     |
+	| UC    | mininglib                      | 1.1.0                           | mininglib-1.12.1-1.1.0.jar                          | None                                     |
+	| UC    | dimensionalores                | 1.12-1.0.1                      | dimensionalores-1.12-1.0.1.jar                      | None                                     |
+	| UC    | dirt2path                      | 1.7.1                           | dirt2path-1.7.1.jar                                 | None                                     |
+	| UC    | durabilityshow                 | 5.0.0                           | Durability Show-1.12-5.0.0.jar                      | None                                     |
+	| UC    | earthworks                     | 1.3.4.3                         | Earthworks-1.12-1.3.6.jar                           | None                                     |
+	| UC    | easybreeding                   | 5.0.0                           | easybreading-1.12-5.0.0.jar                         | None                                     |
+	| UC    | elevatorid                     | 1.3.6                           | ElevatorMod-1.12.2-1.3.6.jar                        | None                                     |
+	| UC    | logicaldrops                   | 0.9.4                           | EM3R50N-LogicalDrops-1.12-14.21.1.2387.jar          | None                                     |
+	| UC    | csb_ench_table                 | 1.1.3                           | EnchantingTable-1.12-1.1.3.jar                      | None                                     |
+	| UC    | enchdesc                       | 1.1.6                           | EnchantmentDescriptions-1.12.2-1.1.6.jar            | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UC    | enchiridion                    | 3.3.3                           | Enchiridion-1.12.2-3.3.3.jar                        | None                                     |
+	| UC    | endercompass                   | 1.2.6.1                         | EnderCompass-1.12-1.2.6.1.jar                       | None                                     |
+	| UC    | endercrop                      | 1.12.2-1.5.1                    | endercrop-1.12.2-1.5.1.jar                          | None                                     |
+	| UC    | engineersdoors                 | 0.7.2                           | engineersdoors-0.7.2.jar                            | None                                     |
+	| UC    | shadowmc                       | 3.8.0                           | ShadowMC-1.12-3.8.0.jar                             | None                                     |
+	| UC    | extrarails                     | 1.3.0                           | ExtraRails-1.12-1.3.0.jar                           | None                                     |
+	| UC    | fairylights                    | 2.1.2                           | fairylights-2.1.2-1.12.x.jar                        | None                                     |
+	| UC    | fasterladderclimbing           | 0.1-146                         | FasterLadderClimbing-1.12-0.1-146.jar               | None                                     |
+	| UC    | fencejumper                    | 1.0.3                           | fencejumper-1.12-1.0.3.jar                          | None                                     |
+	| UC    | flatbedrockx                   | 1.4.0                           | FlatBedrock-1.4.0_1.12.jar                          | None                                     |
+	| UC    | floricraft                     | 4.4.1                           | Floricraft-1.12.2-4.4.1.jar                         | None                                     |
+	| UC    | foamfix                        | 0.9.9.1-1.12.2                  | foamfix-0.9.9.1-1.12.2-anarchy.jar                  | None                                     |
+	| UC    | forgeendertech                 | 1.12.2-4.3.10.0                 | ForgeEndertech-1.12.2-4.3.10.0-build.0125.jar       | None                                     |
+	| U     | forgelin                       | 1.7.3                           | Forgelin-1.7.3.jar                                  | None                                     |
+	| U     | harvest                        | 1.12-1.2.6-18                   | Harvest-1.12-1.2.6-18.jar                           | None                                     |
+	| U     | hopperducts                    | 1.5                             | hopperducts-mc1.12-1.5.jar                          | None                                     |
+	| U     | horsetweaks                    | 1.0.3                           | HorseTweaks_1.12.2-1.0.3.jar                        | None                                     |
+	| U     | waila                          | 1.8.26                          | Hwyla-1.8.26-B41_1.12.2.jar                         | None                                     |
+	| U     | mcjtylib_ng                    | 3.0.1                           | mcjtylib-1.12-3.0.1.jar                             | None                                     |
+	| U     | immcraft                       | 1.5.0                           | immcraft-1.12-1.5.0.jar                             | None                                     |
+	| U     | immersivehempcraft             | 1.12-0.0.6.2                    | Immersive HempCraft-1.12-0.0.6.2.jar                | None                                     |
+	| U     | immersivepetroleum             | 1.1.9                           | immersivepetroleum-1.12.2-1.1.9.jar                 | None                                     |
+	| U     | immersivetech                  | 1.3.10                          | immersivetech-1.12-1.3.10.jar                       | None                                     |
+	| U     | initialinventory               | 2.0.2                           | InitialInventory-3.0.0.jar                          | None                                     |
+	| U     | inventorytweaks                | 1.63+release.109.220f184        | InventoryTweaks-1.63.jar                            | None                                     |
+	| U     | ironchest                      | 1.12.2-7.0.42.827               | ironchest-1.12.2-7.0.42.827.jar                     | None                                     |
+	| U     | itemzoom                       | 1.10                            | itemzoom_1.12.1-1.10.jar                            | None                                     |
+	| U     | jeiintegration                 | 1.5.1.36                        | jeiintegration_1.12.2-1.5.1.36.jar                  | None                                     |
+	| U     | jepb                           | 1.2.1                           | jepb-1.12-1.2.1.jar                                 | None                                     |
+	| U     | journeymap                     | 1.12.2-5.5.2                    | journeymap-1.12.2-5.5.2.jar                         | None                                     |
+	| U     | jaff                           | 1.7_for_1.12                    | JustAFewFish-1.7_for_1.12.jar                       | None                                     |
+	| U     | jeresources                    | 0.8.7.41                        | JustEnoughResources-1.12.2-0.8.7.41.jar             | None                                     |
+	| U     | subcommonlib                   | 1.2.0.1                         | subcommonlib-sublib-1.12.2-1.2.0.4.jar              | None                                     |
+	| U     | fashion                        | 1.11.2 0.1.2.0                  | JustFashion-1.12-0.1.2.0.jar                        | None                                     |
+	| U     | largeveins                     | @VERSION@                       | LargeVeins-1.12-1.1.0.jar                           | None                                     |
+	| U     | longfallboots                  | 1.2.1a                          | longfallboots-1.2.1a.jar                            | None                                     |
+	| U     | malisiscore                    | 1.12.2-6.4.0                    | malisiscore-1.12.2-6.4.0.jar                        | None                                     |
+	| U     | malisisdoors                   | 1.12.2-7.3.0                    | malisisdoors-1.12.2-7.3.0.jar                       | None                                     |
+	| U     | mobends                        | 0.24                            | mobends-0.24_for_MC-1.12.jar                        | None                                     |
+	| U     | mob_grinding_utils             | 0.3.6                           | MobGrindingUtils-0.3.6.jar                          | None                                     |
+	| U     | moreoverlays                   | 1.13                            | moreoverlays-1.13-mc1.12.1.jar                      | None                                     |
+	| U     | mousetweaks                    | 2.8                             | MouseTweaks-2.8-mc1.12.1.jar                        | None                                     |
+	| U     | naturescompass                 | 1.5.1                           | NaturesCompass-1.12.2-1.5.1.jar                     | None                                     |
+	| U     | nmsot                          | 1.2.2-mc1.12.2                  | NoMobSpawningOnTrees-1.2.2-mc1.12.2.jar             | None                                     |
+	| U     | notenoughwands                 | 1.7.0                           | notenoughwands-1.12-1.7.0.jar                       | None                                     |
+	| U     | obsidianplates                 | 1.3.0                           | ObsidianPlates-1.3.0_1.12.jar                       | None                                     |
+	| U     | samsocean                      | 1.0.1                           | OceanFloor-1.12-1.0.1.jar                           | None                                     |
+	| U     | openglider                     | @VERSION@                       | OpenGlider-1.12.1-1.1.0.jar                         | None                                     |
+	| U     | shetiphiancore                 | 3.5.7                           | shetiphiancore-1.12.0-3.5.7.jar                     | None                                     |
+	| U     | platforms                      | 1.4.5                           | platforms-1.12.0-1.4.5.jar                          | None                                     |
+	| U     | prefab                         | 1.3.0.23                        | prefab-1.3.0.23.jar                                 | None                                     |
+	| U     | quickleafdecay                 | 1.2.4                           | QuickLeafDecay-MC1.12.1-1.2.4.jar                   | None                                     |
+	| U     | reborncore                     | 3.8.9.300                       | RebornCore-1.12.2-3.8.9.300-universal.jar           | None                                     |
+	| U     | resourceloader                 | 1.5.3                           | ResourceLoader-MC1.12.1-1.5.3.jar                   | None                                     |
+	| U     | ropebridge                     | 2.0.5                           | ropebridge-1.12-2.0.7.jar                           | None                                     |
+	| U     | ruins                          | 17.1                            | Ruins-1.12.2.jar                                    | None                                     |
+	| U     | rustic                         | 1.0.5                           | rustic-1.0.5.jar                                    | None                                     |
+	| U     | bonetorch                      | @MAJOR@.@MINOR@.@REVIS@.@BUILD@ | SBM-BoneTorch-1.12-0.0.1b3.jar                      | None                                     |
+	| U     | sereneseasons                  | 1.2.3                           | SereneSeasons-1.12.2-1.2.3-universal.jar            | None                                     |
+	| U     | signpic                        | 2.8.1                           | SignPicture-1.12.1-2.8.1-universal.jar              | None                                     |
+	| U     | signpost                       | 1.07.2                          | signpost-1.12-1.07.2.jar                            | None                                     |
+	| U     | simplemagnet                   | 1.12.0-1.2.6                    | simplemagnet-1.12.2-1.2.10.jar                      | None                                     |
+	| U     | soundfilters                   | 0.10_for_1.12                   | SoundFilters-0.10_for_1.12.jar                      | None                                     |
+	| U     | stevescarts                    | 2.4.20.99                       | StevesCarts-1.12.2-2.4.20.99.jar                    | None                                     |
+	| U     | storagedrawers                 | 1.12-5.3.5                      | StorageDrawers-1.12.2-5.3.6.jar                     | None                                     |
+	| U     | supersoundmuffler              | 1.0.2.9                         | supersoundmuffler-1.12.1-1.0.2.9.jar                | None                                     |
+	| U     | tp                             | 3.2.29                          | tinyprogressions-1.12.2-3.3.29-Release.jar          | None                                     |
+	| U     | tombstone                      | 2.9.7                           | tombstone-2.9.7-1.12.jar                            | None                                     |
+	| U     | toolbelt                       | 1.7.1                           | ToolBelt-1.12.0-1.7.1.jar                           | None                                     |
+	| U     | torchmaster                    | 1.6.4.62                        | torchmaster_1.12.2-1.6.4.62.jar                     | None                                     |
+	| U     | trapcraft                      | v2.4.3a                         | Trapcraft-1.12-v2.4.3a-universal.jar                | None                                     |
+	| U     | trashslot                      | 8.4.6                           | TrashSlot_1.12.1-8.4.6.jar                          | None                                     |
+	| U     | usefulnullifiers               | 1.4.1                           | usefulnullifiers-1.4.1.jar                          | None                                     |
+	| U     | veinminer                      | 0.38.2                          | VeinMiner-1.12-0.38.2.647+b31535a.jar               | None                                     |
+	| U     | veinminermodsupport            | 0.38.2                          | VeinMiner-1.12-0.38.2.647+b31535a.jar               | None                                     |
+	| U     | vc                             | 5.9.13                          | ViesCraft-1.12.2-5.9.13.jar                         | None                                     |
+	| U     | wailaharvestability            | 1.1.12                          | WailaHarvestability-mc1.12-1.1.12.jar               | None                                     |
+	| U     | waterstrainer                  | 3.2.0                           | WaterStrainer-1.12-3.2.0.jar                        | None                                     |
+	| U     | wawla                          | 2.5.257                         | Wawla-1.12.2-2.5.257.jar                            | None                                     |
+	| U     | waystones                      | 4.0.43                          | Waystones_1.12.2-4.0.43.jar                         | None                                     |
+	| U     | wearablebackpacks              | 3.1.2                           | WearableBackpacks-1.12.2-3.1.2.jar                  | None                                     |
+	| U     | xpbook                         | 0.0.3-beta                      | xpbook-1.12-0.0.3-beta.jar                          | None                                     |
+	| U     | adfinders                      | 1.12.2-2.3.0.0                  | AdFinders-1.12.2-2.3.0.0-build.0125.jar             | None                                     |
+	| U     | corail_pillar                  | 4.1.0                           | corail_pillar-4.1.0-1.12.jar                        | None                                     |
+	| U     | dropt                          | 1.12.2-1.9.4                    | dropt-1.12.2-1.9.4.jar                              | None                                     |
+
+	Loaded coremods (and transformers): 
+RBLoadingPlugin (RealBench-1.12.2-1.3.3.jar)
+  pw.prok.realbench.asm.RBTransformer
+CorePlugin (ForgeEndertech-1.12.2-4.3.10.0-build.0125.jar)
+  
+CTMCorePlugin (CTM-MC1.12-0.3.0.15.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+ItemPatchingLoader (ItemPhysic_Full_1.4.12_mc1.12.2.jar)
+  com.creativemd.itemphysic.ItemTransformer
+Do not report to Forge! Remove FoamFixAPI (or replace with FoamFixAPI-Lawful) and try again. (foamfix-0.9.9.1-1.12.2-anarchy.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+SignPictureCorePlugin (SignPicture-1.12.1-2.8.1-universal.jar)
+  com.kamesuta.mc.signpic.asm.SignPictureTransformer
+SSLoadingPlugin (SereneSeasons-1.12.2-1.2.3-universal.jar)
+  sereneseasons.asm.transformer.EntityRendererTransformer
+  sereneseasons.asm.transformer.WorldTransformer
+CreativePatchingLoader (CreativeCore_v1.9.22_mc1.12.2.jar)
+  
+MalisisCorePlugin (malisiscore-1.12.2-6.4.0.jar)
+  
+ForgelinPlugin (Forgelin-1.7.3.jar)
+  
+Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  invtweaks.forge.asm.ContainerTransformer
+ShetiPhian-ASM (ShetiPhian-ASM-1.12.0.jar)
+  shetiphian.asm.ClassTransformer
+BlurPlugin (Blur-1.0.4-14.jar)
+  com.tterrag.blur.BlurTransformer
+CoreMod (Aroma1997Core-1.12.2-2.0.0.0.b155.jar)
+  
+IELoadingPlugin (ImmersiveEngineering-core-0.12-82.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  lumien.resourceloader.asm.ClassTransformer
+LoadingPlugin (AdFinders-1.12.2-2.3.0.0-build.0125.jar)
+  com.endertech.minecraft.mods.adfinders.finder.Render
+	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4358' Renderer: 'Intel(R) HD Graphics 4000'
+	Launched Version: forge-14.23.4.2707
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) HD Graphics 4000 GL version 4.0.0 - Build 10.18.10.4358, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i7-3537U CPU @ 2.00GHz

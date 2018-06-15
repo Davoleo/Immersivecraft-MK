@@ -74,5 +74,24 @@
 		"type": "grass",
 		"identifier": "grass",
 		"enabled": false
+	},
+	{
+		"type": "oreReplace",
+		"identifier": "oreGenDebug",
+		"_comment": "If you want this to work properly, this needs to be the last block in the json file.",
+		"enabled": false,
+		"targetBlock": "minecraft:air",
+		"originalBlock": [
+			"minecraft:stone",
+			"minecraft:stone:1",
+			"minecraft:stone:2",
+			"minecraft:stone:3",
+			"minecraft:stone:4",
+			"minecraft:stone:5",
+			"minecraft:stone:6",
+			"minecraft:dirt",
+			"minecraft:grass",
+			"minecraft:gravel"
+		]
 	}
 ]

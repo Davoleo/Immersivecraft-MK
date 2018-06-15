@@ -101,6 +101,22 @@ recipes.remove(<tp:bsc_iron_pickaxe>);
 recipes.remove(<bibliocraft:framedchest:5>);
 recipes.remove(<ropebridge:rope>);
 recipes.remove(<ore:drawerBasic>);
+recipes.remove(<tp:infin_bucket>);
+recipes.remove(<immersiveengineering:wooden_device1>);
+recipes.remove(<tp:pouch>);
+recipes.remove(<tp:mycelium_seeds>);
+recipes.remove(<tp:tiny_coal>);
+recipes.remove(<tp:tiny_charcoal>);
+recipes.remove(<tp:redstone_apple>);
+recipes.remove(<tp:iron_apple>);
+recipes.remove(<minecraft:golden_apple>);
+recipes.remove(<tp:emerald_apple>);
+recipes.remove(<tp:diamond_apple>);
+recipes.remove(<minecraft:golden_apple:1>);
+recipes.remove(<tp:redstone_ingot>);
+recipes.remove(<tp:lapis_ingot>);
+recipes.remove(<tp:quartz_ingot>);
+recipes.remove(<tp:flint_ingot>);
 
 
 //Oredictionary conversions
@@ -179,7 +195,7 @@ recipes.addShaped(<aroma1997sdimension:miningmultitool>, [[<ore:torch>, <ore:gea
                                                           [null, <tp:bone_pickaxe>, null],
                                                           [null, <immersiveengineering:material>, null]]);
 
-recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>]);
+recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>, <minecraft:gravel>]);
 
 recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotCobalt>, <ore:ingotIron>],
                                           [<ore:ingotCobalt>, <ore:ingotIron>, <ore:ingotCobalt>]]);
@@ -191,9 +207,17 @@ recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
 <minecraft:banner:*>.addTooltip(format.white("(Press 'U' to see banner customization)"));
 
 //Kiln
-AlloySmelter.addRecipe(<rustic:tallow> *2, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>, 400);
+AlloySmelter.addRecipe(<rustic:tallow> *2, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>, 300);
 
-AlloySmelter.addRecipe(<minecraft:brick>, <betterwithmods:unfired_pottery:4>, <immcraft:sticks>, 1000);
+AlloySmelter.addRecipe(<minecraft:brick>, <betterwithmods:unfired_pottery:4>, <immcraft:sticks>, 150);
+
+AlloySmelter.addRecipe(<tp:redstone_ingot>, <ceramics:unfired_clay:5>, <minecraft:redstone> * 6, 400);
+
+AlloySmelter.addRecipe(<tp:lapis_ingot>, <ceramics:unfired_clay:5>, <minecraft:dye:4> * 6, 400);
+
+AlloySmelter.addRecipe(<tp:quartz_ingot>, <ceramics:unfired_clay:5>, <minecraft:quartz> * 6, 400);
+
+AlloySmelter.addRecipe(<tp:flint_ingot>, <ceramics:unfired_clay:5>, <minecraft:flint> * 6, 400);
 
 //Advanced Finders
 recipes.addShaped(<adfinders:minerals_finder>, [[<vc:item_viesoline_pellets>, <ore:dustRedstone>, <vc:item_viesoline_pellets>],
@@ -217,7 +241,7 @@ recipes.addShaped(<betterwithmods:single_machine>, [[<ore:cobblestone>, <ore:gea
 mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<minecraft:clay_ball>]);
 mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
-mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket>]);
+mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 
 mods.betterwithmods.Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer>*5]);
 
@@ -298,13 +322,18 @@ recipes.addShaped(<immersiveengineering:tool>,
 [<ore:stickAluminum>,  null, null]]);
 
 recipes.addShaped(<immersiveengineering:stone_decoration:10>, 
-[[<ore:sandstone>, <tp:wub_ingot>],
- [<tp:wub_ingot>, <ore:sandstone>]]);
+[[<ore:sandstone>, <earthworks:item_adobe>],
+ [<earthworks:item_adobe>, <ore:sandstone>]]);
 
 recipes.addShaped(<immersiveengineering:wooden_device1:1>, 
 [[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
  [<immersiveengineering:material:11>, <betterwithmods:axle_generator>, <immersiveengineering:material:11>],
  [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]]);
+
+recipes.addShaped(<immersiveengineering:wooden_device1>, 
+[[<immersiveengineering:material:2>, <immersiveengineering:material:10>, <immersiveengineering:material:2>],
+ [<immersiveengineering:material:10>, <betterwithmods:axle_generator:1>, <immersiveengineering:material:10>],
+ [<immersiveengineering:material:2>, <immersiveengineering:material:10>, <immersiveengineering:material:2>]]);
 
 //Immersive tech
 recipes.addShapeless(<immersivetech:stone_decoration>, [<immersiveengineering:stone_decoration>, <immersivehempcraft:hempstone_plate>]);
@@ -431,6 +460,49 @@ recipes.addShaped(<stevescarts:cartmodule:32>,
 [null,  <stevescarts:modulecomponents:22>, null]]);
 
 
+//Tiny Progressions
+recipes.addShaped(<tp:infin_bucket>, [[<forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000}), <tp:watering_can>, <forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000})],
+                                      [<minecraft:netherbrick>, <vc:modules/item_module_type:23>, null],
+                                      [null,  <minecraft:netherbrick>, <minecraft:netherbrick>]]);
+
+recipes.addShaped(<tp:pouch>, [[<betterwithmods:material:6>, <betterwithmods:material:6>, <betterwithmods:material:6>],
+                               [<betterwithmods:material:3>, <ironchest:iron_chest:4>, <betterwithmods:material:3>],
+                               [<betterwithmods:material:6>,  <betterwithmods:material:6>, <betterwithmods:material:6>]]);
+
+recipes.addShaped(<tp:mycelium_seeds> * 4, [[<ore:seed>, <ore:seed>, <ore:seed>],
+                                            [<ore:seed>, <betterwithmods:nether_growth>, <ore:seed>],
+                                            [<ore:seed>,  <ore:seed>, <ore:seed>]]);
+
+recipes.addShapeless(<tp:tiny_coal> * 8, [<minecraft:coal>]);
+recipes.addShapeless(<tp:tiny_charcoal> * 8, [<minecraft:coal:1>]);
+
+recipes.addShaped(<tp:redstone_apple>, [[<tp:redstone_ingot>, <tp:redstone_ingot>, <tp:redstone_ingot>],
+                                        [<tp:redstone_ingot>, <minecraft:apple>, <tp:redstone_ingot>],
+                                        [<tp:redstone_ingot>,  <tp:redstone_ingot>, <tp:redstone_ingot>]]);
+
+recipes.addShaped(<tp:iron_apple>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+                                    [<ore:ingotIron>, <tp:redstone_apple>, <ore:ingotIron>],
+                                    [<ore:ingotIron>,  <ore:ingotIron>, <ore:ingotIron>]]);
+
+recipes.addShaped(<minecraft:golden_apple>, [[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>],
+                                             [<minecraft:gold_ingot>, <tp:iron_apple>, <minecraft:gold_ingot>],
+                                             [<minecraft:gold_ingot>,  <minecraft:gold_ingot>, <minecraft:gold_ingot>]]);
+
+recipes.addShaped(<tp:emerald_apple>, [[<minecraft:emerald>, <minecraft:emerald>, <minecraft:emerald>],
+                                       [<minecraft:emerald>, <minecraft:golden_apple>, <minecraft:emerald>],
+                                       [<minecraft:emerald>,  <minecraft:emerald>, <minecraft:emerald>]]);
+
+recipes.addShaped(<tp:diamond_apple>, [[<ore:ingotDiamond>, <ore:ingotDiamond>, <ore:ingotDiamond>],
+                                       [<ore:ingotDiamond>, <tp:emerald_apple>, <ore:ingotDiamond>],
+                                       [<ore:ingotDiamond>,  <ore:ingotDiamond>, <ore:ingotDiamond>]]);
+
+recipes.addShaped(<minecraft:golden_apple:1>, [[<chisel:gold>, <chisel:gold>, <chisel:gold>],
+                                               [<chisel:gold>, <tp:diamond_apple>, <chisel:gold>],
+                                               [<chisel:gold>,  <chisel:gold>, <chisel:gold>]]);
+
+recipes.addShaped(<tp:lava_infused_stone>, [[<tp:hardened_stone>, <betterwithmods:material:16>, <tp:hardened_stone>],
+                                            [<betterwithmods:material:16>, <chisel:lavastone>, <betterwithmods:material:16>],
+                                            [<tp:hardened_stone>,  <betterwithmods:material:16>, <tp:hardened_stone>]]);
 
 
 //Tooltips

@@ -83,21 +83,14 @@ recipes.remove(<notenoughwands:capturing_wand>);
 recipes.remove(<stevescarts:cartmodule:32>);
 recipes.remove(<extrarails:teleporting_rail>);
 recipes.remove(<chesttransporter:chesttransporter_copper>);
-recipes.remove(<tp:wub_pickaxe>);
 recipes.remove(<betterbuilderswands:wanddiamond>);
 recipes.remove(<chesttransporter:chesttransporter>);
-recipes.remove(<tp:birthday_pickaxe>);
 recipes.remove(<chesttransporter:chesttransporter_tin>);
-recipes.remove(<tp:obsidian_pickaxe>);
 recipes.remove(<chesttransporter:chesttransporter_iron>);
-recipes.remove(<tp:bsc_diamond_pickaxe>);
-recipes.remove(<tp:steel_ingot>);
 recipes.remove(<bibliocraft:framedchest:4>);
 recipes.remove(<bibliocraft:framedchest:3>);
 recipes.remove(<bibliocraft:framedchest:2>);
 recipes.remove(<bibliocraft:framedchest:1>);
-recipes.remove(<tp:bsc_gold_pickaxe>);
-recipes.remove(<tp:bsc_iron_pickaxe>);
 recipes.remove(<bibliocraft:framedchest:5>);
 recipes.remove(<ropebridge:rope>);
 recipes.remove(<ore:drawerBasic>);
@@ -117,6 +110,10 @@ recipes.remove(<tp:redstone_ingot>);
 recipes.remove(<tp:lapis_ingot>);
 recipes.remove(<tp:quartz_ingot>);
 recipes.remove(<tp:flint_ingot>);
+recipes.remove(<rustic:rope>);
+recipes.remove(<rustic:iron_lattice>);
+recipes.remove(<ropebridge:bridge_builder_material.handle>);
+recipes.remove(<ropebridge:bridge_builder_material.barrel>);
 
 
 //Oredictionary conversions
@@ -192,7 +189,7 @@ recipes.addShaped(<betterbuilderswands:wandunbreakable>, [[null, <vc:modules/ite
                                                           [<immersiveengineering:material:2>, null, null]]);
 
 recipes.addShaped(<aroma1997sdimension:miningmultitool>, [[<ore:torch>, <ore:gearWood>, <ore:torch>],
-                                                          [null, <tp:bone_pickaxe>, null],
+                                                          [null, <tp:flint_pickaxe>, null],
                                                           [null, <immersiveengineering:material>, null]]);
 
 recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>, <minecraft:gravel>]);
@@ -443,9 +440,9 @@ recipes.addShaped(<rustic:condenser>, [[null, <earthworks:item_adobe>, null],
 
 mods.rustic.Condenser.addRecipe(<minecraft:leather>, <minecraft:magma>, [<minecraft:rotten_flesh>.withTag({oiled: 0 as byte}), <floricraft:dust_salt>, <chisel:waterstone1:5>]);
 
-recipes.addShaped(<rustic:iron_lattice>, [[null, <ore:stickIron>, null],
-                                          [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
-                                          [null,  <ore:stickIron>, null]]);
+recipes.addShaped(<rustic:iron_lattice> *16, [[null, <ore:stickIron>, null],
+                                              [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+                                              [null,  <ore:stickIron>, null]]);
 
 recipes.addShaped(<rustic:rope> *3, [[null, <betterwithmods:shaft>, <betterwithmods:rope>],
                                   [<betterwithmods:rope>, <betterwithmods:shaft>, null],
@@ -462,8 +459,8 @@ recipes.addShaped(<stevescarts:cartmodule:32>,
 
 //Tiny Progressions
 recipes.addShaped(<tp:infin_bucket>, [[<forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000}), <tp:watering_can>, <forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000})],
-                                      [<minecraft:netherbrick>, <vc:modules/item_module_type:23>, null],
-                                      [null,  <minecraft:netherbrick>, <minecraft:netherbrick>]]);
+                                      [<minecraft:netherbrick>, <vc:modules/item_module_type:23>, <minecraft:netherbrick>],
+                                      [null,  <minecraft:netherbrick>, null]]);
 
 recipes.addShaped(<tp:pouch>, [[<betterwithmods:material:6>, <betterwithmods:material:6>, <betterwithmods:material:6>],
                                [<betterwithmods:material:3>, <ironchest:iron_chest:4>, <betterwithmods:material:3>],

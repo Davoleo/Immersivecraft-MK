@@ -42,3 +42,5 @@ config/BlockDrops/modVersions\.txt
 config/dynamiclights_entityclasses\.cfg
 
 config/dynamiclights_onfire\.cfg
+
+mods/

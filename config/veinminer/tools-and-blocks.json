@@ -9,6 +9,12 @@
         "minecraft:iron_axe",
         "minecraft:stone_axe",
         "minecraft:wooden_axe"
+        "betterwithmods:steel_battleaxe"
+        "tp:diamond_multi"
+        "tp:golden_battle"
+        "tp:flint_multi"
+        "tp:flint_axe"
+        "betterwithmods:steel_axe"
       ],
       "blocklist": [
         "betterwithmods:blood_leaves/0",
@@ -69,6 +75,9 @@
         "minecraft:iron_hoe",
         "minecraft:stone_hoe",
         "minecraft:wooden_hoe"
+        "betterwithmods:steel_hoe"
+        "tp:obsidian_hoe"
+        "tp:flint_hoe"
       ],
       "blocklist": [
         "minecraft:carrots",
@@ -88,6 +97,11 @@
         "minecraft:iron_pickaxe",
         "minecraft:stone_pickaxe",
         "minecraft:wooden_pickaxe"
+        "tp:diamond_multi"
+        "tp:flint_multi"
+        "betterwithmods:steel_pickaxe"
+        "tp:kappa_pick"
+        "tp:flint_pickaxe"
       ],
       "blocklist": [
         "dimensionalores:end_aluminium/0",
@@ -170,6 +184,8 @@
       "toollist": [
         "ceramics:clay_shears",
         "minecraft:shears"
+        "tp:diamond_shears"
+        "tp:flint_shears"
       ],
       "blocklist": [
         "betterwithmods:blood_leaves/0",
@@ -224,6 +240,10 @@
         "minecraft:iron_shovel",
         "minecraft:stone_shovel",
         "minecraft:wooden_shovel"
+        "tp:diamond_multi"
+        "tp:flint_multi"
+        "betterwithmods:steel_shovel"
+        "tp:flint_spade"
       ],
       "blocklist": [
         "minecraft:clay",

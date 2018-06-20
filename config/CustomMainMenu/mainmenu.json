@@ -168,6 +168,15 @@
             "color" : 43520,
             "alignment" : "bottom_center"
             //mannaggia alle virgole
+        },
+        "warning":
+        {
+            "text" : "TESTING ONLY DO NOT DISTRIBUTE THIS MODPACK!",
+            "hoverText" : "§4DISTRIBUTING IS SEVERELY PROHIBITED",
+            "posX" : -240,
+            "posY" : -20,
+            "color" : 7340032,
+            "alignment" : "bottom_right"
         }
     },
     "other":

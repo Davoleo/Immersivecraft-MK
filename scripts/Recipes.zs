@@ -114,6 +114,14 @@ recipes.remove(<rustic:rope>);
 recipes.remove(<rustic:iron_lattice>);
 recipes.remove(<ropebridge:bridge_builder_material.handle>);
 recipes.remove(<ropebridge:bridge_builder_material.barrel>);
+recipes.remove(<waystones:warp_scroll>);
+recipes.remove(<waystones:return_scroll>);
+recipes.remove(<waystones:waystone>);
+recipes.remove(<waystones:warp_stone>);
+recipes.remove(<xpbook:xp_book:1395>);
+recipes.remove(<wearablebackpacks:backpack>);
+recipes.remove(<stevescarts:cartmodule:95>);
+
 
 
 //Oredictionary conversions
@@ -196,6 +204,9 @@ recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft
 
 recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotCobalt>, <ore:ingotIron>],
                                           [<ore:ingotCobalt>, <ore:ingotIron>, <ore:ingotCobalt>]]);
+
+recipes.addShaped(<chisel:ironpane>, [[<minecraft:iron_bars>, <minecraft:iron_bars>],
+                                      [<minecraft:iron_bars>, <minecraft:iron_bars>]]);
 
 recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
                                        [<ore:ingotZinc>, <immcraft:chest>, <ore:ingotZinc>],
@@ -456,6 +467,10 @@ recipes.addShaped(<stevescarts:cartmodule:32>,
 [<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
 [null,  <stevescarts:modulecomponents:22>, null]]);
 
+recipes.addShaped(<stevescarts:cartmodule:95>, 
+[[null, <minecraft:redstone>, null],
+[<minecraft:glass>, <minecraft:glass>, <minecraft:glass>],
+[<stevescarts:modulecomponents:9>,  <minecraft:cauldron>, <stevescarts:modulecomponents:9>]]);
 
 //Tiny Progressions
 recipes.addShaped(<tp:infin_bucket>, [[<forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000}), <tp:watering_can>, <forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000})],
@@ -463,7 +478,7 @@ recipes.addShaped(<tp:infin_bucket>, [[<forge:bucketfilled>.withTag({FluidName: 
                                       [null,  <minecraft:netherbrick>, null]]);
 
 recipes.addShaped(<tp:pouch>, [[<betterwithmods:material:6>, <betterwithmods:material:6>, <betterwithmods:material:6>],
-                               [<betterwithmods:material:3>, <ironchest:iron_chest:4>, <betterwithmods:material:3>],
+                               [<betterwithmods:material:3>, <ironchest:iron_chest>, <betterwithmods:material:3>],
                                [<betterwithmods:material:6>,  <betterwithmods:material:6>, <betterwithmods:material:6>]]);
 
 recipes.addShaped(<tp:mycelium_seeds> * 4, [[<ore:seed>, <ore:seed>, <ore:seed>],
@@ -500,6 +515,37 @@ recipes.addShaped(<minecraft:golden_apple:1>, [[<chisel:gold>, <chisel:gold>, <c
 recipes.addShaped(<tp:lava_infused_stone>, [[<tp:hardened_stone>, <betterwithmods:material:16>, <tp:hardened_stone>],
                                             [<betterwithmods:material:16>, <chisel:lavastone>, <betterwithmods:material:16>],
                                             [<tp:hardened_stone>,  <betterwithmods:material:16>, <tp:hardened_stone>]]);
+
+//Water Strainers
+recipes.addShaped(<waterstrainer:strainer_base>, [[<chisel:ironpane>, <chisel:ironpane>, <chisel:ironpane>],
+                                                  [<ore:plankWood>, <minecraft:hopper>, <ore:plankWood>],
+                                                  [<ore:plankWood>, <rustic:barrel>, <ore:plankWood>]]);
+
+//Waystones
+recipes.addShaped(<waystones:warp_stone>, [[<immersiveengineering:fluorescent_tube>, <betterwithmods:aesthetic:8>, <immersiveengineering:fluorescent_tube>],
+                                            [<minecraft:ender_pearl>, <immersiveengineering:material:27>, <minecraft:ender_pearl>],
+                                            [<ore:dyePurple>,  <notenoughwands:teleportation_wand>, <ore:dyePurple>]]);
+
+recipes.addShaped(<waystones:waystone>, [[null, <minecraft:stonebrick>, null],
+                                         [<minecraft:stonebrick>, <betterwithmods:material:40>, <minecraft:stonebrick>],
+                                            [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
+
+recipes.addShaped(<waystones:return_scroll>*3, [[<minecraft:gold_nugget>, <minecraft:ender_pearl>, <minecraft:gold_nugget>],
+                                                [<tombstone:strange_scroll>, <tombstone:strange_scroll>, <tombstone:strange_scroll>]]);
+
+recipes.addShaped(<waystones:warp_scroll>*3, [[<minecraft:ender_pearl>, <stevescarts:modulecomponents:5>, <minecraft:ender_pearl>],
+                                              [<tombstone:strange_scroll>, <tombstone:strange_scroll>, <tombstone:strange_scroll>],
+                                              [<minecraft:gold_nugget>, <stevescarts:modulecomponents:5>, <minecraft:gold_nugget>]]);
+
+//Wearable Backpack
+recipes.addShaped(<wearablebackpacks:backpack>, [[<betterwithmods:material:8>, <betterwithmods:material:32>, <betterwithmods:material:8>],
+                                                 [<betterwithmods:material:32>, <ironchest:iron_chest:4>, <betterwithmods:material:32>],
+                                                 [<betterwithmods:material:32>,<betterwithmods:material:9>, <betterwithmods:material:32>]]);
+
+//XP Book
+recipes.addShaped(<xpbook:xp_book:1395>, [[<minecraft:ender_pearl>, <mob_grinding_utils:xp_tap>, <minecraft:ender_pearl>],
+                                          [<forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000}), <bibliocraft:bigbook>, <forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000})],
+                                          [<minecraft:ender_pearl>, <stevescarts:cartmodule:95>, <minecraft:ender_pearl>]]);
 
 
 //Tooltips

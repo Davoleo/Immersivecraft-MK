@@ -4,17 +4,17 @@
       "name": "Axe",
       "icon": "minecraft:diamond_axe",
       "toollist": [
+        "betterwithmods:steel_axe",
+        "betterwithmods:steel_battleaxe",
         "minecraft:diamond_axe",
         "minecraft:golden_axe",
         "minecraft:iron_axe",
         "minecraft:stone_axe",
-        "minecraft:wooden_axe"
-        "betterwithmods:steel_battleaxe"
-        "tp:diamond_multi"
+        "minecraft:wooden_axe",
+        "tp:diamond_multi",
+        "tp:flint_axe",
+        "tp:flint_multi",
         "tp:golden_battle"
-        "tp:flint_multi"
-        "tp:flint_axe"
-        "betterwithmods:steel_axe"
       ],
       "blocklist": [
         "betterwithmods:blood_leaves/0",
@@ -70,14 +70,14 @@
       "name": "Hoe",
       "icon": "minecraft:diamond_hoe",
       "toollist": [
+        "betterwithmods:steel_hoe",
         "minecraft:diamond_hoe",
         "minecraft:golden_hoe",
         "minecraft:iron_hoe",
         "minecraft:stone_hoe",
-        "minecraft:wooden_hoe"
-        "betterwithmods:steel_hoe"
+        "minecraft:wooden_hoe",
+        "tp:flint_hoe",
         "tp:obsidian_hoe"
-        "tp:flint_hoe"
       ],
       "blocklist": [
         "minecraft:carrots",
@@ -91,17 +91,17 @@
       "name": "Pickaxe",
       "icon": "minecraft:diamond_pickaxe",
       "toollist": [
+        "betterwithmods:steel_pickaxe",
         "immersiveengineering:drill",
         "minecraft:diamond_pickaxe",
         "minecraft:golden_pickaxe",
         "minecraft:iron_pickaxe",
         "minecraft:stone_pickaxe",
-        "minecraft:wooden_pickaxe"
-        "tp:diamond_multi"
-        "tp:flint_multi"
-        "betterwithmods:steel_pickaxe"
+        "minecraft:wooden_pickaxe",
+        "tp:diamond_multi",
+        "tp:flint_multi",
+        "tp:flint_pickaxe",
         "tp:kappa_pick"
-        "tp:flint_pickaxe"
       ],
       "blocklist": [
         "dimensionalores:end_aluminium/0",
@@ -183,8 +183,8 @@
       "icon": "minecraft:shears",
       "toollist": [
         "ceramics:clay_shears",
-        "minecraft:shears"
-        "tp:diamond_shears"
+        "minecraft:shears",
+        "tp:diamond_shears",
         "tp:flint_shears"
       ],
       "blocklist": [
@@ -234,15 +234,15 @@
       "name": "Shovel",
       "icon": "minecraft:diamond_shovel",
       "toollist": [
+        "betterwithmods:steel_shovel",
         "immersiveengineering:drill",
         "minecraft:diamond_shovel",
         "minecraft:golden_shovel",
         "minecraft:iron_shovel",
         "minecraft:stone_shovel",
-        "minecraft:wooden_shovel"
-        "tp:diamond_multi"
-        "tp:flint_multi"
-        "betterwithmods:steel_shovel"
+        "minecraft:wooden_shovel",
+        "tp:diamond_multi",
+        "tp:flint_multi",
         "tp:flint_spade"
       ],
       "blocklist": [

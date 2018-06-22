@@ -121,6 +121,8 @@ recipes.remove(<waystones:warp_stone>);
 recipes.remove(<xpbook:xp_book:1395>);
 recipes.remove(<wearablebackpacks:backpack>);
 recipes.remove(<stevescarts:cartmodule:95>);
+recipes.remove(<tp:bsc_rod>);
+recipes.remove(<betterwithmods:hibachi>);
 
 
 
@@ -242,9 +244,13 @@ recipes.addShaped(<adfinders:gems_finder>,     [[<waystones:warp_stone>, <better
 
 //Better With mods
 
+recipes.addShaped(<betterwithmods:hibachi>, [[<ore:ingotConstantan>, <ore:ingotConstantan>, <ore:ingotConstantan>],
+                                             [<ore:stone>, <betterwithmods:material:28>, <ore:stone>],
+                                             [<ore:stone>, <ore:dustRedstone>, <ore:stone>]]);
+
 recipes.addShaped(<betterwithmods:single_machine>, [[<ore:cobblestone>, <ore:gearWood>, <ore:cobblestone>],
-                                                   [<ore:cobblestone>, <tp:stone_hammer>, <ore:cobblestone>],
-                                                   [<ore:cobblestone>, <rustic:crushing_tub>, <ore:cobblestone>]]);
+                                                    [<ore:cobblestone>, <tp:stone_hammer>, <ore:cobblestone>],
+                                                    [<ore:cobblestone>, <rustic:crushing_tub>, <ore:cobblestone>]]);
 
 mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<minecraft:clay_ball>]);
 mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
@@ -254,15 +260,17 @@ mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <or
 mods.betterwithmods.Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer>*5]);
 
 
+
+
 //Bibliocraft
 
 recipes.addShaped(<bibliocraft:framedchest>, [[<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>],
                                               [<earthworks:block_cordwood>, <bibliocraft:label>, <earthworks:block_cordwood>],
                                         [<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>]]);
 
-recipes.addShaped(<betterwithmods:single_machine>, [[<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>],
+/*recipes.addShaped(<betterwithmods:single_machine>, [[<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>],
                                                 [<earthworks:block_cordwood>, <bibliocraft:label:6>, <earthworks:block_cordwood>],
-                                        [<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>]]);
+                                        [<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>]]);*/
 
 //Chicken chunks
 recipes.addShaped(<chickenchunks:chunk_loader>, [[null, <immersiveengineering:speedloader>, null],
@@ -477,9 +485,15 @@ recipes.addShaped(<tp:infin_bucket>, [[<forge:bucketfilled>.withTag({FluidName: 
                                       [<minecraft:netherbrick>, <vc:modules/item_module_type:23>, <minecraft:netherbrick>],
                                       [null,  <minecraft:netherbrick>, null]]);
 
+furnace.addRecipe(<tp:dead_reed>, <minecraft:reeds>);
+
 recipes.addShaped(<tp:pouch>, [[<betterwithmods:material:6>, <betterwithmods:material:6>, <betterwithmods:material:6>],
                                [<betterwithmods:material:3>, <ironchest:iron_chest>, <betterwithmods:material:3>],
                                [<betterwithmods:material:6>,  <betterwithmods:material:6>, <betterwithmods:material:6>]]);
+
+recipes.addShaped(<tp:bsc_rod>, [[null, null, <minecraft:reeds>],
+                                 [null, <tp:dead_reed>, null],
+                                 [<minecraft:reeds>,  null, null]]);
 
 recipes.addShaped(<tp:mycelium_seeds> * 4, [[<ore:seed>, <ore:seed>, <ore:seed>],
                                             [<ore:seed>, <betterwithmods:nether_growth>, <ore:seed>],

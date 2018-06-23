@@ -123,12 +123,29 @@ recipes.remove(<wearablebackpacks:backpack>);
 recipes.remove(<stevescarts:cartmodule:95>);
 recipes.remove(<tp:bsc_rod>);
 recipes.remove(<betterwithmods:hibachi>);
+recipes.remove(<betterwithmods:single_machine>);
 
 
 
 //Oredictionary conversions
 recipes.addShapeless(<immersiveengineering:metal:3>*2, [<dimensionalores:ingot_silver>,<dimensionalores:ingot_silver>]);
 recipes.addShapeless(<dimensionalores:ingot_silver>*2, [<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]);
+
+/*val element = <ore:rodElement>;
+element.add(<minecraft:blaze_rod>);
+element.add(<ThermalFoundation:material:1024>);
+element.add(<ThermalFoundation:material:1026>);
+element.add(<ThermalFoundation:material:1028>);
+
+val enderm = <ore:itemSkull>;
+enderm.add(<IguanaTweaksTConstruct:skullItem>);
+enderm.add(<IguanaTweaksTConstruct:skullItem:1>);
+enderm.add(<IguanaTweaksTConstruct:skullItem:2>);
+enderm.add(<IguanaTweaksTConstruct:skullItem:3>);
+
+val bar = <ore:barsIron>;
+bar.remove(<minecraft:iron_bars>);
+bar.remove(<EnderIO:blockDarkIronBars>);*/
 
 //General
 recipes.addShaped(<usefulnullifiers:overflownullifieritem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
@@ -566,3 +583,4 @@ recipes.addShaped(<xpbook:xp_book:1395>, [[<minecraft:ender_pearl>, <mob_grindin
 <minecraft:flint_and_steel>.addTooltip(format.darkGray("(Right-click a rock from immersivecraft with a flint to get it)"));
 <minecraft:furnace>.addTooltip(format.darkGray("(Use Immersivecraft furnace for early-game)"));
 <minecraft:stick>.addTooltip(format.darkRed("(Use them on rocks for early-game fire)"));
+

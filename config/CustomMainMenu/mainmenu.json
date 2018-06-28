@@ -149,8 +149,8 @@
             {
                 "type" : "refresh"
             }    
-        },
-                "asdf":
+        }
+ /*               "asdf":
         {
             "text" : "",
             "posX" : 0,
@@ -164,7 +164,7 @@
                 "type" : "refresh"
             }    
         }
-
+*/
     },
     "labels":
     {
@@ -193,7 +193,7 @@
         },
         "packver":
         {
-            "text" : "1.5 DEV",
+            "text" : "§61.5 Beta",
             "hoverText" : "§2A new way forward",
             "posX" : -10,
             "posY" : -10,
@@ -202,7 +202,7 @@
             "alignment" : "bottom_center"
             //mannaggia alle virgole
         },
-        "warning":
+        /*"warning":
         {
             "text" : "TESTING ONLY - DO NOT DISTRIBUTE THIS MODPACK!",
             "hoverText" : "§4DISTRIBUTING IS SEVERELY PROHIBITED",
@@ -210,7 +210,7 @@
             "posY" : -20,
             "color" : 7340032,
             "alignment" : "bottom_right"
-        },
+        },*/
         "welcome":
         {
             "text" : "Hello #username#! Welcome to",

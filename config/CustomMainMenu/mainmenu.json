@@ -1,0 +1,262 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "test:textures/gui/minecraft.png",
+            "posX" : -137,
+            "posY" : 30,
+            "width" : 512,
+            "height" : 512,
+            "alignment" : "top_center"
+        },
+                "black":
+        {
+            "image" : "test:textures/gui/blacktransparent.png",
+            "posX" : -400,
+            "posY" : 7,
+            "width" : 2000,
+            "height" : 100,
+            "alignment" : "center"
+        }
+
+    },
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "texture": "test:textures/gui/longbutton.png",
+            "text" : "§6Singleplayer",
+            "hoverText" : "§a§nPlay Alone!",
+            "posX" : -340,
+            "posY" : 20,
+            "width" : 200,
+            "height" : 20,
+            "alignment" : "center",
+            "anchor" : "top",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "texture": "test:textures/gui/longbutton.png",
+            "text" : "§6Multiplayer",
+            "hoverText" : "§a§nPlay With Friends!",
+            "posX" : 140,
+            "posY" : 20,
+            "width" : 200,
+            "height" : 20,
+            "alignment" : "center",   
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        "mods":
+        {
+            "texture": "test:textures/gui/longbutton.png",
+            "text" : "§6Mods",
+            "hoverText" : "§a§nMods",
+            "posX" : -100,
+            "posY" : 20,
+            "width" : 200,
+            "height" : 20,
+            "alignment" : "center",   
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        }, 
+        "options":
+        {
+            "texture": "test:textures/gui/midbutton.png",
+            "text" : "§6Settings",
+            "hoverText" : "§a§oSet your MC up",
+            "posX" : -325,
+            "posY" : 75,
+            "width" : 175,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        "report":
+        {
+            "texture": "test:textures/gui/midbutton.png",
+            "text" : "§6Bug reports and Ideas here!",
+            "hoverText" : "§a§oI really appreciate it!",
+            "posX" : -87,
+            "posY" : 75,
+            "width" : 175,
+            "height" : 20,
+            "alignment" : "center",
+                    "action" : {
+                "type" : "openLink",
+                "link" : "https://minecraft.curseforge.com/projects/immersivecraft-mk/issues"
+            }
+        },
+        "quit":
+        {
+            "texture": "test:textures/gui/midbutton.png",
+            "text" : "§6Quit",
+            "hoverText" : "§a§oFade Away",
+            "posX" : 155,
+            "posY" : 75,
+            "width" : 175,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+    "language":
+    {
+        "text" : "",
+        "posX" : -20,
+        "posY" : 0,
+        "width" : 20,
+        "height" : 20,
+        "imageWidth": "40",
+        "imageHeight": "40",
+        "texture" : "test:textures/gui/lang.png",
+        "alignment" : "top_right",
+        "action" : 
+        {
+            "type" : "openGui",
+            "gui" : "languages"
+        }
+    }
+        /*"discord":
+        {
+            "text" : "",
+            "posX" : 0,
+            "posY" : 0,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "test:textures/discord.png",
+            "alignment" : "top_left",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "discord.gg/Juy9amW"
+            }    
+        }*/
+ /*               "asdf":
+        {
+            "text" : "",
+            "posX" : 0,
+            "posY" : 100,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "test:textures/gui/buttons.png",
+            "alignment" : "top_left",
+            "action" : 
+            {
+                "type" : "refresh"
+            }    
+        }
+*/
+    },
+    "labels":
+    {
+        "M":
+        {
+            "text" : "§2Inspired by MarcusKron's Youtube series",
+            "hoverText" : "§2§oInspired by MarcusKron Youtube series",
+            "posX" : -213,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "credits"
+            }
+        },
+        "D":
+        {
+            "text" : "§2Developed by Davoleo",
+            "hoverText" : "§2§oDeveloped by Davoleo",
+            "posX" : -112,
+            "posY" : -20,
+            "color" : -1,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "credits"
+            }
+        },
+        "fml":
+        {
+            "text" : "",
+            "hoverText" : "§2§o",
+            "posX" : 2,
+            "posY" : -38,
+            "color" : 43520,
+            "alignment" : "bottom_left"
+        },
+        "packver":
+        {
+            "text" : "§61.5.2",
+            //"hoverText" : "§6A new way forward!",
+            "posX" : -10,
+            "posY" : -10,
+            "color" : 43520,
+            "pressSound" : "test:sounds/welcome_to_overwatch.ogg",
+            "alignment" : "bottom_center"
+            //mannaggia alle virgole
+        },
+        /*"warning":
+        {
+            "text" : "TESTING ONLY - DO NOT DISTRIBUTE THIS MODPACK!",
+            "hoverText" : "§4DISTRIBUTING IS SEVERELY PROHIBITED",
+            "posX" : -250,
+            "posY" : -20,
+            "color" : 7340032,
+            "alignment" : "bottom_right"
+        },*/
+        "welcome":
+        {
+            "text" : "Hello #username#! Welcome to",
+            "hoverText" : "Refresh Main Menu",
+            "posX" : -45,
+            "posY" : 10,
+            "color" : 6176793,
+            "alignment" : "top_center",
+            "action" :
+            {
+                "type" : "refresh"
+            }    
+        }
+    },
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 150,
+            "posY" : 90,
+            "color" : 6176793,
+            "alignment" : "top_center",
+            "texts" : "file:minecraft:texts/splashes.txt"
+        },
+        "panorama":
+        {
+            "images" : "test:textures/gui/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : false,
+            "gradient" : false
+        }
+    }
+}

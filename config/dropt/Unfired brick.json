@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "betterwithmods:unfired_pottery:4"
+          ]
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL",
+      "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 100
+            }
+          },
+          "item": {
+            "items": [
+              "betterwithmods:unfired_pottery:4"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

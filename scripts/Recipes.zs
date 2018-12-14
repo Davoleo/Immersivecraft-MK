@@ -272,7 +272,7 @@ recipes.addShaped(<betterwithmods:single_machine>, [[<ore:cobblestone>, <ore:gea
 //mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<ceramics:unfired_clay:4>]);
 //mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
-recipes.addShapeless(<betterwithmods:unfired_pottery:4>, [<ceramics:clay_soft>]);
+recipes.addShaped(<betterwithmods:unfired_pottery:4>, [[<ceramics:clay_soft>], [<bibliocraft:bibliochase>]]);
 recipes.addShapeless(<betterwithmods:bucket>, [<immersiveengineering:sheetmetal:1>]);
 
 <minecraft:clay_ball>.addTooltip(format.red("(THIS IS A TEMPORARY CRAFTING RECIPE!)"));

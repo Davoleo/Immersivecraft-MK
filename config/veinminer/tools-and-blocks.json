@@ -173,6 +173,7 @@
         "minecraft:redstone_ore",
         "tp:ender_ore/0",
         "tp:lava_block/0",
+        "tp:nether_lava_block/0",
         "tp:nether_wub_ore/0",
         "tp:water_block/0",
         "tp:wub_ore/0"

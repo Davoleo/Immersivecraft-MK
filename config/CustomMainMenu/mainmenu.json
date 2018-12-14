@@ -13,9 +13,9 @@
                 "black":
         {
             "image" : "test:textures/gui/blacktransparent.png",
-            "posX" : -400,
+            "posX" : -2000,
             "posY" : 7,
-            "width" : 2000,
+            "width" : 4000,
             "height" : 100,
             "alignment" : "center"
         }
@@ -208,7 +208,7 @@
         },
         "packver":
         {
-            "text" : "§61.5.2",
+            "text" : "§61.5.3",
             //"hoverText" : "§6A new way forward!",
             "posX" : -10,
             "posY" : -10,

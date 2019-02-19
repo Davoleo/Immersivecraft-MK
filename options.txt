@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.0
+gamma:1.0
 saturation:0.0
 renderDistance:10
 guiScale:2
@@ -29,7 +29,7 @@ fullscreen:false
 enableVsync:true
 useVbo:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 touchscreen:false
 overrideWidth:0
@@ -49,7 +49,7 @@ attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
-autoJump:true
+autoJump:false
 narrator:0
 tutorialStep:none
 key_key.attack:-100
@@ -86,7 +86,7 @@ key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_keybind.baublesinventory:48
-key_cos.key.openCosArmorInventory:0
+key_cos.key.opencosarmorinventory:0
 key_enchiridion.key.library:38
 key_Wardrobe:17
 key_key.moreoverlays.lightoverlay.desc:65
@@ -114,6 +114,10 @@ key_key.jei.bookmark:30
 key_key.jei.toggleBookmarkOverlay:0
 key_key.immersiveengineering.magnetEquip:31
 key_key.immersiveengineering.chemthrowerSwitch:0
+key_key.nextitem:26
+key_key.previtem:27
+key_key.placeitem:25
+key_key.debughandles:0
 key_bbw.key.mode:50
 key_bbw.key.fluidmode:33
 key_key.carry.desc:42
@@ -123,10 +127,6 @@ key_waila.keybind.wailadisplay:79
 key_waila.keybind.liquid:80
 key_waila.keybind.recipe:81
 key_waila.keybind.usage:75
-key_key.nextitem:26
-key_key.previtem:27
-key_key.placeitem:25
-key_key.debughandles:0
 key_invtweaks.key.sort:19
 key_key.itemzoom.toggle:44:SHIFT
 key_key.itemzoom.hold:0
@@ -159,7 +159,7 @@ key_key.journeymap.fullscreen.north:200
 key_key.journeymap.fullscreen.south:208
 key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
-soundCategory_master:1.0
+soundCategory_master:0.30132452
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

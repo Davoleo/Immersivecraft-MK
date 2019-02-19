@@ -217,15 +217,15 @@
             "alignment" : "bottom_center"
             //mannaggia alle virgole
         },
-        /*"warning":
+        "warning":
         {
-            "text" : "TESTING ONLY - DO NOT DISTRIBUTE THIS MODPACK!",
+            "text" : "TESTING ONLY - DO NOT DISTRIBUTE THIS VERSION!",
             "hoverText" : "§4DISTRIBUTING IS SEVERELY PROHIBITED",
             "posX" : -250,
             "posY" : -20,
             "color" : 7340032,
             "alignment" : "bottom_right"
-        },*/
+        },
         "welcome":
         {
             "text" : "Hello #username#! Welcome to",

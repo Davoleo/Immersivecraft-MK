@@ -1,7 +1,5 @@
 /*************************************************
  * Author: Davoleo
- * Date: ##/##/##
- * Hour: ##:##
  * Copyright - © - Davoleo - 2018
 **************************************************/
 
@@ -231,6 +229,9 @@ recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
                                        [<ore:ingotZinc>, <immcraft:chest>, <ore:ingotZinc>],
                                        [null, <ore:ingotZinc>, null]]);
 
+recipes.addShaped(<immersiveengineering:material:3> * 4, [[<ore:ingotAluminium>, null],
+                                                      [<ore:ingotAluminium>, null]]);
+
 <minecraft:banner:*>.addTooltip(format.white("(Press 'U' to see banner customization)"));
 
 //Kiln
@@ -269,15 +270,8 @@ recipes.addShaped(<betterwithmods:single_machine>, [[<ore:cobblestone>, <ore:gea
                                                     [<ore:cobblestone>, <tp:stone_hammer>, <ore:cobblestone>],
                                                     [<ore:cobblestone>, <rustic:crushing_tub>, <ore:cobblestone>]]);
 
-//mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<ceramics:unfired_clay:4>]);
-//mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
-
-recipes.addShaped(<betterwithmods:unfired_pottery:4>, [[<ceramics:clay_soft>], [<bibliocraft:bibliochase>]]);
-recipes.addShapeless(<betterwithmods:bucket>, [<immersiveengineering:sheetmetal:1>]);
-
-<minecraft:clay_ball>.addTooltip(format.red("(THIS IS A TEMPORARY CRAFTING RECIPE!)"));
-<betterwithmods:bucket>.addTooltip(format.red("(THIS IS A TEMPORARY CRAFTING RECIPE!)"));
-
+mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<ceramics:unfired_clay:4>]);
+mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
 mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 

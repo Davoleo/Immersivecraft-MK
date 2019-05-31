@@ -1,0 +1,928 @@
+{
+ "Name": "ImmersiveCraft (MK)",
+ "CustomName": "Immersivecraft",
+ "ShowCustomName": false,
+ "ProjectID": 279707,
+ "FileID": 2676997,
+ "MC_Version": "1.12.2",
+ "URL": "https://minecraft.curseforge.com/projects/279707",
+ "Mods": [
+  {
+   "ProjectID": 238695,
+   "FileID": 2447343,
+   "Name": "[SBM] Bone Torch",
+   "FileName": "SBM-BoneTorch-1.12-0.0.1b3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 260925,
+   "FileID": 2715799,
+   "Name": "Advanced Finders",
+   "FileName": "AdFinders-1.12.2-2.3.9.0-build.0353.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 285135,
+   "FileID": 2693578,
+   "Name": "Alternating Flux",
+   "FileName": "alternatingflux-0.12.2-2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 254284,
+   "FileID": 2709223,
+   "Name": "AmbientSounds 3",
+   "FileName": "AmbientSounds_v3.0.9_mc1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 248787,
+   "FileID": 2496585,
+   "Name": "AppleSkin",
+   "FileName": "AppleSkin-mc1.12-1.0.9.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 256159,
+   "FileID": 2704396,
+   "Name": "Aqua Munda",
+   "FileName": "aquamunda-1.12-0.6.0-beta.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 223735,
+   "FileID": 2690354,
+   "Name": "Aroma1997Core",
+   "FileName": "Aroma1997Core-1.12.2-2.0.0.2.b165.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 60092,
+   "FileID": 2683101,
+   "Name": "Aroma1997s Dimensional World",
+   "FileName": "Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b89.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 225658,
+   "FileID": 2672446,
+   "Name": "AromaBackup",
+   "FileName": "AromaBackup-1.12.2-3.0.0.0.b117.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 284350,
+   "FileID": 2662251,
+   "Name": "Athenaeum",
+   "FileName": "athenaeum-1.12.2-1.16.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 227083,
+   "FileID": 2518667,
+   "Name": "Baubles",
+   "FileName": "Baubles-1.12-1.5.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 238403,
+   "FileID": 2691084,
+   "Name": "Better Builder's Wands",
+   "FileName": "BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 264738,
+   "FileID": 2711958,
+   "Name": "Better Than Mending",
+   "FileName": "BetterThanMending-1.1.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 246760,
+   "FileID": 2650398,
+   "Name": "Better With Mods",
+   "FileName": "BetterWithMods-1.12-2.3.20-1027.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 294335,
+   "FileID": 2624990,
+   "Name": "BetterWithLib",
+   "FileName": "BetterWithLib-1.12-1.5.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 228027,
+   "FileID": 2574880,
+   "Name": "BiblioCraft",
+   "FileName": "BiblioCraft[v2.4.5][MC1.12.2].jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 268324,
+   "FileID": 2460821,
+   "Name": "Blur",
+   "FileName": "Blur-1.0.4-14.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 278993,
+   "FileID": 2654304,
+   "Name": "Bonsai Trees",
+   "FileName": "bonsaitrees-1.1.2-b144.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 228525,
+   "FileID": 2717168,
+   "Name": "Bookshelf",
+   "FileName": "Bookshelf-1.12.2-2.3.581.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 274259,
+   "FileID": 2649772,
+   "Name": "Carry On",
+   "FileName": "CarryOn MC1.12.2 v1.12.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 250617,
+   "FileID": 2698094,
+   "Name": "Ceramics",
+   "FileName": "Ceramics-1.12-1.3.7.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 230497,
+   "FileID": 2450900,
+   "Name": "Chameleon",
+   "FileName": "Chameleon-1.12-4.1.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 78778,
+   "FileID": 2524058,
+   "Name": "Chest Transporter",
+   "FileName": "ChestTransporter-1.12.2-2.8.8.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 243883,
+   "FileID": 2594241,
+   "Name": "Chicken Chunks 1.8.+",
+   "FileName": "ChickenChunks-1.12.2-2.4.1.73-universal.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 235279,
+   "FileID": 2619468,
+   "Name": "Chisel",
+   "FileName": "Chisel-MC1.12.2-0.2.1.35.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 227276,
+   "FileID": 2432985,
+   "Name": "Clay WorldGen",
+   "FileName": "ClayWorldGen-1.1.0-1.12.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 242818,
+   "FileID": 2618630,
+   "Name": "CodeChicken Lib 1.8.+",
+   "FileName": "CodeChickenLib-1.12.2-3.2.2.353-universal.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 267602,
+   "FileID": 2642375,
+   "Name": "ConnectedTexturesMod",
+   "FileName": "CTM-MC1.12.2-0.3.3.22.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 266228,
+   "FileID": 2631798,
+   "Name": "Corail Pillar",
+   "FileName": "corail_pillar-4.2.1-1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 272197,
+   "FileID": 2484060,
+   "Name": "Corail Pillar - Extension Chisel",
+   "FileName": "corail_pillar_extension_chisel-4.0.0-1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 243707,
+   "FileID": 2715222,
+   "Name": "Corail Tombstone",
+   "FileName": "tombstone-3.5.2-1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 237307,
+   "FileID": 2697672,
+   "Name": "Cosmetic Armor Reworked",
+   "FileName": "CosmeticArmorReworked-1.12.2-v4a.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 247093,
+   "FileID": 2448715,
+   "Name": "Craftable Saddles",
+   "FileName": "Craftable Saddles[1.12]-1.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 239197,
+   "FileID": 2713681,
+   "Name": "CraftTweaker",
+   "FileName": "CraftTweaker2-1.12-4.1.18.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 257814,
+   "FileID": 2705492,
+   "Name": "CreativeCore",
+   "FileName": "CreativeCore_v1.9.45_mc1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 226406,
+   "FileID": 2638282,
+   "Name": "Custom Main Menu",
+   "FileName": "CustomMainMenu-MC1.12.2-2.0.9.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 248345,
+   "FileID": 2459474,
+   "Name": "Dimensional Ores",
+   "FileName": "dimensionalores-1.12-1.0.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 284973,
+   "FileID": 2687727,
+   "Name": "Dropt",
+   "FileName": "dropt-1.12.2-1.14.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 226099,
+   "FileID": 2432683,
+   "Name": "Durability Show",
+   "FileName": "Durability Show-1.12-5.0.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 255427,
+   "FileID": 2486190,
+   "Name": "Earthworks",
+   "FileName": "Earthworks-1.12-1.3.6.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 236045,
+   "FileID": 2434727,
+   "Name": "Easy Breeding",
+   "FileName": "easybreading-1.12-5.0.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 250419,
+   "FileID": 2689502,
+   "Name": "Enchantment Descriptions",
+   "FileName": "EnchantmentDescriptions-1.12.2-1.1.15.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 76612,
+   "FileID": 2711602,
+   "Name": "Enchiridion",
+   "FileName": "Enchiridion-1.12.2-3.3.5.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 223106,
+   "FileID": 2595437,
+   "Name": "Ender Compass",
+   "FileName": "EnderCompass-1.12-1.2.6.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 242269,
+   "FileID": 2588335,
+   "Name": "Ender Crop",
+   "FileName": "endercrop-1.12.2-1.6.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 291126,
+   "FileID": 2625854,
+   "Name": "Engineer's Doors",
+   "FileName": "engineers_doors-1.12.2-0.8.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 247665,
+   "FileID": 2441517,
+   "Name": "Extra Rails",
+   "FileName": "ExtraRails-1.12-1.3.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 233342,
+   "FileID": 2703165,
+   "Name": "Fairy Lights",
+   "FileName": "fairylights-2.1.6-1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 258881,
+   "FileID": 2512758,
+   "Name": "Faster Ladder Climbing",
+   "FileName": "FasterLadderClimbing-1.12-0.1-146.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 254652,
+   "FileID": 2591087,
+   "Name": "Fence Jumper",
+   "FileName": "fencejumper-1.12-1.0.5.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 78886,
+   "FileID": 2440978,
+   "Name": "FlatBedrock Xplosion's Edition",
+   "FileName": "FlatBedrock-1.4.0_1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 247429,
+   "FileID": 2714879,
+   "Name": "Floricraft",
+   "FileName": "Floricraft-1.12.2-4.4.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 278494,
+   "FileID": 2638380,
+   "Name": "FoamFix for Minecraft",
+   "FileName": "foamfix-0.10.3-1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 244844,
+   "FileID": 2715060,
+   "Name": "ForgeEndertech",
+   "FileName": "ForgeEndertech-1.12.2-4.4.19.1-build.0353.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 72210,
+   "FileID": 2454832,
+   "Name": "Hopper Ducts",
+   "FileName": "hopperducts-mc1.12-1.5.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 291218,
+   "FileID": 2696995,
+   "Name": "Horse Tweaks",
+   "FileName": "HorseTweaks_1.12.2-1.0.5.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 253449,
+   "FileID": 2568751,
+   "Name": "Hwyla",
+   "FileName": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 241268,
+   "FileID": 2704408,
+   "Name": "Immersive Craft",
+   "FileName": "immcraft-1.12-1.6.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 231951,
+   "FileID": 2676501,
+   "Name": "Immersive Engineering",
+   "FileName": "ImmersiveEngineering-0.12-89.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 282295,
+   "FileID": 2631070,
+   "Name": "Immersive HempCraft",
+   "FileName": "Immersive HempCraft-1.12-0.0.7.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 268250,
+   "FileID": 2544919,
+   "Name": "Immersive Petroleum",
+   "FileName": "immersivepetroleum-1.12.2-1.1.9.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 274159,
+   "FileID": 2568579,
+   "Name": "Immersive Tech",
+   "FileName": "immersivetech-1.12-1.3.10.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 253230,
+   "FileID": 2465617,
+   "Name": "Initial Inventory",
+   "FileName": "InitialInventory-3.0.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 223094,
+   "FileID": 2482481,
+   "Name": "Inventory Tweaks",
+   "FileName": "InventoryTweaks-1.63.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 228756,
+   "FileID": 2713441,
+   "Name": "Iron Chests",
+   "FileName": "ironchest-1.12.2-7.0.64.843.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 258587,
+   "FileID": 2703259,
+   "Name": "ItemPhysic Full",
+   "FileName": "ItemPhysic_Full_1.4.21_mc1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 261725,
+   "FileID": 2643616,
+   "Name": "ItemZoom",
+   "FileName": "itemzoom_1.12.2-1.11.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 265917,
+   "FileID": 2491927,
+   "Name": "JEI Integration",
+   "FileName": "jeiintegration_1.12.2-1.5.1.36.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 32274,
+   "FileID": 2714302,
+   "Name": "JourneyMap",
+   "FileName": "journeymap-1.12.2-5.5.5b7.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 235261,
+   "FileID": 2448283,
+   "Name": "Just a Few Fish",
+   "FileName": "JustAFewFish-1.7_for_1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 238222,
+   "FileID": 2710384,
+   "Name": "Just Enough Items (JEI)",
+   "FileName": "jei_1.12.2-4.15.0.279.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 263590,
+   "FileID": 2455920,
+   "Name": "Just Enough Pattern Banners",
+   "FileName": "jepb-1.12-1.2.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 240630,
+   "FileID": 2693889,
+   "Name": "Just Enough Resources (JER)",
+   "FileName": "JustEnoughResources-1.12.2-0.9.0.53.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 253400,
+   "FileID": 2454154,
+   "Name": "Just Fashion",
+   "FileName": "JustFashion-1.12-0.1.2.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 263905,
+   "FileID": 2553810,
+   "Name": "Lapis Stays in the Enchanting Table",
+   "FileName": "EnchantingTable-1.12-1.1.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 256237,
+   "FileID": 2441512,
+   "Name": "Large Veins",
+   "FileName": "LargeVeins-1.12-1.1.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 244453,
+   "FileID": 2622818,
+   "Name": "LogicalCraft!",
+   "FileName": "EM3R50N-LogicalCraft-1.12.2-14.23.4.2764.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 254032,
+   "FileID": 2595728,
+   "Name": "Long Fall Boots",
+   "FileName": "longfallboots-1.2.1b.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 223896,
+   "FileID": 2680892,
+   "Name": "MalisisCore",
+   "FileName": "malisiscore-1.12.2-6.5.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 223891,
+   "FileID": 2526674,
+   "Name": "MalisisDoors",
+   "FileName": "malisisdoors-1.12.2-7.3.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 233105,
+   "FileID": 2714365,
+   "Name": "McJtyLib",
+   "FileName": "mcjtylib-1.12-3.5.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 271314,
+   "FileID": 2479363,
+   "Name": "MiningLib",
+   "FileName": "mininglib-1.12.1-1.1.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 231347,
+   "FileID": 2456231,
+   "Name": "Mo' Bends",
+   "FileName": "mobends-0.24_for_MC-1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 254241,
+   "FileID": 2656683,
+   "Name": "Mob Grinding Utils",
+   "FileName": "MobGrindingUtils-0.3.13.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 220954,
+   "FileID": 2693544,
+   "Name": "ModTweaker",
+   "FileName": "modtweaker-4.0.17.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 243478,
+   "FileID": 2589773,
+   "Name": "More Overlays",
+   "FileName": "moreoverlays-1.14-mc1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 60089,
+   "FileID": 2671937,
+   "Name": "Mouse Tweaks",
+   "FileName": "MouseTweaks-2.10-mc1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 253211,
+   "FileID": 2684561,
+   "Name": "MTLib",
+   "FileName": "MTLib-3.0.6.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 252848,
+   "FileID": 2513221,
+   "Name": "Nature's Compass",
+   "FileName": "NaturesCompass-1.12.2-1.5.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 226779,
+   "FileID": 2563292,
+   "Name": "No Mob Spawning on Trees",
+   "FileName": "NoMobSpawningOnTrees-1.2.2-mc1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 235595,
+   "FileID": 2705633,
+   "Name": "Not Enough Wands",
+   "FileName": "notenoughwands-1.12-1.8.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 244769,
+   "FileID": 2441985,
+   "Name": "Obsidian Plates",
+   "FileName": "ObsidianPlates-1.3.0_1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 231837,
+   "FileID": 2433720,
+   "Name": "Ocean Floor - Clay Sand and Dirt",
+   "FileName": "OceanFloor-1.12-1.0.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 252354,
+   "FileID": 2464501,
+   "Name": "Open Glider",
+   "FileName": "OpenGlider-1.12.1-1.1.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 250832,
+   "FileID": 2715224,
+   "Name": "OpenBlocks Elevator",
+   "FileName": "ElevatorMod-1.12.2-1.4.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 244786,
+   "FileID": 2616061,
+   "Name": "Platforms",
+   "FileName": "platforms-1.12.0-1.4.6.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 246550,
+   "FileID": 2651659,
+   "Name": "Prefab",
+   "FileName": "prefab-1.3.0.26.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 225839,
+   "FileID": 2469364,
+   "Name": "Quick Leaf Decay",
+   "FileName": "QuickLeafDecay-MC1.12.1-1.2.4.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 237414,
+   "FileID": 2505261,
+   "Name": "RealBench",
+   "FileName": "RealBench-1.12.2-1.3.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 237903,
+   "FileID": 2697453,
+   "Name": "Reborn Core",
+   "FileName": "RebornCore-1.12.2-3.13.12.447-universal.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 226447,
+   "FileID": 2477566,
+   "Name": "Resource Loader",
+   "FileName": "ResourceLoader-MC1.12.1-1.5.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 238050,
+   "FileID": 2465994,
+   "Name": "Rope Bridge",
+   "FileName": "ropebridge-1.12-2.0.7.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 227873,
+   "FileID": 2638826,
+   "Name": "Ruins (Structure Spawning System)",
+   "FileName": "Ruins-1.12.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 256141,
+   "FileID": 2670073,
+   "Name": "Rustic",
+   "FileName": "rustic-1.1.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 291874,
+   "FileID": 2710586,
+   "Name": "Serene Seasons",
+   "FileName": "SereneSeasons-1.12.2-1.2.16-universal.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 248453,
+   "FileID": 2640952,
+   "Name": "Shadowfacts' Forgelin",
+   "FileName": "Forgelin-1.8.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 226780,
+   "FileID": 2441500,
+   "Name": "ShadowMC",
+   "FileName": "ShadowMC-1.12-3.8.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 71738,
+   "FileID": 2661618,
+   "Name": "ShetiPhianCore",
+   "FileName": "shetiphiancore-1.12.0-3.5.9.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 250822,
+   "FileID": 2464981,
+   "Name": "SignPicture",
+   "FileName": "SignPicture-1.12.1-2.8.1-universal.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 261837,
+   "FileID": 2709716,
+   "Name": "Signpost",
+   "FileName": "signpost-1.12.2-1.08.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 245060,
+   "FileID": 2698812,
+   "Name": "Simple Magnet",
+   "FileName": "simplemagnet-1.12.2-1.3.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 240783,
+   "FileID": 2645984,
+   "Name": "SimpleHarvest",
+   "FileName": "Harvest-1.12-1.2.7-20.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 222789,
+   "FileID": 2445236,
+   "Name": "Sound Filters",
+   "FileName": "SoundFilters-0.10_for_1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 253462,
+   "FileID": 2695453,
+   "Name": "Steve's Carts Reborn",
+   "FileName": "StevesCarts-1.12.2-2.4.30.134.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 223852,
+   "FileID": 2642386,
+   "Name": "Storage Drawers",
+   "FileName": "StorageDrawers-1.12.2-5.3.8.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 251678,
+   "FileID": 2522690,
+   "Name": "SubLib",
+   "FileName": "subcommonlib-sublib-1.12.2-1.2.0.4.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 256343,
+   "FileID": 2668858,
+   "Name": "Super Sound Muffler",
+   "FileName": "supersoundmuffler-1.12.2-1.0.2.10.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 250850,
+   "FileID": 2666258,
+   "Name": "Tiny Progressions",
+   "FileName": "tinyprogressions-1.12.2-3.3.32-Release.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 260262,
+   "FileID": 2461671,
+   "Name": "Tool Belt",
+   "FileName": "ToolBelt-1.12.0-1.7.1.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 254268,
+   "FileID": 2657299,
+   "Name": "TorchMaster",
+   "FileName": "torchmaster_1.12.2-1.7.1.74.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 271272,
+   "FileID": 2445526,
+   "Name": "Trapcraft",
+   "FileName": "Trapcraft-1.12-v2.4.3a-universal.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 235577,
+   "FileID": 2477077,
+   "Name": "TrashSlot",
+   "FileName": "TrashSlot_1.12.1-8.4.6.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 247408,
+   "FileID": 2588336,
+   "Name": "Useful Nullifiers",
+   "FileName": "usefulnullifiers-1.5.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 67133,
+   "FileID": 2528295,
+   "Name": "VeinMiner",
+   "FileName": "VeinMiner-1.12-0.38.2.647+b31535a.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 246795,
+   "FileID": 2563103,
+   "Name": "ViesCraft - Airships!",
+   "FileName": "ViesCraft-1.12.2-5.9.13.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 79287,
+   "FileID": 2481605,
+   "Name": "Waila Harvestability",
+   "FileName": "WailaHarvestability-mc1.12-1.1.12.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 246939,
+   "FileID": 2460195,
+   "Name": "Water Strainer",
+   "FileName": "WaterStrainer-1.12-3.2.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 224712,
+   "FileID": 2707185,
+   "Name": "Wawla - What Are We Looking At",
+   "FileName": "Wawla-1.12.2-2.5.273.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 245755,
+   "FileID": 2624701,
+   "Name": "Waystones",
+   "FileName": "Waystones_1.12.2-4.0.67.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 257572,
+   "FileID": 2576699,
+   "Name": "Wearable Backpacks",
+   "FileName": "WearableBackpacks-1.12.2-3.1.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 260391,
+   "FileID": 2460787,
+   "Name": "XP Book",
+   "FileName": "xpbook-1.12-0.0.3-beta.jar",
+   "CustomSide": 0
+  }
+ ]
+}

@@ -136,36 +136,6 @@
             "gui" : "languages"
         }
     }
-        /*"discord":
-        {
-            "text" : "",
-            "posX" : 0,
-            "posY" : 0,
-            "width" : 20,
-            "height" : 20,
-            "texture" : "test:textures/discord.png",
-            "alignment" : "top_left",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "discord.gg/Juy9amW"
-            }    
-        }*/
- /*               "asdf":
-        {
-            "text" : "",
-            "posX" : 0,
-            "posY" : 100,
-            "width" : 20,
-            "height" : 20,
-            "texture" : "test:textures/gui/buttons.png",
-            "alignment" : "top_left",
-            "action" : 
-            {
-                "type" : "refresh"
-            }    
-        }
-*/
     },
     "labels":
     {
@@ -208,23 +178,12 @@
         },
         "packver":
         {
-            "text" : "§61.5.3",
-            //"hoverText" : "§6A new way forward!",
+            "text" : "§61.5.4",
             "posX" : -10,
             "posY" : -10,
             "color" : 43520,
             "pressSound" : "test:sounds/welcome_to_overwatch.ogg",
             "alignment" : "bottom_center"
-            //mannaggia alle virgole
-        },
-        "warning":
-        {
-            "text" : "TESTING ONLY - DO NOT DISTRIBUTE THIS VERSION!",
-            "hoverText" : "§4DISTRIBUTING IS SEVERELY PROHIBITED",
-            "posX" : -250,
-            "posY" : -20,
-            "color" : 7340032,
-            "alignment" : "bottom_right"
         },
         "welcome":
         {

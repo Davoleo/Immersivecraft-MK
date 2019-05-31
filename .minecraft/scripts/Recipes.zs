@@ -122,6 +122,7 @@ recipes.remove(<stevescarts:cartmodule:95>);
 recipes.remove(<tp:bsc_rod>);
 recipes.remove(<betterwithmods:hibachi>);
 recipes.remove(<betterwithmods:single_machine>);
+recipes.remove(<betterwithmods:material:24>);
 
 
 
@@ -270,15 +271,16 @@ recipes.addShaped(<betterwithmods:single_machine>, [[<ore:cobblestone>, <ore:gea
                                                     [<ore:cobblestone>, <tp:stone_hammer>, <ore:cobblestone>],
                                                     [<ore:cobblestone>, <rustic:crushing_tub>, <ore:cobblestone>]]);
 
+recipes.addShaped(<betterwithmods:material:24>, [[<ore:plateIron>, <ore:stickIron>, null],
+                                                 [null, <ore:stickIron>, <ore:plateIron>],
+                                                 [<ore:plateIron>, <ore:stickIron>, null]]);
+
 mods.betterwithmods.Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<ceramics:unfired_clay:4>]);
 mods.betterwithmods.Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
 mods.betterwithmods.Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 
 mods.betterwithmods.Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer>*5]);
-
-
-
 
 //Bibliocraft
 
@@ -563,10 +565,10 @@ recipes.addShaped(<waystones:waystone>, [[null, <minecraft:stonebrick>, null],
                                             [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
 
 recipes.addShaped(<waystones:return_scroll>*3, [[<minecraft:gold_nugget>, <minecraft:ender_pearl>, <minecraft:gold_nugget>],
-                                                [<tombstone:strange_scroll>, <tombstone:strange_scroll>, <tombstone:strange_scroll>]]);
+                                                [<tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>]]);
 
 recipes.addShaped(<waystones:warp_scroll>*3, [[<minecraft:ender_pearl>, <stevescarts:modulecomponents:5>, <minecraft:ender_pearl>],
-                                              [<tombstone:strange_scroll>, <tombstone:strange_scroll>, <tombstone:strange_scroll>],
+                                              [<tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>],
                                               [<minecraft:gold_nugget>, <stevescarts:modulecomponents:5>, <minecraft:gold_nugget>]]);
 
 //Wearable Backpack
@@ -578,10 +580,3 @@ recipes.addShaped(<wearablebackpacks:backpack>, [[<betterwithmods:material:8>, <
 recipes.addShaped(<xpbook:xp_book:1395>, [[<minecraft:ender_pearl>, <mob_grinding_utils:xp_tap>, <minecraft:ender_pearl>],
                                           [<forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000}), <bibliocraft:bigbook>, <forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000})],
                                           [<minecraft:ender_pearl>, <stevescarts:cartmodule:95>, <minecraft:ender_pearl>]]);
-
-
-//Tooltips
-<minecraft:flint_and_steel>.addTooltip(format.darkGray("(Right-click a rock from immersivecraft with a flint to get it)"));
-<minecraft:furnace>.addTooltip(format.darkGray("(Use Immersivecraft furnace for early-game)"));
-<minecraft:stick>.addTooltip(format.darkRed("(Use them on rocks for early-game fire)"));
-

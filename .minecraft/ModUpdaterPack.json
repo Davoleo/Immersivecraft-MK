@@ -260,6 +260,13 @@
    "CustomSide": 0
   },
   {
+   "ProjectID": 301356,
+   "FileID": 2657779,
+   "Name": "Demagnetize",
+   "FileName": "demagnetize-1.12.2-1.0.1.jar",
+   "CustomSide": 0
+  },
+  {
    "ProjectID": 248345,
    "FileID": 2459474,
    "Name": "Dimensional Ores",
@@ -375,7 +382,7 @@
    "ProjectID": 278494,
    "FileID": 2638380,
    "Name": "FoamFix for Minecraft",
-   "FileName": "foamfix-0.10.3-1.12.2.jar",
+   "FileName": "foamfix-0.10.3-1.12.2.jar.disabled",
    "CustomSide": 0
   },
   {

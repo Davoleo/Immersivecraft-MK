@@ -1,0 +1,330 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  RBLoadingPlugin (RealBench-1.12.2-1.3.3.jar)
+  CreativePatchingLoader (CreativeCore_v1.9.45_mc1.12.2.jar)
+  SignPictureCorePlugin (SignPicture-1.12.1-2.8.1-universal.jar)
+  ForgelinPlugin (Forgelin-1.8.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-0.3.3.22.jar)
+  LoadingPlugin (BetterWithLib-1.12-1.5.jar)
+  CorePlugin (ForgeEndertech-1.12.2-4.4.19.1-build.0353.jar)
+  IELoadingPlugin (ImmersiveEngineering-core-0.12-89.jar)
+  Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  ShetiPhian-ASM (ShetiPhian-ASM-1.12.0.jar)
+  BlurPlugin (Blur-1.0.4-14.jar)
+  LoadingPlugin (AdFinders-1.12.2-2.3.9.0-build.0353.jar)
+  LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  SSLoadingPlugin (SereneSeasons-1.12.2-1.2.16-universal.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  ItemPatchingLoader (ItemPhysic_Full_1.4.21_mc1.12.2.jar)
+  CoreMod (Aroma1997Core-1.12.2-2.0.0.2.b165.jar)
+Contact their authors BEFORE contacting forge
+
+// You should try our sister game, Minceraft!
+
+Time: 5/31/19 10:45 PM
+Description: Unexpected error
+
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at net.mcft.copy.backpacks.block.BlockBackpack.func_185496_a(BlockBackpack.java:86)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_185900_c(BlockStateContainer.java:456)
+	at net.minecraft.block.Block.func_180636_a(Block.java:631)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_185910_a(BlockStateContainer.java:461)
+	at net.minecraft.world.World.func_147447_a(World.java:1087)
+	at net.minecraft.world.World.func_72901_a(World.java:930)
+	at mcp.mobius.waila.overlay.RayTracing.rayTrace(RayTracing.java:69)
+	at mcp.mobius.waila.overlay.RayTracing.fire(RayTracing.java:49)
+	at mcp.mobius.waila.overlay.WailaTickHandler.tickClient(WailaTickHandler.java:66)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_166_WailaTickHandler_tickClient_ClientTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:349)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1911)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1098)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.mcft.copy.backpacks.block.BlockBackpack.func_185496_a(BlockBackpack.java:86)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_185900_c(BlockStateContainer.java:456)
+	at net.minecraft.block.Block.func_180636_a(Block.java:631)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_185910_a(BlockStateContainer.java:461)
+	at net.minecraft.world.World.func_147447_a(World.java:1087)
+	at net.minecraft.world.World.func_72901_a(World.java:930)
+	at mcp.mobius.waila.overlay.RayTracing.rayTrace(RayTracing.java:69)
+	at mcp.mobius.waila.overlay.RayTracing.fire(RayTracing.java:49)
+	at mcp.mobius.waila.overlay.WailaTickHandler.tickClient(WailaTickHandler.java:66)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_166_WailaTickHandler_tickClient_ClientTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:349)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Davoleo'/1840466, l='MpServer', x=-216.65, y=70.00, z=241.81]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-212,64,244), Chunk: (at 12,4,4 in -14,15; contains blocks -224,0,240 to -209,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 1896 game time, 1896 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 279 total; [EntityFallingBlock['Falling Block'/1841183, l='MpServer', x=-312.50, y=21.88, z=385.50], EntityFishCod['Cod'/1845347, l='MpServer', x=-282.67, y=61.20, z=213.72], EntityCreeper['Creeper'/1845380, l='MpServer', x=-195.50, y=37.00, z=285.50], EntityFishCod['Cod'/1845421, l='MpServer', x=-212.20, y=13.00, z=172.46], EntityFishCod['Cod'/1845524, l='MpServer', x=-273.81, y=60.00, z=246.33], EntityFallingBlock['Falling Block'/1841528, l='MpServer', x=-79.50, y=32.00, z=293.50], EntityFallingBlock['Falling Block'/1841529, l='MpServer', x=-79.50, y=32.00, z=294.50], EntityFallingBlock['Falling Block'/1841530, l='MpServer', x=-79.50, y=32.00, z=295.50], EntityFallingBlock['Falling Block'/1841524, l='MpServer', x=-77.50, y=48.00, z=294.50], EntityFallingBlock['Falling Block'/1841525, l='MpServer', x=-78.50, y=32.00, z=292.50], EntityFallingBlock['Falling Block'/1841526, l='MpServer', x=-78.50, y=32.00, z=294.50], EntityFallingBlock['Falling Block'/1841527, l='MpServer', x=-79.50, y=32.00, z=292.50], EntityFallingBlock['Falling Block'/1841521, l='MpServer', x=-78.50, y=32.00, z=293.50], EntityFallingBlock['Falling Block'/1841522, l='MpServer', x=-77.50, y=32.00, z=292.50], EntityFallingBlock['Falling Block'/1841523, l='MpServer', x=-77.50, y=47.00, z=293.50], EntitySquid['Squid'/1841569, l='MpServer', x=-273.98, y=62.18, z=245.42], EntityFallingBlock['Falling Block'/1841629, l='MpServer', x=-358.50, y=3.00, z=380.50], EntitySpider['Spider'/1845714, l='MpServer', x=-206.70, y=15.00, z=248.13], EntitySpider['Spider'/1845715, l='MpServer', x=-206.70, y=15.00, z=245.98], EntityFallingBlock['Falling Block'/1841609, l='MpServer', x=-358.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1841610, l='MpServer', x=-359.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1841611, l='MpServer', x=-359.50, y=28.00, z=230.50], EntityBat['Bat'/1845697, l='MpServer', x=-259.04, y=51.12, z=286.18], EntityCreeper['Creeper'/1845757, l='MpServer', x=-243.50, y=49.00, z=231.50], EntityFallingBlock['Falling Block'/1841633, l='MpServer', x=-350.50, y=34.00, z=384.50], EntityFallingBlock['Falling Block'/1841634, l='MpServer', x=-351.50, y=34.00, z=384.50], EntityFallingBlock['Falling Block'/1841635, l='MpServer', x=-351.50, y=34.00, z=385.50], EntityZombie['Zombie'/1843714, l='MpServer', x=-280.26, y=44.00, z=296.51], EntityFallingBlock['Falling Block'/1841726, l='MpServer', x=-312.50, y=25.23, z=385.50], EntityZombie['Zombie'/1843760, l='MpServer', x=-276.50, y=17.00, z=301.50], EntityFishCod['Cod'/1845808, l='MpServer', x=-269.50, y=61.00, z=227.50], EntityFishCod['Cod'/1845807, l='MpServer', x=-268.40, y=62.20, z=226.78], EntityCreeper['Creeper'/1845830, l='MpServer', x=-288.17, y=38.00, z=265.63], EntitySheep['Sheep'/1839742, l='MpServer', x=-278.50, y=70.00, z=279.50], EntityCreeper['Creeper'/1845886, l='MpServer', x=-282.50, y=43.00, z=298.50], EntitySheep['Sheep'/1839743, l='MpServer', x=-277.50, y=70.00, z=279.50], EntitySkeleton['Skeleton'/1845887, l='MpServer', x=-282.50, y=43.00, z=299.50], EntityItem['item.tile.sand.default'/1843833, l='MpServer', x=-257.67, y=57.00, z=196.88], EntityBat['Bat'/1845858, l='MpServer', x=-232.24, y=50.35, z=202.43], EntitySheep['Sheep'/1839775, l='MpServer', x=-230.50, y=63.00, z=173.50], EntityFishCod['Cod'/1845908, l='MpServer', x=-277.67, y=61.00, z=219.78], EntitySheep['Sheep'/1839760, l='MpServer', x=-257.98, y=71.00, z=273.30], EntityFishCod['Cod'/1845907, l='MpServer', x=-292.26, y=62.20, z=224.50], EntitySheep['Sheep'/1839757, l='MpServer', x=-266.30, y=70.00, z=279.51], EntitySheep['Sheep'/1839758, l='MpServer', x=-251.78, y=72.00, z=264.71], EntitySheep['Sheep'/1839759, l='MpServer', x=-261.50, y=72.00, z=268.50], EntityZombie['Zombie'/1845896, l='MpServer', x=-192.50, y=32.00, z=321.50], EntitySheep['Sheep'/1839744, l='MpServer', x=-279.50, y=70.00, z=278.50], EntitySheep['Sheep'/1839745, l='MpServer', x=-279.50, y=70.00, z=276.50], EntitySheep['Sheep'/1839804, l='MpServer', x=-187.50, y=66.00, z=294.50], EntityFishCod['Cod'/1845948, l='MpServer', x=-284.31, y=62.00, z=244.50], EntitySheep['Sheep'/1839805, l='MpServer', x=-191.50, y=67.00, z=288.50], EntitySheep['Sheep'/1839806, l='MpServer', x=-194.50, y=67.00, z=290.50], EntitySheep['Sheep'/1839807, l='MpServer', x=-199.50, y=66.00, z=309.50], EntitySheep['Sheep'/1839800, l='MpServer', x=-201.72, y=71.00, z=203.61], EntitySheep['Sheep'/1839801, l='MpServer', x=-207.50, y=71.00, z=204.50], EntityFishCod['Cod'/1845945, l='MpServer', x=-281.92, y=62.00, z=243.50], EntitySheep['Sheep'/1839802, l='MpServer', x=-202.50, y=71.00, z=198.04], EntityFishCod['Cod'/1845946, l='MpServer', x=-272.84, y=60.80, z=244.40], EntitySheep['Sheep'/1839803, l='MpServer', x=-188.50, y=67.00, z=290.50], EntityFishCod['Cod'/1845947, l='MpServer', x=-283.92, y=62.00, z=244.50], EntitySheep['Sheep'/1839796, l='MpServer', x=-223.25, y=73.00, z=194.51], EntityFishCod['Cod'/1845940, l='MpServer', x=-281.50, y=61.00, z=227.50], EntitySheep['Sheep'/1839797, l='MpServer', x=-210.50, y=72.00, z=197.31], EntitySheep['Sheep'/1839798, l='MpServer', x=-206.50, y=72.00, z=193.50], EntitySheep['Sheep'/1839799, l='MpServer', x=-210.50, y=70.00, z=209.50], EntityFishCod['Cod'/1845938, l='MpServer', x=-274.68, y=62.20, z=223.68], EntitySheep['Sheep'/1839795, l='MpServer', x=-213.50, y=71.00, z=199.50], EntityFishCod['Cod'/1845939, l='MpServer', x=-283.22, y=62.20, z=227.40], EntitySheep['Sheep'/1839776, l='MpServer', x=-230.50, y=63.00, z=173.50], EntitySheep['Sheep'/1839777, l='MpServer', x=-228.50, y=69.00, z=173.50], EntitySheep['Sheep'/1839778, l='MpServer', x=-227.23, y=71.00, z=172.55], EntitySheep['Sheep'/1839839, l='MpServer', x=-143.50, y=64.00, z=185.01], EntitySheep['Sheep'/1839824, l='MpServer', x=-153.50, y=64.00, z=212.50], EntitySheep['Sheep'/1839825, l='MpServer', x=-155.50, y=64.00, z=211.50], EntitySheep['Sheep'/1839826, l='MpServer', x=-154.50, y=64.00, z=211.50], EntitySheep['Sheep'/1839823, l='MpServer', x=-144.71, y=63.00, z=210.49], EntitySheep['Sheep'/1839812, l='MpServer', x=-191.50, y=66.00, z=296.50], EntitySheep['Sheep'/1839813, l='MpServer', x=-189.50, y=66.00, z=299.50], EntitySheep['Sheep'/1839814, l='MpServer', x=-188.50, y=66.00, z=298.50], EntitySheep['Sheep'/1839808, l='MpServer', x=-199.50, y=66.00, z=311.50], EntitySheep['Sheep'/1839809, l='MpServer', x=-197.50, y=66.00, z=309.50], EntitySheep['Sheep'/1839810, l='MpServer', x=-206.33, y=68.00, z=306.50], EntitySheep['Sheep'/1839811, l='MpServer', x=-188.50, y=66.00, z=296.50], EntityFallingBlock['Falling Block'/1841912, l='MpServer', x=-79.50, y=34.32, z=295.50], EntityFallingBlock['Falling Block'/1841908, l='MpServer', x=-78.50, y=35.32, z=292.50], EntityBat['Bat'/1846004, l='MpServer', x=-225.50, y=51.93, z=216.39], EntityFallingBlock['Falling Block'/1841909, l='MpServer', x=-79.50, y=35.32, z=292.50], EntityFallingBlock['Falling Block'/1841910, l='MpServer', x=-79.50, y=35.32, z=293.50], EntityFallingBlock['Falling Block'/1841911, l='MpServer', x=-79.50, y=35.32, z=294.50], EntityFallingBlock['Falling Block'/1841905, l='MpServer', x=-78.50, y=35.32, z=293.50], EntityFallingBlock['Falling Block'/1841906, l='MpServer', x=-77.50, y=47.00, z=293.50], EntityFallingBlock['Falling Block'/1841907, l='MpServer', x=-77.50, y=48.00, z=294.50], EntitySheep['Sheep'/1839840, l='MpServer', x=-143.56, y=63.00, z=187.29], EntitySheep['Sheep'/1839841, l='MpServer', x=-145.50, y=63.00, z=187.50], EntitySheep['Sheep'/1839842, l='MpServer', x=-146.50, y=63.00, z=187.50], EntityFallingBlock['Falling Block'/1839932, l='MpServer', x=-358.50, y=28.00, z=228.50], EntityFallingBlock['Falling Block'/1839933, l='MpServer', x=-358.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1839934, l='MpServer', x=-358.50, y=28.00, z=230.50], EntityFallingBlock['Falling Block'/1839935, l='MpServer', x=-357.50, y=28.00, z=228.50], EntityFallingBlock['Falling Block'/1841972, l='MpServer', x=-358.50, y=3.00, z=380.50], EntityBat['Bat'/1846062, l='MpServer', x=-268.25, y=28.52, z=287.62], EntityFishCod['Cod'/1842010, l='MpServer', x=-178.83, y=62.00, z=185.61], EntityBat['Bat'/1844058, l='MpServer', x=-294.25, y=22.07, z=289.75], EntityFallingBlock['Falling Block'/1842002, l='MpServer', x=-312.50, y=28.34, z=385.50], EntityFallingBlock['Falling Block'/1839940, l='MpServer', x=-359.50, y=28.00, z=230.50], EntityFallingBlock['Falling Block'/1839941, l='MpServer', x=-359.50, y=28.00, z=231.50], EntityFallingBlock['Falling Block'/1839936, l='MpServer', x=-357.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1839937, l='MpServer', x=-357.50, y=28.00, z=230.50], EntityFallingBlock['Falling Block'/1839938, l='MpServer', x=-359.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1839939, l='MpServer', x=-359.50, y=28.00, z=228.50], EntityFallingBlock['Falling Block'/1839992, l='MpServer', x=-353.50, y=34.00, z=194.50], EntityFallingBlock['Falling Block'/1839993, l='MpServer', x=-353.50, y=31.00, z=192.50], EntityBat['Bat'/1844090, l='MpServer', x=-231.18, y=38.96, z=227.37], EntityFallingBlock['Falling Block'/1839994, l='MpServer', x=-353.50, y=34.00, z=195.50], EntityFallingBlock['Falling Block'/1839995, l='MpServer', x=-354.50, y=35.00, z=195.50], EntityFallingBlock['Falling Block'/1839988, l='MpServer', x=-352.50, y=31.00, z=192.50], EntityFallingBlock['Falling Block'/1839989, l='MpServer', x=-352.50, y=32.00, z=193.50], EntityFallingBlock['Falling Block'/1839990, l='MpServer', x=-352.50, y=33.00, z=194.50], EntityFallingBlock['Falling Block'/1839991, l='MpServer', x=-353.50, y=32.00, z=193.50], EntityFallingBlock['Falling Block'/1839973, l='MpServer', x=-356.50, y=22.00, z=143.50], EntityFallingBlock['Falling Block'/1839974, l='MpServer', x=-357.50, y=21.00, z=143.50], EntityFallingBlock['Falling Block'/1839975, l='MpServer', x=-357.50, y=22.00, z=144.50], EntityFallingBlock['Falling Block'/1839968, l='MpServer', x=-353.50, y=21.00, z=141.50], EntityFallingBlock['Falling Block'/1839969, l='MpServer', x=-353.50, y=21.00, z=142.50], EntityFallingBlock['Falling Block'/1839970, l='MpServer', x=-353.50, y=21.00, z=140.50], EntityFallingBlock['Falling Block'/1839971, l='MpServer', x=-352.50, y=20.00, z=142.50], EntityFallingBlock['Falling Block'/1840012, l='MpServer', x=-354.50, y=11.00, z=309.50], EntityFallingBlock['Falling Block'/1840013, l='MpServer', x=-354.50, y=11.00, z=310.50], EntityFallingBlock['Falling Block'/1840014, l='MpServer', x=-354.50, y=11.00, z=311.50], EntityFallingBlock['Falling Block'/1840015, l='MpServer', x=-354.50, y=9.00, z=312.50], EntityFallingBlock['Falling Block'/1840010, l='MpServer', x=-354.50, y=12.00, z=307.50], EntityFallingBlock['Falling Block'/1840011, l='MpServer', x=-354.50, y=11.00, z=308.50], EntityPlayerSP['Davoleo'/1840466, l='MpServer', x=-216.65, y=70.00, z=241.81], EntityFallingBlock['Falling Block'/1840038, l='MpServer', x=-357.50, y=2.00, z=381.50], EntityFallingBlock['Falling Block'/1840039, l='MpServer', x=-358.50, y=2.00, z=381.50], EntityCreeper['Creeper'/1844180, l='MpServer', x=-212.50, y=43.00, z=239.84], EntityFallingBlock['Falling Block'/1840068, l='MpServer', x=-350.50, y=34.00, z=385.50], EntityFallingBlock['Falling Block'/1840064, l='MpServer', x=-350.50, y=34.00, z=384.50], EntityFallingBlock['Falling Block'/1840065, l='MpServer', x=-351.50, y=34.00, z=384.50], EntityFallingBlock['Falling Block'/1840066, l='MpServer', x=-349.50, y=34.00, z=384.50], EntityFallingBlock['Falling Block'/1840067, l='MpServer', x=-351.50, y=34.00, z=385.50], EntityCreeper['Creeper'/1844216, l='MpServer', x=-252.50, y=39.00, z=295.50], EntityFishCod['Cod'/1846312, l='MpServer', x=-273.76, y=62.00, z=249.30], EntityFishCod['Cod'/1846313, l='MpServer', x=-278.30, y=62.00, z=245.76], EntityFishCod['Cod'/1846311, l='MpServer', x=-279.75, y=60.80, z=249.25], EntitySkeleton['Skeleton'/1846306, l='MpServer', x=-292.50, y=23.00, z=265.50], EntityFishCod['Cod'/1846360, l='MpServer', x=-257.50, y=61.00, z=213.84], EntityFishCod['Cod'/1846361, l='MpServer', x=-258.50, y=62.20, z=223.23], EntityFishCod['Cod'/1846352, l='MpServer', x=-257.90, y=28.00, z=263.10], EntitySpider['Spider'/1846344, l='MpServer', x=-220.50, y=36.00, z=271.50], EntitySpider['Spider'/1846345, l='MpServer', x=-221.05, y=36.00, z=266.69], EntitySquid['Squid'/1846396, l='MpServer', x=-269.91, y=62.41, z=212.70], EntitySquid['Squid'/1846397, l='MpServer', x=-265.30, y=62.45, z=210.91], EntitySquid['Squid'/1846398, l='MpServer', x=-273.37, y=61.25, z=217.90], EntitySquid['Squid'/1846395, l='MpServer', x=-271.78, y=60.66, z=215.57], EntityFishCod['Cod'/1846388, l='MpServer', x=-238.85, y=62.00, z=166.50], EntityFishCod['Cod'/1846389, l='MpServer', x=-240.78, y=62.00, z=168.37], EntityFishCod['Cod'/1846390, l='MpServer', x=-240.78, y=62.00, z=168.63], EntityFishCod['Cod'/1846387, l='MpServer', x=-243.63, y=62.00, z=172.22], EntityCreeper['Creeper'/1846428, l='MpServer', x=-245.50, y=28.00, z=254.50], EntitySkeleton['Skeleton'/1846429, l='MpServer', x=-243.50, y=28.00, z=252.50], EntityZombie['Zombie'/1844408, l='MpServer', x=-251.50, y=37.00, z=259.50], EntityCreeper['Creeper'/1844404, l='MpServer', x=-243.40, y=20.00, z=167.85], EntityFishCod['Cod'/1846444, l='MpServer', x=-262.50, y=61.00, z=212.50], EntityFishCod['Cod'/1846445, l='MpServer', x=-265.38, y=59.80, z=205.78], EntityFallingBlock['Falling Block'/1840302, l='MpServer', x=-312.50, y=18.31, z=385.50], EntityFishCod['Cod'/1846442, l='MpServer', x=-264.50, y=61.00, z=212.50], EntityFishCod['Cod'/1846443, l='MpServer', x=-264.50, y=61.00, z=213.50], EntitySkeleton['Skeleton'/1846432, l='MpServer', x=-278.50, y=54.00, z=320.27], EntityCreeper['Creeper'/1846433, l='MpServer', x=-278.50, y=52.00, z=314.50], EntityZombie['Zombie'/1846480, l='MpServer', x=-220.50, y=36.00, z=269.50], EntityZombie['Zombie'/1846481, l='MpServer', x=-222.48, y=35.00, z=266.30], EntityFishCod['Cod'/1846525, l='MpServer', x=-269.65, y=61.99, z=244.65], EntityFishCod['Cod'/1846526, l='MpServer', x=-271.75, y=62.20, z=245.64], EntitySkeleton['Skeleton'/1846514, l='MpServer', x=-288.50, y=59.00, z=279.50], EntityFishCod['Cod'/1846536, l='MpServer', x=-277.25, y=62.20, z=207.64], EntityFishCod['Cod'/1846537, l='MpServer', x=-276.26, y=62.20, z=213.50], EntityFishCod['Cod'/1846534, l='MpServer', x=-276.54, y=60.84, z=213.16], EntityFishCod['Cod'/1846535, l='MpServer', x=-268.78, y=61.00, z=208.67], EntityFishCod['Cod'/1846528, l='MpServer', x=-274.26, y=60.00, z=242.74], EntityItem['item.tile.doublePlant.rose'/1844525, l='MpServer', x=-262.71, y=72.00, z=264.56], EntityZombie['Zombie'/1846571, l='MpServer', x=-242.59, y=33.00, z=321.74], EntitySkeleton['Skeleton'/1846616, l='MpServer', x=-285.50, y=43.00, z=300.50], EntityZombie['Zombie'/1846617, l='MpServer', x=-280.50, y=43.00, z=299.50], EntityZombieVillager['Zombie Villager'/1846641, l='MpServer', x=-259.50, y=40.00, z=269.50], EntityZombieVillager['Zombie Villager'/1846642, l='MpServer', x=-265.50, y=40.00, z=271.50], EntityBat['Bat'/1846687, l='MpServer', x=-264.27, y=28.91, z=284.54], EntityFishCod['Cod'/1846717, l='MpServer', x=-270.50, y=60.00, z=215.50], EntityFishCod['Cod'/1846718, l='MpServer', x=-271.22, y=61.20, z=212.40], EntityFishCod['Cod'/1846719, l='MpServer', x=-265.50, y=60.00, z=215.50], EntityCreeper['Creeper'/1846692, l='MpServer', x=-210.50, y=18.00, z=236.50], EntitySkeleton['Skeleton'/1846693, l='MpServer', x=-260.28, y=31.00, z=234.48], EntityZombie['Zombie'/1846691, l='MpServer', x=-210.50, y=18.00, z=235.50], EntityFishCod['Cod'/1846748, l='MpServer', x=-295.76, y=62.00, z=210.24], EntityCreeper['Creeper'/1846734, l='MpServer', x=-224.50, y=13.00, z=238.50], EntityZombie['Zombie'/1844678, l='MpServer', x=-294.53, y=22.00, z=284.18], EntityFishCod['Cod'/1846720, l='MpServer', x=-266.50, y=61.20, z=225.23], EntitySpider['Spider'/1844675, l='MpServer', x=-294.19, y=22.00, z=285.49], EntityBat['Bat'/1846792, l='MpServer', x=-166.67, y=28.23, z=317.80], EntityFishCod['Cod'/1846784, l='MpServer', x=-238.72, y=62.20, z=164.40], EntityFishCod['Cod'/1846785, l='MpServer', x=-241.64, y=62.20, z=167.31], EntityFishCod['Cod'/1846786, l='MpServer', x=-244.60, y=61.00, z=167.23], EntitySkeleton['Skeleton'/1846910, l='MpServer', x=-181.47, y=23.00, z=308.29], EntitySlime['Slime'/1846906, l='MpServer', x=-210.77, y=17.00, z=243.08], EntityFishCod['Cod'/1846884, l='MpServer', x=-293.50, y=61.00, z=240.50], EntityFishCod['Cod'/1846885, l='MpServer', x=-295.50, y=61.00, z=243.50], EntitySkeleton['Skeleton'/1846881, l='MpServer', x=-285.50, y=44.00, z=271.50], EntityFishCod['Cod'/1846883, l='MpServer', x=-292.71, y=62.20, z=242.42], EntityCreeper['Creeper'/1846940, l='MpServer', x=-264.50, y=27.00, z=290.50], EntityItem['item.tile.bwm:hemp'/1844890, l='MpServer', x=-267.35, y=71.00, z=267.36], EntityFallingBlock['Falling Block'/1840830, l='MpServer', x=-79.50, y=32.00, z=295.50], EntityFallingBlock['Falling Block'/1840831, l='MpServer', x=-79.50, y=32.00, z=291.50], EntityZombie['Zombie'/1846968, l='MpServer', x=-234.50, y=51.00, z=212.50], EntityFallingBlock['Falling Block'/1840820, l='MpServer', x=-79.50, y=32.00, z=293.50], EntityFallingBlock['Falling Block'/1840821, l='MpServer', x=-79.50, y=32.00, z=294.50], EntityFallingBlock['Falling Block'/1840822, l='MpServer', x=-78.50, y=32.00, z=291.50], EntityFallingBlock['Falling Block'/1840816, l='MpServer', x=-77.50, y=47.00, z=293.50], EntityFallingBlock['Falling Block'/1840817, l='MpServer', x=-78.50, y=32.00, z=292.50], EntityFallingBlock['Falling Block'/1840818, l='MpServer', x=-78.50, y=32.00, z=294.50], EntityFallingBlock['Falling Block'/1840819, l='MpServer', x=-79.50, y=32.00, z=292.50], EntityFishCod['Cod'/1844908, l='MpServer', x=-267.77, y=59.85, z=227.30], EntityFishCod['Cod'/1844909, l='MpServer', x=-270.61, y=62.00, z=222.80], EntityFallingBlock['Falling Block'/1840814, l='MpServer', x=-78.50, y=32.00, z=293.50], EntityFallingBlock['Falling Block'/1840815, l='MpServer', x=-77.50, y=32.00, z=292.50], EntityItem['item.tile.flower1.dandelion'/1847001, l='MpServer', x=-261.44, y=63.00, z=247.83], EntityCreeper['Creeper'/1846993, l='MpServer', x=-251.50, y=28.00, z=319.50], EntityFishCod['Cod'/1844942, l='MpServer', x=-290.59, y=62.20, z=231.27], EntityFishCod['Cod'/1844928, l='MpServer', x=-292.66, y=62.20, z=240.29], EntityFishCod['Cod'/1846977, l='MpServer', x=-269.50, y=62.00, z=165.50], EntityFishCod['Cod'/1846978, l='MpServer', x=-274.30, y=62.00, z=169.24], EntityFishCod['Cod'/1844981, l='MpServer', x=-260.81, y=60.00, z=213.39], EntityItem['item.tile.doublePlant.rose'/1844973, l='MpServer', x=-262.12, y=72.00, z=267.11], EntityZombie['Zombie'/1847009, l='MpServer', x=-145.50, y=49.00, z=167.50], EntityZombie['Zombie'/1847010, l='MpServer', x=-149.50, y=49.00, z=165.50], EntityFishCod['Cod'/1847060, l='MpServer', x=-272.50, y=61.00, z=243.50], EntityFishCod['Cod'/1847061, l='MpServer', x=-274.50, y=61.00, z=241.50], EntityFishCod['Cod'/1847062, l='MpServer', x=-276.50, y=61.00, z=237.50], EntityFishCod['Cod'/1847063, l='MpServer', x=-273.50, y=61.00, z=238.50], EntityItem['item.tile.doublePlant.rose'/1845008, l='MpServer', x=-261.43, y=72.00, z=263.70], EntityFishCod['Cod'/1845000, l='MpServer', x=-265.71, y=62.20, z=250.34], EntityFishCod['Cod'/1845003, l='MpServer', x=-269.25, y=62.20, z=250.36], EntityZombie['Zombie'/1847044, l='MpServer', x=-290.50, y=42.00, z=254.50], EntityZombie['Zombie'/1847045, l='MpServer', x=-290.50, y=42.00, z=255.50], EntityZombie['Zombie'/1847046, l='MpServer', x=-290.50, y=42.00, z=256.50], EntitySpider['Spider'/1847043, l='MpServer', x=-280.50, y=56.00, z=193.50], EntityFallingBlock['Falling Block'/1840957, l='MpServer', x=-352.50, y=31.00, z=192.50], EntityFallingBlock['Falling Block'/1840959, l='MpServer', x=-353.50, y=32.00, z=193.50], EntityFallingBlock['Falling Block'/1840952, l='MpServer', x=-353.50, y=23.00, z=143.50], EntityFallingBlock['Falling Block'/1840953, l='MpServer', x=-356.50, y=22.00, z=143.50], EntityFallingBlock['Falling Block'/1840951, l='MpServer', x=-353.50, y=21.00, z=142.50], EntityFallingBlock['Falling Block'/1840936, l='MpServer', x=-359.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1840937, l='MpServer', x=-359.50, y=28.00, z=228.50], EntityFallingBlock['Falling Block'/1840938, l='MpServer', x=-359.50, y=28.00, z=230.50], EntityFallingBlock['Falling Block'/1840939, l='MpServer', x=-359.50, y=28.00, z=231.50], EntityFallingBlock['Falling Block'/1840932, l='MpServer', x=-358.50, y=28.00, z=230.50], EntityFallingBlock['Falling Block'/1840933, l='MpServer', x=-357.50, y=28.00, z=228.50], EntityFallingBlock['Falling Block'/1840934, l='MpServer', x=-357.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1840935, l='MpServer', x=-357.50, y=28.00, z=230.50], EntityFishCod['Cod'/1845025, l='MpServer', x=-257.76, y=61.00, z=213.70], EntityFallingBlock['Falling Block'/1840930, l='MpServer', x=-358.50, y=28.00, z=228.50], EntityFallingBlock['Falling Block'/1840931, l='MpServer', x=-358.50, y=28.00, z=229.50], EntityFallingBlock['Falling Block'/1840984, l='MpServer', x=-358.50, y=2.00, z=381.50], EntityFallingBlock['Falling Block'/1840985, l='MpServer', x=-358.50, y=3.00, z=380.50], EntityFallingBlock['Falling Block'/1840986, l='MpServer', x=-358.50, y=4.00, z=382.50], EntityFallingBlock['Falling Block'/1840982, l='MpServer', x=-357.50, y=4.00, z=382.50], EntityFallingBlock['Falling Block'/1840983, l='MpServer', x=-357.50, y=2.00, z=381.50], EntityFishCod['Cod'/1845073, l='MpServer', x=-184.55, y=62.00, z=190.84], EntityFallingBlock['Falling Block'/1840960, l='MpServer', x=-353.50, y=34.00, z=194.50], EntityFallingBlock['Falling Block'/1840961, l='MpServer', x=-353.50, y=31.00, z=192.50], EntityFallingBlock['Falling Block'/1840962, l='MpServer', x=-354.50, y=35.00, z=195.50], EntityCreeper['Creeper'/1845106, l='MpServer', x=-287.08, y=20.00, z=297.50], EntityFallingBlock['Falling Block'/1841004, l='MpServer', x=-350.50, y=34.00, z=385.50], EntityFallingBlock['Falling Block'/1841001, l='MpServer', x=-351.50, y=34.00, z=384.50], EntityFallingBlock['Falling Block'/1841002, l='MpServer', x=-349.50, y=34.00, z=384.50], EntityFallingBlock['Falling Block'/1841003, l='MpServer', x=-351.50, y=34.00, z=385.50], EntityFallingBlock['Falling Block'/1840999, l='MpServer', x=-350.50, y=34.00, z=384.50], EntityFishCod['Cod'/1845178, l='MpServer', x=-231.42, y=62.00, z=172.19], EntityBat['Bat'/1845167, l='MpServer', x=-225.48, y=37.58, z=178.57]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2741)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:427)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 568604952 bytes (542 MB) / 2558001152 bytes (2439 MB) up to 5607784448 bytes (5348 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx6016m
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2838 138 mods loaded, 138 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                             | Version                         | Source                                              | Signature                                |
+	|:------ |:------------------------------ |:------------------------------- |:--------------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft                      | 1.12.2                          | minecraft.jar                                       | None                                     |
+	| LCHIJA | mcp                            | 9.42                            | minecraft.jar                                       | None                                     |
+	| LCHIJA | FML                            | 8.0.99.99                       | forge-1.12.2-14.23.5.2838-universal.jar             | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge                          | 14.23.5.2838                    | forge-1.12.2-14.23.5.2838-universal.jar             | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | creativecoredummy              | 1.0.0                           | minecraft.jar                                       | None                                     |
+	| LCHIJA | itemphysic                     | 1.4.0                           | minecraft.jar                                       | None                                     |
+	| LCHIJA | crafttweaker                   | 4.1.18                          | CraftTweaker2-1.12-4.1.18.jar                       | None                                     |
+	| LCHIJA | mtlib                          | 3.0.6                           | MTLib-3.0.6.jar                                     | None                                     |
+	| LCHIJA | modtweaker                     | 4.0.17                          | modtweaker-4.0.17.jar                               | None                                     |
+	| LCHIJA | jei                            | 4.15.0.279                      | jei_1.12.2-4.15.0.279.jar                           | None                                     |
+	| LCHIJA | immersiveengineering           | 0.12-89                         | ImmersiveEngineering-0.12-89.jar                    | 4cb49fcde3b43048c9889e0a3d083225da926334 |
+	| LCHIJA | alternatingflux                | 0.12.2-2                        | alternatingflux-0.12.2-2.jar                        | None                                     |
+	| LCHIJA | ambientsounds                  | 3.0                             | AmbientSounds_v3.0.9_mc1.12.2.jar                   | None                                     |
+	| LCHIJA | ctm                            | MC1.12.2-0.3.3.22               | CTM-MC1.12.2-0.3.3.22.jar                           | None                                     |
+	| LCHIJA | betterwithmods                 | 1.12-2.3.20-1027                | BetterWithMods-1.12-2.3.20-1027.jar                 | None                                     |
+	| LCHIJA | appleskin                      | 1.0.9                           | AppleSkin-mc1.12-1.0.9.jar                          | None                                     |
+	| LCHIJA | mcjtylib_ng                    | 3.5.3                           | mcjtylib-1.12-3.5.3.jar                             | None                                     |
+	| LCHIJA | immcraft                       | 1.6.0                           | immcraft-1.12-1.6.0.jar                             | None                                     |
+	| LCHIJA | aquamunda                      | 0.6.0                           | aquamunda-1.12-0.6.0-beta.jar                       | None                                     |
+	| LCHIJA | aroma1997core                  | 2.0.0.2.b165                    | Aroma1997Core-1.12.2-2.0.0.2.b165.jar               | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| LCHIJA | aroma1997sdimension            | 2.0.0.2.b89                     | Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b89.jar | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| LCHIJA | aromabackup                    | 3.0.0.0.b117                    | AromaBackup-1.12.2-3.0.0.0.b117.jar                 | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| LCHIJA | aromabackuprecovery            | 3.0.0.0.b117                    | AromaBackup-1.12.2-3.0.0.0.b117.jar                 | dfbfe4c473253d8c5652417689848f650b2cbe32 |
+	| LCHIJA | athenaeum                      | 1.12.2-1.16.0-1-g05e9939        | athenaeum-1.12.2-1.16.0.jar                         | None                                     |
+	| LCHIJA | baubles                        | 1.5.2                           | Baubles-1.12-1.5.2.jar                              | None                                     |
+	| LCHIJA | betterbuilderswands            | 0.13.2                          | BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar   | None                                     |
+	| LCHIJA | betterthanmending              | 1.1.2                           | BetterThanMending-1.1.2.jar                         | None                                     |
+	| LCHIJA | betterwithlib                  | ${version}                      | BetterWithLib-1.12-1.5.jar                          | None                                     |
+	| LCHIJA | bibliocraft                    | 2.4.5                           | BiblioCraft[v2.4.5][MC1.12.2].jar                   | None                                     |
+	| LCHIJA | blur                           | 1.0.4-14                        | Blur-1.0.4-14.jar                                   | None                                     |
+	| LCHIJA | bonsaitrees                    | 1.1.2                           | bonsaitrees-1.1.2-b144.jar                          | None                                     |
+	| LCHIJA | bookshelf                      | 2.3.581                         | Bookshelf-1.12.2-2.3.581.jar                        | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCHIJA | carryon                        | 1.12.1                          | CarryOn MC1.12.2 v1.12.1.jar                        | 55e88f24d04398481ae6f1ce76f65fd776f14227 |
+	| LCHIJA | ceramics                       | 1.12-1.3.7                      | Ceramics-1.12-1.3.7.jar                             | None                                     |
+	| LCHIJA | chameleon                      | 1.12-4.1.3                      | Chameleon-1.12-4.1.3.jar                            | None                                     |
+	| LCHIJA | chesttransporter               | 2.8.8                           | ChestTransporter-1.12.2-2.8.8.jar                   | None                                     |
+	| LCHIJA | codechickenlib                 | 3.2.2.353                       | CodeChickenLib-1.12.2-3.2.2.353-universal.jar       | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJA | chickenchunks                  | 2.4.1.73                        | ChickenChunks-1.12.2-2.4.1.73-universal.jar         | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJA | chisel                         | MC1.12.2-0.2.1.35               | Chisel-MC1.12.2-0.2.1.35.jar                        | None                                     |
+	| LCHIJA | clayworldgen                   | 1.1.0-1.12                      | ClayWorldGen-1.1.0-1.12.0.jar                       | None                                     |
+	| LCHIJA | corail_pillar_extension_chisel | 4.0.0                           | corail_pillar_extension_chisel-4.0.0-1.12.jar       | None                                     |
+	| LCHIJA | cosmeticarmorreworked          | 1.12.2-v4a                      | CosmeticArmorReworked-1.12.2-v4a.jar                | aaaf83332a11df02406e9f266b1b65c1306f0f76 |
+	| LCHIJA | craftablesaddles               | 1.3                             | Craftable Saddles[1.12]-1.3.jar                     | None                                     |
+	| LCHIJA | ctgui                          | 1.0.0                           | CraftTweaker2-1.12-4.1.18.jar                       | None                                     |
+	| LCHIJA | crafttweakerjei                | 2.0.3                           | CraftTweaker2-1.12-4.1.18.jar                       | None                                     |
+	| LCHIJA | creativecore                   | 1.9.9                           | CreativeCore_v1.9.45_mc1.12.2.jar                   | None                                     |
+	| LCHIJA | custommainmenu                 | 2.0.9                           | CustomMainMenu-MC1.12.2-2.0.9.jar                   | None                                     |
+	| LCHIJA | mininglib                      | 1.1.0                           | mininglib-1.12.1-1.1.0.jar                          | None                                     |
+	| LCHIJA | dimensionalores                | 1.12-1.0.1                      | dimensionalores-1.12-1.0.1.jar                      | None                                     |
+	| LCHIJA | dropt                          | 1.12.2-1.14.0                   | dropt-1.12.2-1.14.0.jar                             | None                                     |
+	| LCHIJA | durabilityshow                 | 5.0.0                           | Durability Show-1.12-5.0.0.jar                      | None                                     |
+	| LCHIJA | earthworks                     | 1.3.4.3                         | Earthworks-1.12-1.3.6.jar                           | None                                     |
+	| LCHIJA | easybreeding                   | 5.0.0                           | easybreading-1.12-5.0.0.jar                         | None                                     |
+	| LCHIJA | elevatorid                     | 1.4.2                           | ElevatorMod-1.12.2-1.4.2.jar                        | None                                     |
+	| LCHIJA | logicaldrops                   | 1.12.2-14.23.4.2764             | EM3R50N-LogicalCraft-1.12.2-14.23.4.2764.jar        | None                                     |
+	| LCHIJA | csb_ench_table                 | 1.1.3                           | EnchantingTable-1.12-1.1.3.jar                      | None                                     |
+	| LCHIJA | enchdesc                       | 1.1.15                          | EnchantmentDescriptions-1.12.2-1.1.15.jar           | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCHIJA | enchiridion                    | 3.3.5                           | Enchiridion-1.12.2-3.3.5.jar                        | None                                     |
+	| LCHIJA | endercompass                   | 1.2.6.2                         | EnderCompass-1.12-1.2.6.2.jar                       | None                                     |
+	| LCHIJA | endercrop                      | 1.12.2-1.6.0                    | endercrop-1.12.2-1.6.0.jar                          | None                                     |
+	| LCHIJA | engineersdoors                 | 0.8.0                           | engineers_doors-1.12.2-0.8.0.jar                    | None                                     |
+	| LCHIJA | shadowmc                       | 3.8.0                           | ShadowMC-1.12-3.8.0.jar                             | None                                     |
+	| LCHIJA | extrarails                     | 1.3.0                           | ExtraRails-1.12-1.3.0.jar                           | None                                     |
+	| LCHIJA | fairylights                    | 2.1.6                           | fairylights-2.1.6-1.12.2.jar                        | None                                     |
+	| LCHIJA | fasterladderclimbing           | 0.1-146                         | FasterLadderClimbing-1.12-0.1-146.jar               | None                                     |
+	| LCHIJA | fencejumper                    | 1.0.5                           | fencejumper-1.12-1.0.5.jar                          | None                                     |
+	| LCHIJA | flatbedrockx                   | 1.4.0                           | FlatBedrock-1.4.0_1.12.jar                          | None                                     |
+	| LCHIJA | floricraft                     | 4.4.3                           | Floricraft-1.12.2-4.4.3.jar                         | None                                     |
+	| LCHIJA | forgeendertech                 | 1.12.2-4.4.19.1                 | ForgeEndertech-1.12.2-4.4.19.1-build.0353.jar       | None                                     |
+	| LCHIJA | forgelin                       | 1.8.2                           | Forgelin-1.8.2.jar                                  | None                                     |
+	| LCHIJA | harvest                        | 1.12-1.2.7-20                   | Harvest-1.12-1.2.7-20.jar                           | None                                     |
+	| LCHIJA | hopperducts                    | 1.5                             | hopperducts-mc1.12-1.5.jar                          | None                                     |
+	| LCHIJA | horsetweaks                    | 1.0.5                           | HorseTweaks_1.12.2-1.0.5.jar                        | None                                     |
+	| LCHIJA | waila                          | 1.8.26                          | Hwyla-1.8.26-B41_1.12.2.jar                         | None                                     |
+	| LCHIJA | immersivehempcraft             | 1.12-0.0.7.1                    | Immersive HempCraft-1.12-0.0.7.1.jar                | None                                     |
+	| LCHIJA | immersivepetroleum             | 1.1.9                           | immersivepetroleum-1.12.2-1.1.9.jar                 | None                                     |
+	| LCHIJA | immersivetech                  | 1.3.10                          | immersivetech-1.12-1.3.10.jar                       | None                                     |
+	| LCHIJA | initialinventory               | 2.0.2                           | InitialInventory-3.0.0.jar                          | None                                     |
+	| LCHIJA | inventorytweaks                | 1.63+release.109.220f184        | InventoryTweaks-1.63.jar                            | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+	| LCHIJA | ironchest                      | 1.12.2-7.0.64.843               | ironchest-1.12.2-7.0.64.843.jar                     | None                                     |
+	| LCHIJA | itemzoom                       | 1.11                            | itemzoom_1.12.2-1.11.jar                            | None                                     |
+	| LCHIJA | jeiintegration                 | 1.5.1.36                        | jeiintegration_1.12.2-1.5.1.36.jar                  | None                                     |
+	| LCHIJA | jepb                           | 1.2.1                           | jepb-1.12-1.2.1.jar                                 | None                                     |
+	| LCHIJA | journeymap                     | 1.12.2-5.5.5b7                  | journeymap-1.12.2-5.5.5b7.jar                       | None                                     |
+	| LCHIJA | jaff                           | 1.7_for_1.12                    | JustAFewFish-1.7_for_1.12.jar                       | None                                     |
+	| LCHIJA | jeresources                    | 0.9.0.53                        | JustEnoughResources-1.12.2-0.9.0.53.jar             | None                                     |
+	| LCHIJA | subcommonlib                   | 1.2.0.1                         | subcommonlib-sublib-1.12.2-1.2.0.4.jar              | None                                     |
+	| LCHIJA | fashion                        | 1.11.2 0.1.2.0                  | JustFashion-1.12-0.1.2.0.jar                        | None                                     |
+	| LCHIJA | largeveins                     | @VERSION@                       | LargeVeins-1.12-1.1.0.jar                           | None                                     |
+	| LCHIJA | longfallboots                  | 1.2.1a                          | longfallboots-1.2.1b.jar                            | None                                     |
+	| LCHIJA | malisiscore                    | 1.12.2-6.5.1-SNAPSHOT           | malisiscore-1.12.2-6.5.1.jar                        | None                                     |
+	| LCHIJA | malisisdoors                   | 1.12.2-7.3.0                    | malisisdoors-1.12.2-7.3.0.jar                       | None                                     |
+	| LCHIJA | mobends                        | 0.24                            | mobends-0.24_for_MC-1.12.jar                        | None                                     |
+	| LCHIJA | mob_grinding_utils             | 0.3.13                          | MobGrindingUtils-0.3.13.jar                         | None                                     |
+	| LCHIJA | moreoverlays                   | 1.14                            | moreoverlays-1.14-mc1.12.2.jar                      | None                                     |
+	| LCHIJA | mousetweaks                    | 2.10                            | MouseTweaks-2.10-mc1.12.2.jar                       | None                                     |
+	| LCHIJA | naturescompass                 | 1.5.1                           | NaturesCompass-1.12.2-1.5.1.jar                     | None                                     |
+	| LCHIJA | nmsot                          | 1.2.2-mc1.12.2                  | NoMobSpawningOnTrees-1.2.2-mc1.12.2.jar             | None                                     |
+	| LCHIJA | notenoughwands                 | 1.8.1                           | notenoughwands-1.12-1.8.1.jar                       | None                                     |
+	| LCHIJA | obsidianplates                 | 1.3.0                           | ObsidianPlates-1.3.0_1.12.jar                       | None                                     |
+	| LCHIJA | samsocean                      | 1.0.1                           | OceanFloor-1.12-1.0.1.jar                           | None                                     |
+	| LCHIJA | openglider                     | @VERSION@                       | OpenGlider-1.12.1-1.1.0.jar                         | None                                     |
+	| LCHIJA | shetiphiancore                 | 3.5.9                           | shetiphiancore-1.12.0-3.5.9.jar                     | None                                     |
+	| LCHIJA | platforms                      | 1.4.6                           | platforms-1.12.0-1.4.6.jar                          | None                                     |
+	| LCHIJA | prefab                         | 1.3.0.26                        | prefab-1.3.0.26.jar                                 | None                                     |
+	| LCHIJA | quickleafdecay                 | 1.2.4                           | QuickLeafDecay-MC1.12.1-1.2.4.jar                   | None                                     |
+	| LCHIJA | reborncore                     | 3.13.12.447                     | RebornCore-1.12.2-3.13.12.447-universal.jar         | 8727a3141c8ec7f173b87aa78b9b9807867c4e6b |
+	| LCHIJA | resourceloader                 | 1.5.3                           | ResourceLoader-MC1.12.1-1.5.3.jar                   | d72e0dd57935b3e9476212aea0c0df352dd76291 |
+	| LCHIJA | ropebridge                     | 2.0.5                           | ropebridge-1.12-2.0.7.jar                           | None                                     |
+	| LCHIJA | ruins                          | 17.1                            | Ruins-1.12.2.jar                                    | None                                     |
+	| LCHIJA | rustic                         | 1.1.0                           | rustic-1.1.0.jar                                    | None                                     |
+	| LCHIJA | bonetorch                      | @MAJOR@.@MINOR@.@REVIS@.@BUILD@ | SBM-BoneTorch-1.12-0.0.1b3.jar                      | None                                     |
+	| LCHIJA | sereneseasons                  | 1.2.16                          | SereneSeasons-1.12.2-1.2.16-universal.jar           | None                                     |
+	| LCHIJA | signpic                        | 2.8.1                           | SignPicture-1.12.1-2.8.1-universal.jar              | None                                     |
+	| LCHIJA | signpost                       | 1.08.2                          | signpost-1.12.2-1.08.2.jar                          | None                                     |
+	| LCHIJA | simplemagnet                   | 1.12.2-1.3.12                   | simplemagnet-1.12.2-1.3.12.jar                      | None                                     |
+	| LCHIJA | soundfilters                   | 0.10_for_1.12                   | SoundFilters-0.10_for_1.12.jar                      | None                                     |
+	| LCHIJA | stevescarts                    | 2.4.30.134                      | StevesCarts-1.12.2-2.4.30.134.jar                   | None                                     |
+	| LCHIJA | storagedrawers                 | 1.12-5.3.5                      | StorageDrawers-1.12.2-5.3.8.jar                     | None                                     |
+	| LCHIJA | supersoundmuffler              | 1.0.2.10                        | supersoundmuffler-1.12.2-1.0.2.10.jar               | None                                     |
+	| LCHIJA | tp                             | 3.2.32                          | tinyprogressions-1.12.2-3.3.32-Release.jar          | None                                     |
+	| LCHIJA | tombstone                      | 3.5.2                           | tombstone-3.5.2-1.12.jar                            | None                                     |
+	| LCHIJA | toolbelt                       | 1.7.1                           | ToolBelt-1.12.0-1.7.1.jar                           | None                                     |
+	| LCHIJA | torchmaster                    | 1.7.1.74                        | torchmaster_1.12.2-1.7.1.74.jar                     | 5e9a436b366831c8f54a7e80b015784da69278c6 |
+	| LCHIJA | trapcraft                      | v2.4.3a                         | Trapcraft-1.12-v2.4.3a-universal.jar                | None                                     |
+	| LCHIJA | trashslot                      | 8.4.6                           | TrashSlot_1.12.1-8.4.6.jar                          | None                                     |
+	| LCHIJA | usefulnullifiers               | 1.5.0                           | usefulnullifiers-1.5.0.jar                          | None                                     |
+	| LCHIJA | veinminer                      | 0.38.2                          | VeinMiner-1.12-0.38.2.647+b31535a.jar               | None                                     |
+	| LCHIJA | veinminermodsupport            | 0.38.2                          | VeinMiner-1.12-0.38.2.647+b31535a.jar               | None                                     |
+	| LCHIJA | vc                             | 5.9.13                          | ViesCraft-1.12.2-5.9.13.jar                         | None                                     |
+	| LCHIJA | wailaharvestability            | 1.1.12                          | WailaHarvestability-mc1.12-1.1.12.jar               | None                                     |
+	| LCHIJA | waterstrainer                  | 3.2.0                           | WaterStrainer-1.12-3.2.0.jar                        | None                                     |
+	| LCHIJA | wawla                          | 2.5.273                         | Wawla-1.12.2-2.5.273.jar                            | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCHIJA | waystones                      | 4.0.67                          | Waystones_1.12.2-4.0.67.jar                         | None                                     |
+	| LCHIJA | wearablebackpacks              | 3.1.3                           | WearableBackpacks-1.12.2-3.1.3.jar                  | None                                     |
+	| LCHIJA | xpbook                         | 0.0.3-beta                      | xpbook-1.12-0.0.3-beta.jar                          | None                                     |
+	| LCHIJA | adfinders                      | 1.12.2-2.3.9.0                  | AdFinders-1.12.2-2.3.9.0-build.0353.jar             | None                                     |
+	| LCHIJA | corail_pillar                  | 4.2.1                           | corail_pillar-4.2.1-1.12.jar                        | None                                     |
+
+	Loaded coremods (and transformers): 
+RBLoadingPlugin (RealBench-1.12.2-1.3.3.jar)
+  pw.prok.realbench.asm.RBTransformer
+CreativePatchingLoader (CreativeCore_v1.9.45_mc1.12.2.jar)
+  
+SignPictureCorePlugin (SignPicture-1.12.1-2.8.1-universal.jar)
+  com.kamesuta.mc.signpic.asm.SignPictureTransformer
+ForgelinPlugin (Forgelin-1.8.2.jar)
+  
+CTMCorePlugin (CTM-MC1.12.2-0.3.3.22.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+LoadingPlugin (BetterWithLib-1.12-1.5.jar)
+  betterwithmods.library.core.ClassTransformer
+CorePlugin (ForgeEndertech-1.12.2-4.4.19.1-build.0353.jar)
+  
+IELoadingPlugin (ImmersiveEngineering-core-0.12-89.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  invtweaks.forge.asm.ContainerTransformer
+ShetiPhian-ASM (ShetiPhian-ASM-1.12.0.jar)
+  shetiphian.asm.ClassTransformer
+BlurPlugin (Blur-1.0.4-14.jar)
+  com.tterrag.blur.BlurTransformer
+LoadingPlugin (AdFinders-1.12.2-2.3.9.0-build.0353.jar)
+  com.endertech.minecraft.mods.adfinders.finder.Render
+LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  lumien.resourceloader.asm.ClassTransformer
+SSLoadingPlugin (SereneSeasons-1.12.2-1.2.16-universal.jar)
+  sereneseasons.asm.transformer.EntityRendererTransformer
+  sereneseasons.asm.transformer.WorldTransformer
+MalisisCorePlugin (malisiscore-1.12.2-6.5.1.jar)
+  
+ItemPatchingLoader (ItemPhysic_Full_1.4.21_mc1.12.2.jar)
+  com.creativemd.itemphysic.ItemTransformer
+CoreMod (Aroma1997Core-1.12.2-2.0.0.2.b165.jar)
+  
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.6.13544 Compatibility Profile Context 25.20.15011.1004' Renderer: 'Radeon RX 580 Series'
+	RebornCore: 
+		Plugin Engine: 0
+		RebornCore Version: 3.13.12.447
+		Runtime Debofucsation 1
+		RenderEngine: 0
+	Launched Version: MultiMC5
+	LWJGL: 2.9.4
+	OpenGL: Radeon RX 580 Series GL version 4.6.13544 Compatibility Profile Context 25.20.15011.1004, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 12x AMD Ryzen 5 2600 Six-Core Processor 

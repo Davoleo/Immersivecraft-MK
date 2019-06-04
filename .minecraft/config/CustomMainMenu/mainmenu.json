@@ -16,7 +16,7 @@
             "posX" : -2000,
             "posY" : 7,
             "width" : 4000,
-            "height" : 100,
+            "height" : 80,
             "alignment" : "center"
         }
 
@@ -25,12 +25,12 @@
     {
         "singleplayer":
         {
-            "texture": "test:textures/gui/longbutton.png",
+            "texture": "test:textures/gui/midbutton.png",
             "text" : "§6Singleplayer",
             "hoverText" : "§a§nPlay Alone!",
-            "posX" : -340,
+            "posX" : -290,
             "posY" : 20,
-            "width" : 200,
+            "width" : 175,
             "height" : 20,
             "alignment" : "center",
             "anchor" : "top",
@@ -43,12 +43,12 @@
         
         "multiplayer":
         {
-            "texture": "test:textures/gui/longbutton.png",
+            "texture": "test:textures/gui/midbutton.png",
             "text" : "§6Multiplayer",
             "hoverText" : "§a§nPlay With Friends!",
-            "posX" : 140,
+            "posX" : 110,
             "posY" : 20,
-            "width" : 200,
+            "width" : 175,
             "height" : 20,
             "alignment" : "center",   
             "action" : 
@@ -59,12 +59,12 @@
         },
         "mods":
         {
-            "texture": "test:textures/gui/longbutton.png",
+            "texture": "test:textures/gui/midbutton.png",
             "text" : "§6Mods",
             "hoverText" : "§a§nMods",
-            "posX" : -100,
+            "posX" : -90,
             "posY" : 20,
-            "width" : 200,
+            "width" : 175,
             "height" : 20,
             "alignment" : "center",   
             "action" : 
@@ -78,8 +78,8 @@
             "texture": "test:textures/gui/midbutton.png",
             "text" : "§6Settings",
             "hoverText" : "§a§oSet your MC up",
-            "posX" : -325,
-            "posY" : 75,
+            "posX" : -290,
+            "posY" : 55,
             "width" : 175,
             "height" : 20,
             "alignment" : "center",
@@ -94,8 +94,8 @@
             "texture": "test:textures/gui/midbutton.png",
             "text" : "§6Bug reports and Ideas here!",
             "hoverText" : "§a§oI really appreciate it!",
-            "posX" : -87,
-            "posY" : 75,
+            "posX" : -90,
+            "posY" : 55,
             "width" : 175,
             "height" : 20,
             "alignment" : "center",
@@ -109,8 +109,8 @@
             "texture": "test:textures/gui/midbutton.png",
             "text" : "§6Quit",
             "hoverText" : "§a§oFade Away",
-            "posX" : 155,
-            "posY" : 75,
+            "posX" : 110,
+            "posY" : 55,
             "width" : 175,
             "height" : 20,
             "alignment" : "center",

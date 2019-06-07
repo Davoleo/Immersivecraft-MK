@@ -58,9 +58,9 @@
   },
   {
    "ProjectID": 60092,
-   "FileID": 2683101,
+   "FileID": 2712288,
    "Name": "Aroma1997s Dimensional World",
-   "FileName": "Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b89.jar",
+   "FileName": "Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b96.jar",
    "CustomSide": 0
   },
   {
@@ -197,6 +197,13 @@
    "CustomSide": 0
   },
   {
+   "ProjectID": 271384,
+   "FileID": 2715784,
+   "Name": "CoFH World",
+   "FileName": "CoFHWorld-1.12.2-1.3.1.7-universal.jar",
+   "CustomSide": 0
+  },
+  {
    "ProjectID": 267602,
    "FileID": 2642375,
    "Name": "ConnectedTexturesMod",
@@ -219,9 +226,9 @@
   },
   {
    "ProjectID": 243707,
-   "FileID": 2715222,
+   "FileID": 2720954,
    "Name": "Corail Tombstone",
-   "FileName": "tombstone-3.5.2-1.12.jar",
+   "FileName": "tombstone-3.5.3-1.12.jar",
    "CustomSide": 0
   },
   {
@@ -264,13 +271,6 @@
    "FileID": 2657779,
    "Name": "Demagnetize",
    "FileName": "demagnetize-1.12.2-1.0.1.jar",
-   "CustomSide": 0
-  },
-  {
-   "ProjectID": 248345,
-   "FileID": 2459474,
-   "Name": "Dimensional Ores",
-   "FileName": "dimensionalores-1.12-1.0.1.jar",
    "CustomSide": 0
   },
   {
@@ -380,16 +380,16 @@
   },
   {
    "ProjectID": 278494,
-   "FileID": 2638380,
+   "FileID": 2695388,
    "Name": "FoamFix for Minecraft",
-   "FileName": "foamfix-0.10.3-1.12.2.jar.disabled",
+   "FileName": "foamfix-0.10.5-1.12.2.jar",
    "CustomSide": 0
   },
   {
    "ProjectID": 244844,
-   "FileID": 2715060,
+   "FileID": 2718619,
    "Name": "ForgeEndertech",
-   "FileName": "ForgeEndertech-1.12.2-4.4.19.1-build.0353.jar",
+   "FileName": "ForgeEndertech-1.12.2-4.4.20.0-build.0354.jar",
    "CustomSide": 0
   },
   {
@@ -439,6 +439,13 @@
    "FileID": 2544919,
    "Name": "Immersive Petroleum",
    "FileName": "immersivepetroleum-1.12.2-1.1.9.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 314645,
+   "FileID": 2704214,
+   "Name": "Immersive Posts",
+   "FileName": "ImmersivePosts-0.1.2.jar",
    "CustomSide": 0
   },
   {
@@ -540,10 +547,10 @@
    "CustomSide": 0
   },
   {
-   "ProjectID": 256237,
-   "FileID": 2441512,
-   "Name": "Large Veins",
-   "FileName": "LargeVeins-1.12-1.1.0.jar",
+   "ProjectID": 318833,
+   "FileID": 2718621,
+   "Name": "Large Ore Deposits",
+   "FileName": "AdLods-1.12.2-1.0.5.0-build.0354.jar",
    "CustomSide": 0
   },
   {
@@ -579,6 +586,13 @@
    "FileID": 2714365,
    "Name": "McJtyLib",
    "FileName": "mcjtylib-1.12-3.5.3.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 300890,
+   "FileID": 2701309,
+   "Name": "Metallurgy 4: Reforged",
+   "FileName": "Metallurgy-4-Reforged-0.2.0.jar",
    "CustomSide": 0
   },
   {
@@ -691,6 +705,13 @@
    "FileID": 2651659,
    "Name": "Prefab",
    "FileName": "prefab-1.3.0.26.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 293192,
+   "FileID": 2558162,
+   "Name": "Questionably Immersive",
+   "FileName": "questionablyimmersive-1.12.2-0.1.0.jar",
    "CustomSide": 0
   },
   {
@@ -859,13 +880,6 @@
    "FileID": 2445526,
    "Name": "Trapcraft",
    "FileName": "Trapcraft-1.12-v2.4.3a-universal.jar",
-   "CustomSide": 0
-  },
-  {
-   "ProjectID": 235577,
-   "FileID": 2477077,
-   "Name": "TrashSlot",
-   "FileName": "TrashSlot_1.12.1-8.4.6.jar",
    "CustomSide": 0
   },
   {

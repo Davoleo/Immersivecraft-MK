@@ -2,6 +2,7 @@
  * Author: Davoleo
  * Copyright - © - Davoleo - 2018
 **************************************************/
+
 //Flint and Steel crafting info
 <minecraft:flint_and_steel>.addTooltip(format.darkGray("(Right-click a rock from immersivecraft with a flint create this)"));
 

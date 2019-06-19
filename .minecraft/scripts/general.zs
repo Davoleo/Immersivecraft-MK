@@ -4,19 +4,11 @@
 **************************************************/
 
 //imports
-import mods.immersiveengineering.AlloySmelter;
-import mods.immersiveengineering.MetalPress;
 import crafttweaker.oredict.IOreDict;
 import mods.betterwithmods.Cauldron;
-import mods.immersiveengineering.CokeOven;
 //import mods.jei.RemoveAndHide
 
 print("MAIN_SCRIPT IS LOADING RIGHT NOW!");
-
-
-//Oredictionary conversions
-recipes.addShapeless(<immersiveengineering:metal:3>*2, [<dimensionalores:ingot_silver>,<dimensionalores:ingot_silver>]);
-recipes.addShapeless(<dimensionalores:ingot_silver>*2, [<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]);
 
 /*val element = <ore:rodElement>;
 element.add(<minecraft:blaze_rod>);

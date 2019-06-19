@@ -3,8 +3,11 @@
  * Copyright - © - Davoleo - 2018
 **************************************************/
 
-//Immersive Hempcraft
+import mods.immersiveengineering.MetalPress;
+import mods.immersiveengineering.CokeOven;
+import mods.betterwithmods.Cauldron;
 
+//Immersive Hempcraft
 mods.rustic.Condenser.addRecipe(<immersivehempcraft:oil>, <immersiveengineering:seed>, <immersiveengineering:material:4>);
 
 recipes.addShaped(<immersivehempcraft:hempstone_block>*8, [[<ore:stone>, <ore:stone>, <ore:stone>],
@@ -21,4 +24,5 @@ Cauldron.addUnstoked([<immersivehempcraft:oil>*2, <minecraft:milk_bucket>], [<im
 recipes.addShaped(<immersivehempcraft:seed_base>, [[<ceramics:clay_hard:6>, <ceramics:clay_hard:6>, <ceramics:clay_hard:6>],
                                                    [<ceramics:clay_hard:6>, <ceramics:rainbow_clay>, <ceramics:clay_hard:6>],
                                                    [<ceramics:clay_hard:6>, <ceramics:clay_hard:6>, <ceramics:clay_hard:6>]]);
+
 <immersivehempcraft:seed_base>.addTooltip(format.darkRed("(grows on a light-mix farmland)"));

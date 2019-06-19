@@ -3,6 +3,10 @@
  * Copyright - © - Davoleo - 2018
 **************************************************/
 
+import mods.immersiveengineering.AlloySmelter;
+import mods.immersiveengineering.MetalPress;
+import mods.immersiveengineering.CokeOven;
+
 //Kiln
 AlloySmelter.addRecipe(<rustic:tallow> *2, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>, 300);
 

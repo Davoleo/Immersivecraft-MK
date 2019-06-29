@@ -85,13 +85,13 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_veinminer.key.enable:41
 key_keybind.baublesinventory:48
 key_cos.key.opencosarmorinventory:0
 key_enchiridion.key.library:38
 key_Wardrobe:17
 key_key.moreoverlays.lightoverlay.desc:65
 key_key.moreoverlays.chunkbounds.desc:67
-key_veinminer.key.enable:41
 key_vc.key.moveForward:17
 key_vc.key.moveBack:31
 key_vc.key.moveLeft:30
@@ -166,7 +166,7 @@ soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
 soundCategory_player:1.0
-soundCategory_ambient:0.5
+soundCategory_ambient:0.15492958
 soundCategory_voice:1.0
 modelPart_cape:true
 modelPart_jacket:true

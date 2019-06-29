@@ -111,3 +111,5 @@ recipes.remove(<tp:bsc_rod>);
 recipes.remove(<betterwithmods:hibachi>);
 recipes.remove(<betterwithmods:single_machine>);
 recipes.remove(<betterwithmods:material:24>);
+recipes.remove(<immcraft:chest>);
+recipes.remove(<immcraft:cupboard>);

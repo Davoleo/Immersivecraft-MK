@@ -78,6 +78,13 @@
    "CustomSide": 0
   },
   {
+   "ProjectID": 240967,
+   "FileID": 2712965,
+   "Name": "Base Metals",
+   "FileName": "BaseMetals-1.12-2.5.0-rc2.332.jar",
+   "CustomSide": 0
+  },
+  {
    "ProjectID": 227083,
    "FileID": 2518667,
    "Name": "Baubles",
@@ -589,17 +596,24 @@
    "CustomSide": 0
   },
   {
-   "ProjectID": 300890,
-   "FileID": 2701309,
-   "Name": "Metallurgy 4: Reforged",
-   "FileName": "Metallurgy-4-Reforged-0.2.0.jar",
-   "CustomSide": 0
-  },
-  {
    "ProjectID": 271314,
    "FileID": 2479363,
    "Name": "MiningLib",
    "FileName": "mininglib-1.12.1-1.1.0.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 245586,
+   "FileID": 2702565,
+   "Name": "MMD OreSpawn",
+   "FileName": "OreSpawn-1.12-3.3.1.172.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 261744,
+   "FileID": 2712947,
+   "Name": "MMDLib",
+   "FileName": "MMDLib-1.12-1.0.0-rc2.36.jar",
    "CustomSide": 0
   },
   {

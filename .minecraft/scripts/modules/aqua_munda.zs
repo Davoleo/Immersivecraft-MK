@@ -22,3 +22,5 @@ recipes.addShaped(<tp:watering_can>, [[<ore:ingotIron>, <minecraft:dye:15>, null
                                       [<ore:ingotIron>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}), <ore:ingotIron>],
                                       [null, <ore:ingotIron>, null]]);
 
+<aquamunda:cooker>.addTooltip(format.red("(Use an Igniter to keep fire under this block)"));
+

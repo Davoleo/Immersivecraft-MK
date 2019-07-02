@@ -112,4 +112,8 @@ recipes.remove(<betterwithmods:hibachi>);
 recipes.remove(<betterwithmods:single_machine>);
 recipes.remove(<betterwithmods:material:24>);
 recipes.remove(<immcraft:chest>);
+recipes.remove(<immcraft:shelf>);
 recipes.remove(<immcraft:cupboard>);
+recipes.remove(<mob_grinding_utils:entity_conveyor>);
+recipes.remove(<trapcraft:igniter>);
+recipes.remove(<betterwithmods:raw_pastry:3>);

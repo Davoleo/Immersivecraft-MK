@@ -29,7 +29,7 @@ Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<imm
 
 Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 
-Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer>*5]);
+Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer> * 5]);
 
 //TODO fix this thing
 //Mill.remove([<minecraft:wheat>], [<betterwithmods:raw_pastry:3>]);

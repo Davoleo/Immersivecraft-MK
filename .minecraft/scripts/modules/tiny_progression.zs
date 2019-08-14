@@ -52,3 +52,5 @@ recipes.addShaped(<minecraft:golden_apple:1>, [[<chisel:gold>, <chisel:gold>, <c
 recipes.addShaped(<tp:lava_infused_stone>, [[<tp:hardened_stone>, <betterwithmods:material:16>, <tp:hardened_stone>],
                                             [<betterwithmods:material:16>, <chisel:lavastone>, <betterwithmods:material:16>],
                                             [<tp:hardened_stone>,  <betterwithmods:material:16>, <tp:hardened_stone>]]);
+
+furnace.remove(<tp:fried_egg>);

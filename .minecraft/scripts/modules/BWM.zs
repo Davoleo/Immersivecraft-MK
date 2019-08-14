@@ -26,10 +26,33 @@ recipes.addShaped(<betterwithmods:cooking_pot:1>, [[<ore:ingotCopper>, <minecraf
 
 Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<ceramics:unfired_clay:4>]);
 Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
+Turntable.add( <corail_pillar:minecraft_block_0>, [<tp:juicer>]);
 
 Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 
 Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer> * 5]);
+
+//Furnace & cauldron migrated to Aqua munda cooker
+Cauldron.remove([<betterwithmods:cooked_egg>]);
+furnace.remove(<betterwithmods:cooked_egg>);
+Cauldron.remove([<betterwithmods:cooked_scrambled_egg>]);
+furnace.remove(<betterwithmods:cooked_scrambled_egg>);
+Cauldron.remove([<betterwithmods:cooked_omelet>]);
+furnace.remove(<betterwithmods:cooked_omelet>);
+Cauldron.remove([<betterwithmods:cooked_bat_wing>]);
+furnace.remove(<betterwithmods:cooked_bat_wing>);
+Cauldron.remove([<betterwithmods:cooked_mystery_meat>]);
+furnace.remove(<betterwithmods:cooked_mystery_meat>);
+Cauldron.remove([<betterwithmods:cooked_kebab>]);
+furnace.remove(<betterwithmods:cooked_kebab>);
+Cauldron.remove([<betterwithmods:cooked_wolf_chop>]);
+furnace.remove(<betterwithmods:cooked_wolf_chop>);
+
+//Furnace Remove only
+furnace.remove(<minecraft:cake>);
+furnace.remove(<minecraft:pumpkin_pie>);
+furnace.remove(<minecraft:cookie>);
+furnace.remove(<betterwithmods:apple_pie>);
 
 //TODO fix this thing
 //Mill.remove([<minecraft:wheat>], [<betterwithmods:raw_pastry:3>]);

@@ -3,6 +3,8 @@
  * Copyright - © - Davoleo - 2018
 **************************************************/
 
+import crafttweaker.oredict.IOreDictEntry;
+
 furnace.remove(<minecraft:baked_potato>);
 
 recipes.remove(<betterwithmods:cooking_pot:1>);
@@ -24,3 +26,6 @@ recipes.addShaped(<tp:watering_can>, [[<ore:ingotIron>, <minecraft:dye:15>, null
 
 <aquamunda:cooker>.addTooltip(format.red("(Use an Igniter to keep fire under this block)"));
 
+//Add aquamunda's flour to the foodFlour OreDict Entry
+val flourOreDict = <ore:foodFlour>;
+flourOreDict.add(<aquamunda:flour>);

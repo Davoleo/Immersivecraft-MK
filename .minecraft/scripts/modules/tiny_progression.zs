@@ -54,3 +54,4 @@ recipes.addShaped(<tp:lava_infused_stone>, [[<tp:hardened_stone>, <betterwithmod
                                             [<tp:hardened_stone>,  <betterwithmods:material:16>, <tp:hardened_stone>]]);
 
 furnace.remove(<tp:fried_egg>);
+furnace.remove(<tp:cooked_apple>);

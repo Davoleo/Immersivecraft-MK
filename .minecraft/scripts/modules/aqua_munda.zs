@@ -28,4 +28,6 @@ recipes.addShaped(<tp:watering_can>, [[<ore:ingotIron>, <minecraft:dye:15>, null
 
 //Add aquamunda's flour to the foodFlour OreDict Entry
 val flourOreDict = <ore:foodFlour>;
+val dustWheatOreDict = <ore:dustWheat>;
 flourOreDict.add(<aquamunda:flour>);
+dustWheatOreDict.add(<aquamunda:flour>)

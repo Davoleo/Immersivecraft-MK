@@ -7,6 +7,7 @@ import mods.betterwithmods.Turntable;
 import mods.betterwithmods.Crucible;
 import mods.betterwithmods.Cauldron;
 import mods.betterwithmods.Mill;
+import mods.betterwithmods.Kiln;
 
 recipes.addShaped(<betterwithmods:hibachi>, [[<ore:ingotConstantan>, <ore:ingotConstantan>, <ore:ingotConstantan>],
                                              [<ore:stone>, <betterwithmods:material:28>, <ore:stone>],
@@ -24,12 +25,19 @@ recipes.addShaped(<betterwithmods:cooking_pot:1>, [[<ore:ingotCopper>, <minecraf
                                                    [<ore:ingotCopper>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}), <ore:ingotCopper>],
                                                    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]]);
 
+//Kiln Recipes
+Kiln.remove([<minecraft:iron_ingot>]);
+Kiln.add(<ore:oreIron>, [<minecraft:iron_ingot>*2]);
+
+//Turntable Recipes
 Turntable.add( <corail_pillar:minecraft_block_0>, [<tp:juicer>]);
 Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<ceramics:unfired_clay:4>]);
 Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
+//Crucible Recipes --- 
 Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 
+//Cauldron Recipes ---
 Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer> * 5]);
 
 //Furnace & cauldron migrated to Aqua munda cooker

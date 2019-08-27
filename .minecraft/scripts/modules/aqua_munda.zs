@@ -19,15 +19,10 @@ recipes.addShaped(<jaff:tank> * 16, [[<minecraft:glass_pane>, null, <minecraft:g
 
 recipes.addShapeless(<forge:bucketfilled>.withTag({FluidName: "alewort", Amount: 1000}), [<forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}), <minecraft:bread>, <minecraft:sugar>]);
 
-//TODO Rework this recipe
-recipes.addShaped(<tp:watering_can>, [[<ore:ingotIron>, <minecraft:dye:15>, null],
-                                      [<ore:ingotIron>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}), <ore:ingotIron>],
-                                      [null, <ore:ingotIron>, null]]);
-
 <aquamunda:cooker>.addTooltip(format.red("(Use an Igniter to keep fire under this block)"));
 
 //Add aquamunda's flour to the foodFlour OreDict Entry
 val flourOreDict = <ore:foodFlour>;
 val dustWheatOreDict = <ore:dustWheat>;
 flourOreDict.add(<aquamunda:flour>);
-dustWheatOreDict.add(<aquamunda:flour>)
+dustWheatOreDict.add(<aquamunda:flour>);

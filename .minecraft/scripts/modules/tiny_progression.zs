@@ -53,5 +53,10 @@ recipes.addShaped(<tp:lava_infused_stone>, [[<tp:hardened_stone>, <betterwithmod
                                             [<betterwithmods:material:16>, <chisel:lavastone>, <betterwithmods:material:16>],
                                             [<tp:hardened_stone>,  <betterwithmods:material:16>, <tp:hardened_stone>]]);
 
+//Watering Cans -----
+recipes.addShaped(<tp:watering_can>, [[<ore:ingotIron>, <betterwithmods:fertilizer>, null],
+                                      [<ore:ingotIron>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}), <ore:ingotIron>],
+                                      [null, <ore:ingotIron>, null]]);
+
 furnace.remove(<tp:fried_egg>);
 furnace.remove(<tp:cooked_apple>);

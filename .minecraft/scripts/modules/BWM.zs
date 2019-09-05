@@ -25,9 +25,15 @@ recipes.addShaped(<betterwithmods:cooking_pot:1>, [[<ore:ingotCopper>, <minecraf
                                                    [<ore:ingotCopper>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}), <ore:ingotCopper>],
                                                    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]]);
 
+recipes.addShaped(<betterwithmods:material:4>, [[null, null, null],
+                                                [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>],
+                                                [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]]);
+
 //Kiln Recipes
 Kiln.remove([<minecraft:iron_ingot>]);
 Kiln.add(<ore:oreIron>, [<minecraft:iron_ingot>*2]);
+//TODO Gold Ingot | Lapis Lazuli | Diamond | Redstone | Emerald | Nether Quartz | Coal | Antimony | Bismuth | CopperIE | CopperBM | LeadIE | LeadBM | NickelIE | NickelBM |
+//TODO Silver | Tin | Zinc | Adamantine | Cold-Iron | Platinum | Star-Steel | Mercury | Aluminium | Uranium
 
 //Turntable Recipes
 Turntable.add( <corail_pillar:minecraft_block_0>, [<tp:juicer>]);

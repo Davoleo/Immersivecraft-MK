@@ -26,3 +26,4 @@ recipes.addShaped(<immersivehempcraft:seed_base>, [[<ceramics:clay_hard:6>, <cer
                                                    [<ceramics:clay_hard:6>, <ceramics:clay_hard:6>, <ceramics:clay_hard:6>]]);
 
 <immersivehempcraft:seed_base>.addTooltip(format.darkRed("(grows on a light-mix farmland)"));
+<immersivehempcraft:hempstone_ball>.addTooltip(format.darkGreen("(obtainable by breaking hempstone)"));

@@ -128,3 +128,4 @@ recipes.remove(<tp:rabbit_sandwhich>);
 recipes.remove(<tp:beef_sandwhich>);
 recipes.remove(<tp:bacon_eggs_sandwhich>);
 recipes.remove(<tp:bacon_eggs>);
+recipes.remove(<betterwithmods:material:4>);

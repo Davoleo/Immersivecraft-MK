@@ -137,11 +137,12 @@ key_Mo'Bends Menu:34
 key_key.modifier:13
 key_key.submode:0
 key_signpic.key.gui:43
-key_Diasble Magnet:50
+key_Diasble Magnet:28
 key_tombstone.message.knowledge_of_death:0
 key_key.toolbelt.open:19
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
+key_key.toolbelt.slot:47
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
 key_key.journeymap.minimap_type:26

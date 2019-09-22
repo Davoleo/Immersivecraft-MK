@@ -1,7 +1,50 @@
+import crafttweaker.item.IItemStack;
+
 /*************************************************
  * Author: Davoleo
  * Copyright - © - Davoleo - 2018
 **************************************************/
+
+val baseMetalPlates = [
+    <basemetals:iron_plate>,
+    <basemetals:gold_plate>,
+    <basemetals:antimony_plate>,
+    <basemetals:bismuth_plate>,
+    <basemetals:copper_plate>,
+    <basemetals:lead_plate>,
+    <basemetals:nickel_plate>,
+    <basemetals:silver_plate>,
+    <basemetals:tin_plate>,
+    <basemetals:zinc_plate>,
+    <basemetals:brass_plate>,
+    <basemetals:bronze_plate>,
+    <basemetals:cupronickel_plate>,
+    <basemetals:electrum_plate>,
+    <basemetals:invar_plate>,
+    <basemetals:pewter_plate>,
+    <basemetals:steel_plate>,
+    <basemetals:adamantine_plate>,
+    <basemetals:coldiron_plate>,
+    <basemetals:platinum_plate>,
+    <basemetals:starsteel_plate>,
+    <basemetals:aquarium_plate>,
+    <basemetals:mithril_plate>
+] as IItemStack[];
+
+val baseMetalCrackHammers = [
+    <basemetals:iron_crackhammer>,
+    <basemetals:diamond_crackhammer>,
+    <basemetals:obsidian_crackhammer>,
+    <basemetals:emerald_crackhammer>,
+    <basemetals:adamantine_crackhammer>,
+    <basemetals:mithril_crackhammer>,
+    <basemetals:aquarium_crackhammer>,
+    <basemetals:starsteel_crackhammer>,
+    <basemetals:platinum_crackhammer>,
+    <basemetals:steel_crackhammer>,
+    <basemetals:invar_crackhammer>,
+    <basemetals:cupronickel_crackhammer>
+] as IItemStack[];
 
 recipes.remove(<usefulnullifiers:overflownullifieritem>);
 recipes.remove(<trapcraft:magnetic_chest>);
@@ -129,3 +172,13 @@ recipes.remove(<tp:beef_sandwhich>);
 recipes.remove(<tp:bacon_eggs_sandwhich>);
 recipes.remove(<tp:bacon_eggs>);
 recipes.remove(<betterwithmods:material:4>);
+for plate in baseMetalPlates {
+    recipes.remove(plate);
+}
+for hammer in baseMetalCrackHammers {
+    recipes.remove(hammer);
+}
+
+recipes.remove(<storagenetwork:master>);
+recipes.remove(<storagenetwork:request>);
+recipes.remove(<storagenetwork:kabel>);

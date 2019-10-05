@@ -187,4 +187,8 @@ recipes.remove(<storagenetwork:storage_kabel>);
 recipes.remove(<storagenetwork:process_kabel>);
 recipes.remove(<storagenetwork:controller>);
 // -------------
-//recipes.remove(<tp:repair_tablet>);
+recipes.remove(<tp:repair_tablet>);
+recipes.remove(<tp:cooked_bacon>);
+recipes.remove(<tp:cooked_mushroom_brown>);
+recipes.remove(<tp:cooked_mushroom_red>);
+recipes.remove(<tp:raw_bacon>);

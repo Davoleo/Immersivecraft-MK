@@ -60,3 +60,7 @@ recipes.addShaped(<tp:watering_can>, [[<ore:ingotIron>, <betterwithmods:fertiliz
 
 furnace.remove(<tp:fried_egg>);
 furnace.remove(<tp:cooked_apple>);
+
+recipes.addShaped(<tp:repair_tablet>, [[<betterwithmods:material:14>, <minecraft:nether_star>, <betterwithmods:material:14>],
+                                       [<minecraft:ghast_tear>, <tp:redstone_ingot>, <minecraft:ghast_tear>],
+                                       [<betterwithmods:material:48>, <minecraft:ghast_tear>, <betterwithmods:material:48>]]);

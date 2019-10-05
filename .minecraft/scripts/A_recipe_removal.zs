@@ -179,6 +179,12 @@ for hammer in baseMetalCrackHammers {
     recipes.remove(hammer);
 }
 
+//Simple Network Storage -----------------
 recipes.remove(<storagenetwork:master>);
 recipes.remove(<storagenetwork:request>);
 recipes.remove(<storagenetwork:kabel>);
+recipes.remove(<storagenetwork:storage_kabel>);
+recipes.remove(<storagenetwork:process_kabel>);
+recipes.remove(<storagenetwork:controller>);
+// -------------
+//recipes.remove(<tp:repair_tablet>);

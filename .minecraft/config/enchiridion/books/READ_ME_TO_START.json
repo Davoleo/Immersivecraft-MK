@@ -49,6 +49,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 0
         },
         {
@@ -80,6 +81,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 1
         },
         {
@@ -96,6 +98,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 2
         },
         {
@@ -112,6 +115,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 3
         },
         {
@@ -128,6 +132,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 4
         },
         {
@@ -144,6 +149,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 5
         },
         {
@@ -160,6 +166,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 6
         }
       ],
@@ -197,6 +204,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 0
         },
         {
@@ -228,22 +236,24 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 1
         },
         {
-          "xPos": 35,
-          "yPos": 23,
+          "xPos": 37,
+          "yPos": 24,
           "width": 137.0,
           "height": 21.0,
           "feature": {
             "class": "joshie.enchiridion.gui.book.features.FeatureText",
             "properties": {
-              "text": "in order to make flint just check the guide",
+              "text": "in order to make flint \u0026 steel just check the guide",
               "size": 1.0
             }
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 2
         },
         {
@@ -260,6 +270,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 3
         },
         {
@@ -276,6 +287,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 4
         },
         {
@@ -292,6 +304,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 5
         },
         {
@@ -308,6 +321,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 6
         },
         {
@@ -324,6 +338,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 7
         },
         {
@@ -340,6 +355,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 8
         },
         {
@@ -356,6 +372,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 9
         },
         {
@@ -372,6 +389,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 10
         }
       ],
@@ -409,6 +427,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 0
         },
         {
@@ -440,6 +459,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 1
         }
       ],
@@ -477,6 +497,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 0
         },
         {
@@ -508,6 +529,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 1
         }
       ],
@@ -545,6 +567,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 0
         },
         {
@@ -576,6 +599,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 1
         },
         {
@@ -592,6 +616,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 2
         },
         {
@@ -607,6 +632,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 3
         },
         {
@@ -641,6 +667,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 4
         },
         {
@@ -657,6 +684,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 5
         },
         {
@@ -672,6 +700,7 @@
           },
           "isLocked": false,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 6
         }
       ],
@@ -709,6 +738,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 0
         },
         {
@@ -740,6 +770,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 1
         }
       ],
@@ -777,6 +808,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 0
         },
         {
@@ -808,6 +840,7 @@
           },
           "isLocked": true,
           "isHidden": false,
+          "isFromTemplate": false,
           "layerIndex": 1
         }
       ],

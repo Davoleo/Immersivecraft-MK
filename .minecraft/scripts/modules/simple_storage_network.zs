@@ -19,10 +19,6 @@ recipes.addShaped(<storagenetwork:storage_kabel>*8, [[<storagedrawers:upgrade_st
                                                      [<storagenetwork:kabel>, null, <storagenetwork:kabel>], 
                                                      [<rustic:chain>, <storagenetwork:kabel>, <rustic:chain>]]);
 
-recipes.addShaped(<storagenetwork:storage_kabel>*8, [[<storagedrawers:upgrade_storage:2>, <storagenetwork:kabel>, <storagedrawers:upgrade_storage:2>],
-                                                     [<storagenetwork:kabel>, null, <storagenetwork:kabel>], 
-                                                     [<rustic:chain>, <storagenetwork:kabel>, <rustic:chain>]]);
-
 recipes.addShaped(<storagenetwork:process_kabel>*4, [[<betterwithmods:material:34>, <storagenetwork:kabel>, <betterwithmods:material:34>],
                                                      [<storagenetwork:kabel>, null, <storagenetwork:kabel>], 
                                                      [<rustic:chain_gold>, <storagenetwork:kabel>, <rustic:chain_gold>]]);

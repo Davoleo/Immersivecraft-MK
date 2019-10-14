@@ -136,6 +136,11 @@ recipes.addShapeless(<chisel:chisel_hitech>,
 //Ceramics
 mods.rustic.EvaporatingBasin.addRecipe(<ceramics:unfired_clay:5>, <liquid:concrete> * 250);
 
+//Malisis Doors
+recipes.addShaped(<malisisdoors:rustyladder> * 4, [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+                                                   [null, null, null],
+                                                   [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>]]);
+
 //Mob grinding utils 
 recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[null, <minecraft:ender_eye>, null],
                                                            [null, <betterwithmods:material:28>, null],

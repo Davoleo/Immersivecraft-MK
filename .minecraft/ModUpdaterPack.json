@@ -207,7 +207,7 @@
    "ProjectID": 271384,
    "FileID": 2715784,
    "Name": "CoFH World",
-   "FileName": "CoFHWorld-1.12.2-1.3.1.7-universal.jar.disabled",
+   "FileName": "CoFHWorld-1.12.2-1.3.1.7-universal.jar",
    "CustomSide": 0
   },
   {
@@ -337,6 +337,13 @@
    "CustomSide": 0
   },
   {
+   "ProjectID": 313866,
+   "FileID": 2730735,
+   "Name": "Engineer's Decor",
+   "FileName": "engineersdecor-1.12.2-1.0.9-b2.jar",
+   "CustomSide": 0
+  },
+  {
    "ProjectID": 291126,
    "FileID": 2625854,
    "Name": "Engineer's Doors",
@@ -369,13 +376,6 @@
    "FileID": 2591087,
    "Name": "Fence Jumper",
    "FileName": "fencejumper-1.12-1.0.5.jar",
-   "CustomSide": 0
-  },
-  {
-   "ProjectID": 78886,
-   "FileID": 2440978,
-   "Name": "FlatBedrock Xplosion's Edition",
-   "FileName": "FlatBedrock-1.4.0_1.12.jar",
    "CustomSide": 0
   },
   {
@@ -453,6 +453,13 @@
    "FileID": 2704214,
    "Name": "Immersive Posts",
    "FileName": "ImmersivePosts-0.1.2.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 277736,
+   "FileID": 2706327,
+   "Name": "Immersive Railroading",
+   "FileName": "ImmersiveRailroading-1.6.1_1.12-1138.jar",
    "CustomSide": 0
   },
   {
@@ -894,6 +901,13 @@
    "FileID": 2657299,
    "Name": "TorchMaster",
    "FileName": "torchmaster_1.12.2-1.7.1.74.jar",
+   "CustomSide": 0
+  },
+  {
+   "ProjectID": 282613,
+   "FileID": 2535626,
+   "Name": "Track API",
+   "FileName": "TrackAPI-1.1_1.12.jar",
    "CustomSide": 0
   },
   {

@@ -26,7 +26,7 @@ chatLinksPrompt:true
 chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
-enableVsync:true
+enableVsync:false
 useVbo:true
 hideServerAddress:false
 advancedItemTooltips:true
@@ -39,7 +39,7 @@ chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
-mipmapLevels:4
+mipmapLevels:0
 forceUnicodeFont:false
 reducedDebugInfo:false
 useNativeTransport:true
@@ -74,7 +74,7 @@ key_key.fullscreen:87
 key_key.spectatorOutlines:0
 key_key.swapHands:33
 key_key.saveToolbarActivator:46
-key_key.loadToolbarActivator:45
+key_key.loadToolbarActivator:0
 key_key.advancements:38
 key_key.hotbar.1:2
 key_key.hotbar.2:3
@@ -85,7 +85,7 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_veinminer.key.enable:41
+key_veinminer.key.enable:45
 key_keybind.baublesinventory:48
 key_cos.key.opencosarmorinventory:0
 key_enchiridion.key.library:38
@@ -97,7 +97,7 @@ key_vc.key.moveBack:31
 key_vc.key.moveLeft:30
 key_vc.key.moveRight:32
 key_vc.key.moveUp:57
-key_vc.key.moveDown:45
+key_vc.key.moveDown:0
 key_vc.key.openInventory:19
 key_vc.key.dropbomb:46
 key_key.wearablebackpacks.open:48
@@ -120,7 +120,7 @@ key_key.previtem:27
 key_key.placeitem:25
 key_key.debughandles:0
 key_bbw.key.mode:50
-key_bbw.key.fluidmode:33
+key_bbw.key.fluidmode:0
 key_key.carry.desc:42
 key_key.hudtoggle:35
 key_waila.keybind.wailaconfig:82
@@ -159,7 +159,7 @@ key_key.journeymap.fullscreen.north:200
 key_key.journeymap.fullscreen.south:208
 key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
-soundCategory_master:0.30132452
+soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

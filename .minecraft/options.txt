@@ -101,6 +101,9 @@ key_vc.key.moveDown:0
 key_vc.key.openInventory:19
 key_vc.key.dropbomb:46
 key_key.wearablebackpacks.open:48
+key_Strip World:211
+key_Dress World:210
+key_Inspect Block:199
 key_key.pickup.item:0
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL

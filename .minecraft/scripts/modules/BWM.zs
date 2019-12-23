@@ -30,10 +30,54 @@ recipes.addShaped(<betterwithmods:material:4>, [[null, null, null],
                                                 [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]]);
 
 //Kiln Recipes
-Kiln.remove([<minecraft:iron_ingot>]);
-Kiln.add(<ore:oreIron>, [<minecraft:iron_ingot>*2]);
-//TODO Gold Ingot | Lapis Lazuli | Diamond | Redstone | Emerald | Nether Quartz | Coal | Antimony | Bismuth | CopperIE | CopperBM | LeadIE | LeadBM | NickelIE | NickelBM |
+val baseMaterials = [
+    "antimony",
+    "bismuth",
+    "copper",
+    "lead",
+    "nickel",
+    "silver",
+    "tin",
+    "zinc",
+    "brass",
+    "bronze",
+    "electrum",
+    "invar",
+    "pewter",
+    "steel",
+    "adamantine",
+    "coldiron",
+    "platinum",
+    "starsteel",
+    "aquarium",
+    "mithril"
+] as string[];
+
+// for material in baseMaterials {
+//     Kiln.remove([<basemetals:$material_ingot>]);
+//     Kiln.add(<ore:oreIron>, [<minecraft:iron_ingot>, <minecraft:iron_nugget> * 6]);
+// }
+
+//TODO Antimony | Bismuth | CopperIE | CopperBM | LeadIE | LeadBM | NickelIE | NickelBM |
 //TODO Silver | Tin | Zinc | Adamantine | Cold-Iron | Platinum | Star-Steel | Mercury | Aluminium | Uranium
+
+//Vanilla Materials
+Kiln.remove([<minecraft:iron_ingot>]);
+Kiln.add(<ore:oreIron>, [<minecraft:iron_ingot>, <minecraft:iron_nugget> * 6]);
+Kiln.remove([<minecraft:gold_ingot>]);
+Kiln.add(<ore:oreGold>, [<minecraft:gold_ingot>, <minecraft:gold_nugget> * 6]);
+Kiln.remove([<minecraft:dye:4>]);
+Kiln.add(<ore:oreLapis>, [<minecraft:dye:4> * 6]);
+Kiln.remove([<minecraft:diamond>]);
+Kiln.add(<ore:oreDiamond>, [<minecraft:diamond> * 2]);
+Kiln.remove([<minecraft:redstone>]);
+Kiln.add(<ore:oreRedstone>, [<minecraft:redstone> * 3]);
+Kiln.remove([<minecraft:emerald>]);
+Kiln.add(<ore:oreEmerald>, [<minecraft:emerald> * 2]);
+Kiln.remove([<minecraft:quartz>]);
+Kiln.add(<ore:oreQuartz, [<minecraft:quartz> * 2]);
+Kiln.remove([<minecraft:coal>]);
+Kiln.add(<ore:oreCoal, [<minecraft:coal> * 3]);
 
 //Turntable Recipes
 Turntable.add( <corail_pillar:minecraft_block_0>, [<tp:juicer>]);

@@ -6,6 +6,7 @@
 import mods.immersiveengineering.AlloySmelter;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.CokeOven;
+import mods.immersiveengineering.Crusher;
 
 //Kiln
 AlloySmelter.addRecipe(<rustic:tallow> *2, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>, 300);
@@ -20,9 +21,15 @@ AlloySmelter.addRecipe(<tp:quartz_ingot>, <ceramics:unfired_clay:5>, <minecraft:
 
 AlloySmelter.addRecipe(<tp:flint_ingot>, <ceramics:unfired_clay:5>, <minecraft:flint> * 6, 400);
 
+//Crusher
+Crusher.removeRecipesForInput(<minecraft:diamond_ore>);
+Crusher.addRecipe(<minecraft:diamond> * 3, <ore:oreDiamond>, 512, <minecraft:diamond>, 0.5);
+Crusher.removeRecipesForInput(<minecraft:emerald_ore>);
+Crusher.addRecipe(<minecraft:emerald> * 3, <ore:oreEmerald>, 512, <minecraft:emerald>, 0.5);
+Crusher.removeRecipesForInput(<minecraft:coal_ore>);
+Crusher.addRecipe(<minecraft:coal> * 6, <ore:oreCoal>, 128);
 
 //Immersive Engineering
-
 recipes.addShaped(<immersiveengineering:stone_decoration> * 3, [[<ore:plateBrick>, <ceramics:unfired_clay:5>, <ore:plateBrick>],
                                                                 [<ceramics:unfired_clay:5>, <minecraft:sandstone>, <ceramics:unfired_clay:5>],
                                                                 [<ore:plateBrick>, <ceramics:unfired_clay:5>, <ore:plateBrick>]]);

@@ -75,9 +75,9 @@ Kiln.add(<ore:oreRedstone>, [<minecraft:redstone> * 3]);
 Kiln.remove([<minecraft:emerald>]);
 Kiln.add(<ore:oreEmerald>, [<minecraft:emerald> * 2]);
 Kiln.remove([<minecraft:quartz>]);
-Kiln.add(<ore:oreQuartz, [<minecraft:quartz> * 2]);
+Kiln.add(<ore:oreQuartz>, [<minecraft:quartz> * 2]);
 Kiln.remove([<minecraft:coal>]);
-Kiln.add(<ore:oreCoal, [<minecraft:coal> * 3]);
+Kiln.add(<ore:oreCoal>, [<minecraft:coal> * 3]);
 
 //Turntable Recipes
 Turntable.add( <corail_pillar:minecraft_block_0>, [<tp:juicer>]);

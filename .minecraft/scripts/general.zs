@@ -136,6 +136,11 @@ recipes.addShapeless(<chisel:chisel_hitech>,
 //Ceramics
 mods.rustic.EvaporatingBasin.addRecipe(<ceramics:unfired_clay:5>, <liquid:concrete> * 250);
 
+//Demagnetize
+recipes.addShaped(<demagnetize:demagnetizer>, [[<ore:fabricHemp>, <ore:ingotRedstone>, <ore:fabricHemp>],
+                                               [<ore:ingotIron>, <simplemagnet:simple_magnet>, <ore:ingotIron>],
+                                               [<ore:fabricHemp>, <ore:ingotRedstone>, <ore:fabricHemp>]]);
+
 //Malisis Doors
 recipes.addShaped(<malisisdoors:rustyladder> * 4, [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
                                                    [null, null, null],

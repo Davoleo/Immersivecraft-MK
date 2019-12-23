@@ -194,3 +194,4 @@ recipes.remove(<tp:cooked_mushroom_red>);
 recipes.remove(<tp:raw_bacon>);
 //--------------
 recipes.remove(<malisisdoors:rustyladder>);
+recipes.remove(<demagnetize:demagnetizer>);

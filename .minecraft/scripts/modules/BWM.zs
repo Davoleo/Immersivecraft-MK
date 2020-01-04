@@ -53,13 +53,19 @@ val baseMaterials = [
     "mithril"
 ] as string[];
 
-// for material in baseMaterials {
-//     Kiln.remove([<basemetals:$material_ingot>]);
-//     Kiln.add(<ore:oreIron>, [<minecraft:iron_ingot>, <minecraft:iron_nugget> * 6]);
-// }
+//Base Metals
+for material in baseMaterials {
+    Kiln.remove([itemUtils.getItem("basemetals:" + material + "_ingot")]);
+    Kiln.add(itemUtils.getItem("basemetals:" + material + "_ore"), 
+    [itemUtils.getItem("basemetals:" + material + "_ingot"), itemUtils.getItem("basemetals:" + material + "_nugget") * 6]);
+}
 
-//TODO Antimony | Bismuth | CopperIE | CopperBM | LeadIE | LeadBM | NickelIE | NickelBM |
-//TODO Silver | Tin | Zinc | Adamantine | Cold-Iron | Platinum | Star-Steel | Mercury | Aluminium | Uranium
+//IE Metals
+for i in 0 .. 6 {
+    Kiln.remove([itemUtils.getItem("immersiveengineering:metal", i)]);
+    Kiln.add(itemUtils.getItem("immersiveengineering:ore", i), 
+    [itemUtils.getItem("immersiveengineering:metal", i), itemUtils.getItem("immersiveengineering:metal", i + 20) * 6]);
+}
 
 //Vanilla Materials
 Kiln.remove([<minecraft:iron_ingot>]);

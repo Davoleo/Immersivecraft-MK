@@ -6,7 +6,6 @@
 //imports
 import crafttweaker.oredict.IOreDict;
 import mods.betterwithmods.Cauldron;
-//import mods.jei.RemoveAndHide
 
 print("MAIN_SCRIPT IS LOADING RIGHT NOW!");
 
@@ -74,22 +73,6 @@ recipes.addShaped(<sereneseasons:season_clock>, [[null, <ore:gemQuartz>, null],
                                                 [<ore:gemQuartz>, <bibliocraft:compass>, <ore:gemQuartz>],
                                                 [null, <ore:gemQuartz>, null]]);
 
-recipes.addShaped(<betterbuilderswands:wandstone>, [[null, null, <ore:cobblestone>],
-                                                    [null, <tp:bsc_rod>, null],
-                                                    [<tp:bsc_rod>, null, null]]);
-
-recipes.addShaped(<betterbuilderswands:wandiron>, [[null, null, <ore:ingotIron>],
-                                                    [null, <betterbuilderswands:wandstone>, null],
-                                                    [<tp:bsc_rod>, null, null]]);
-
-recipes.addShaped(<betterbuilderswands:wandunbreakable>, [[null, <vc:modules/item_module_type:22>, <minecraft:nether_star>],
-                                                          [null, <notenoughwands:building_wand>,<tp:infin_bucket>],
-                                                          [<immersiveengineering:material:2>, null, null]]);
-
-recipes.addShaped(<aroma1997sdimension:miningmultitool>, [[<ore:torch>, <ore:gearWood>, <ore:torch>],
-                                                          [null, <tp:flint_pickaxe>, null],
-                                                          [null, <immersiveengineering:material>, null]]);
-
 recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>, <minecraft:gravel>]);
 
 recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotCobalt>, <ore:ingotIron>],
@@ -106,6 +89,24 @@ recipes.addShaped(<immersiveengineering:material:3> * 4, [[<ore:ingotAluminium>,
                                                       [<ore:ingotAluminium>, null]]);
 
 <minecraft:banner:*>.addTooltip(format.white("(Press 'U' to see banner customization)"));
+
+//Aroma1997
+recipes.addShaped(<aroma1997sdimension:miningmultitool>, [[<ore:torch>, <ore:gearWood>, <ore:torch>],
+                                                          [null, <tp:flint_pickaxe>, null],
+                                                          [null, <immersiveengineering:material>, null]]);
+
+//Better Builder Wands
+recipes.addShaped(<betterbuilderswands:wandstone>, [[null, null, <ore:cobblestone>],
+                                                    [null, <tp:bsc_rod>, null],
+                                                    [<tp:bsc_rod>, null, null]]);
+
+recipes.addShaped(<betterbuilderswands:wandiron>, [[null, null, <ore:ingotIron>],
+                                                    [null, <betterbuilderswands:wandstone>, null],
+                                                    [<tp:bsc_rod>, null, null]]);
+
+recipes.addShaped(<betterbuilderswands:wandunbreakable>, [[null, <vc:modules/item_module_type:22>, <minecraft:nether_star>],
+                                                          [null, <notenoughwands:building_wand>,<tp:infin_bucket>],
+                                                          [<immersiveengineering:material:2>, null, null]]);
 
 //Bibliocraft
 
@@ -151,15 +152,26 @@ recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[null, <minecraft:end
                                                            [null, <betterwithmods:material:28>, null],
                                                            [<ore:obsidian>, <hopperducts:gratedhopper>, <ore:obsidian>]]);
 
-//Open Glider
-recipes.addShaped(<openglider:hang_glider_basic>, 
-[[null, <vc:upgrades/item_upgrade_airship_balloon:1>, null],
-[<openglider:hang_glider_part>, <openglider:hang_glider_part:2>, <openglider:hang_glider_part:1>]]);
+//Natura
+recipes.addShaped(<natura:respawn_obelisk>, [[<natura:nether_logs:0>, <natura:nether_logs:0>, <natura:nether_logs:0>],
+                                             [<natura:nether_logs:0>, <minecraft:iron_nugget>, <natura:nether_logs:0>],
+                                             [<natura:nether_logs:0>, <natura:nether_logs:0>, <natura:nether_logs:0>]]);
 
-recipes.addShaped(<openglider:hang_glider_advanced>, 
-[[null, <vc:upgrades/item_upgrade_airship_balloon:4>, null],
-[<openglider:hang_glider_part>, <openglider:hang_glider_basic>, <openglider:hang_glider_part:1>],
-[null,  <minecraft:elytra>, null]]);
+recipes.addShaped(<natura:netherrack_furnace>, [[<ore:netherrack>, <ore:netherrack>, <ore:netherrack>],
+                                                [<ore:netherrack>, <minecraft:iron_nugget>, <ore:netherrack>],
+                                                [<ore:netherrack>, <ore:netherrack>, <ore:netherrack>]]);
+
+<natura:netherrack_furnace>.addTooltip(format.darkRed("(100% more efficient than vanilla furnace)"));
+
+<natura:flint_and_blaze>.maxDamage = 128;
+
+//Open Glider
+recipes.addShaped(<openglider:hang_glider_basic>, [[null, <vc:upgrades/item_upgrade_airship_balloon:1>, null],
+                                                   [<openglider:hang_glider_part>, <openglider:hang_glider_part:2>, <openglider:hang_glider_part:1>]]);
+
+recipes.addShaped(<openglider:hang_glider_advanced>, [[null, <vc:upgrades/item_upgrade_airship_balloon:4>, null],
+                                                      [<openglider:hang_glider_part>, <openglider:hang_glider_basic>, <openglider:hang_glider_part:1>],
+                                                      [null,  <minecraft:elytra>, null]]);
 
 //Rope Bridge
 recipes.addShaped(<ropebridge:rope> *3, [[null, <betterwithmods:rope>, null],
@@ -175,10 +187,9 @@ recipes.addShaped(<ropebridge:bridge_builder_material.handle>, [[<ore:ingotTitan
                                                                 [<ore:ingotTitanium>,  <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>]]);
 
 //Steve's Carts
-recipes.addShaped(<stevescarts:cartmodule:32>, 
-[[<tp:reinforced_obsidian_ingot>, null, <tp:reinforced_obsidian_ingot>],
-[<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
-[null,  <stevescarts:modulecomponents:22>, null]]);
+recipes.addShaped(<stevescarts:cartmodule:32>, [[<tp:reinforced_obsidian_ingot>, null, <tp:reinforced_obsidian_ingot>],
+                                                [<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
+                                                [null,  <stevescarts:modulecomponents:22>, null]]);
 
 recipes.addShaped(<stevescarts:cartmodule:95>, 
 [[null, <minecraft:redstone>, null],

@@ -195,3 +195,7 @@ recipes.remove(<tp:raw_bacon>);
 //--------------
 recipes.remove(<malisisdoors:rustyladder>);
 recipes.remove(<demagnetize:demagnetizer>);
+
+//Natura -----------
+recipes.remove(<natura:respawn_obelisk>);
+recipes.remove(<natura:netherrack_furnace>);

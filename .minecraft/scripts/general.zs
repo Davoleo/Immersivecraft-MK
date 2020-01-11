@@ -158,10 +158,10 @@ recipes.addShaped(<natura:respawn_obelisk>, [[<natura:nether_logs:0>, <natura:ne
                                              [<natura:nether_logs:0>, <natura:nether_logs:0>, <natura:nether_logs:0>]]);
 
 recipes.addShaped(<natura:netherrack_furnace>, [[<ore:netherrack>, <ore:netherrack>, <ore:netherrack>],
-                                                [<ore:netherrack>, <minecraft:iron_nugget>, <ore:netherrack>],
+                                                [<ore:netherrack>, <vc:modules/item_module_type:10>, <ore:netherrack>],
                                                 [<ore:netherrack>, <ore:netherrack>, <ore:netherrack>]]);
 
-<natura:netherrack_furnace>.addTooltip(format.darkRed("(100% more efficient than vanilla furnace)"));
+<natura:netherrack_furnace>.addTooltip(format.darkRed("(100% more efficient than a normal furnace)"));
 
 <natura:flint_and_blaze>.maxDamage = 128;
 

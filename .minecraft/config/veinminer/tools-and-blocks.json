@@ -98,7 +98,13 @@
         "rustic:leaves_apple/14",
         "rustic:leaves_apple/15",
         "rustic:log/0",
-        "rustic:log/1"
+        "rustic:log/1",
+        "traverse:brown_autumnal_leaves/0",
+        "traverse:fir_leaves/0",
+        "traverse:fir_log/0",
+        "traverse:orange_autumnal_leaves/0",
+        "traverse:red_autumnal_leaves/0",
+        "traverse:yellow_autumnal_leaves/0"
       ]
     },
     "hoe": {
@@ -391,7 +397,12 @@
         "rustic:leaves_apple/12",
         "rustic:leaves_apple/13",
         "rustic:leaves_apple/14",
-        "rustic:leaves_apple/15"
+        "rustic:leaves_apple/15",
+        "traverse:brown_autumnal_leaves/0",
+        "traverse:fir_leaves/0",
+        "traverse:orange_autumnal_leaves/0",
+        "traverse:red_autumnal_leaves/0",
+        "traverse:yellow_autumnal_leaves/0"
       ]
     },
     "shovel": {

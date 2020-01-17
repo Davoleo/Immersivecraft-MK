@@ -24,3 +24,4 @@ instance\.json
 natives/
 twitch-export-builder.exe
 build/
+cache/

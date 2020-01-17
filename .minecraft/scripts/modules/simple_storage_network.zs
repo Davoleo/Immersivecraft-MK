@@ -26,3 +26,15 @@ recipes.addShaped(<storagenetwork:process_kabel>*4, [[<betterwithmods:material:3
 recipes.addShaped(<storagenetwork:controller>, [[<stevescarts:modulecomponents:43>, <storagenetwork:process_kabel>, <stevescarts:modulecomponents:43>],
                                                 [<storagenetwork:process_kabel>, <vc:airship_workbench>, <storagenetwork:process_kabel>], 
                                                 [<stevescarts:modulecomponents:43>, <storagenetwork:process_kabel>, <stevescarts:modulecomponents:43>]]);
+
+recipes.addShaped(<storagenetwork:remote:3>, [[<trapcraft:igniter_range>, <storagenetwork:request>, <trapcraft:igniter_range>],
+                                              [<storagenetwork:kabel>, <storagenetwork:remote>, <storagenetwork:kabel>], 
+                                              [<trapcraft:igniter_range>, <storagenetwork:kabel>, <trapcraft:igniter_range>]]);
+
+recipes.addShaped(<storagenetwork:remote:2>, [[null, <stevescarts:cartmodule:92>, null],
+                                              [<storagenetwork:kabel>, <storagenetwork:remote:3>, <storagenetwork:kabel>], 
+                                              [null, <stevescarts:cartmodule:92>, null]]);
+
+recipes.addShaped(<storagenetwork:remote:1>, [[<minecraft:purpur_block>, <aroma1997sdimension:dimensionchanger>, <minecraft:purpur_block>],
+                                              [<betterwithmods:material:40>, <storagenetwork:remote:2>, <betterwithmods:material:40>], 
+                                              [<minecraft:magma>, <minecraft:nether_star>, <minecraft:magma>]]);

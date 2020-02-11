@@ -186,6 +186,9 @@ recipes.remove(<storagenetwork:kabel>);
 recipes.remove(<storagenetwork:storage_kabel>);
 recipes.remove(<storagenetwork:process_kabel>);
 recipes.remove(<storagenetwork:controller>);
+recipes.remove(<storagenetwork:remote:1>);
+recipes.remove(<storagenetwork:remote:2>);
+recipes.remove(<storagenetwork:remote:3>);
 // -------------
 recipes.remove(<tp:repair_tablet>);
 recipes.remove(<tp:cooked_bacon>);

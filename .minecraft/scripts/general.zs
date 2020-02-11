@@ -9,31 +9,7 @@ import mods.betterwithmods.Cauldron;
 
 print("MAIN_SCRIPT IS LOADING RIGHT NOW!");
 
-/*val element = <ore:rodElement>;
-element.add(<minecraft:blaze_rod>);
-element.add(<ThermalFoundation:material:1024>);
-element.add(<ThermalFoundation:material:1026>);
-element.add(<ThermalFoundation:material:1028>);
-
-val enderm = <ore:itemSkull>;
-enderm.add(<IguanaTweaksTConstruct:skullItem>);
-enderm.add(<IguanaTweaksTConstruct:skullItem:1>);
-enderm.add(<IguanaTweaksTConstruct:skullItem:2>);
-enderm.add(<IguanaTweaksTConstruct:skullItem:3>);
-
-val bar = <ore:barsIron>;
-bar.remove(<minecraft:iron_bars>);
-bar.remove(<EnderIO:blockDarkIronBars>);*/
-
 //General
-recipes.addShaped(<usefulnullifiers:overflownullifieritem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
-                                                             [null, <storagedrawers:upgrade_void>, <ore:cobblestone>], 
-                                                             [<immersiveengineering:material>, <minecraft:lava_bucket>, null]]);
-
-recipes.addShaped(<trapcraft:magnetic_chest>, [[<minecraft:planks:*>, <minecraft:planks:*>, <minecraft:planks:*>],
-                                               [<minecraft:planks:*>, <immersiveengineering:metal:6>, <minecraft:planks:*>], 
-                                               [<minecraft:planks:*>, <minecraft:iron_ingot>, <minecraft:planks:*>]]);
-
 recipes.addShaped(<endercompass:ender_compass>, [[null, <minecraft:end_crystal>, null],
                                                 [<minecraft:end_crystal>, <naturescompass:naturescompass>, <minecraft:end_crystal>], 
                                                 [null, <minecraft:end_crystal>, null]]);
@@ -41,10 +17,6 @@ recipes.addShaped(<endercompass:ender_compass>, [[null, <minecraft:end_crystal>,
 recipes.addShaped(<hopperducts:hopperduct>, [[null, null, null],
                                              [<ore:ingotZinc>, <ore:plankWood>, <ore:ingotZinc>], 
                                              [null, <ore:ingotZinc>, null]]);
-
-recipes.addShaped(<minecraft:furnace>, [[<ore:plateSteel>, <minecraft:cobblestone>, <ore:plateSteel>],
-                                        [<minecraft:cobblestone>, null, <minecraft:cobblestone>], 
-                                        [<ore:plateSteel>, <minecraft:cobblestone>, <ore:plateSteel>]]);
 
 recipes.addShaped(<simplemagnet:simple_magnet>, [[<ore:ingotConstantan>, null, <ore:ingotElectrum>],
                                                 [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>], 
@@ -54,10 +26,6 @@ recipes.addShaped(<naturescompass:naturescompass>, [[<minecraft:sapling:3>, <min
                                                     [<minecraft:log:3>, <sereneseasons:season_clock>, <minecraft:log:1>], 
                                                     [<minecraft:sapling>, <minecraft:log>, <minecraft:sapling:1>]]);
 
-recipes.addShaped(<minecraft:purple_shulker_box>, [[null, <ore:shulkerShell>, null],
-                                                   [null, <immcraft:chest>, null], 
-                                                   [null, <ore:shulkerShell>, null]]);
-
 recipes.addShaped(<ironchest:iron_chest>, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
                                            [<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 
                                            [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
@@ -65,28 +33,10 @@ recipes.addShaped(<ironchest:iron_chest>, [[<ore:plateIron>, <ore:plateIron>, <o
 recipes.addShaped(<ironchest:iron_chest:3>, [[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
                                              [<ore:plateCopper>, <minecraft:chest>, <ore:plateCopper>], 
                                              [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
-recipes.addShaped(<minecraft:chest>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
-                                      [<ore:plankWood>, <ore:nuggetSteel>, <ore:plankWood>], 
-                                      [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 
 recipes.addShaped(<sereneseasons:season_clock>, [[null, <ore:gemQuartz>, null],
                                                 [<ore:gemQuartz>, <bibliocraft:compass>, <ore:gemQuartz>],
                                                 [null, <ore:gemQuartz>, null]]);
-
-recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>, <minecraft:gravel>]);
-
-recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotCobalt>, <ore:ingotIron>],
-                                          [<ore:ingotCobalt>, <ore:ingotIron>, <ore:ingotCobalt>]]);
-
-recipes.addShaped(<chisel:ironpane>, [[<minecraft:iron_bars>, <minecraft:iron_bars>],
-                                      [<minecraft:iron_bars>, <minecraft:iron_bars>]]);
-
-recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
-                                       [<ore:ingotZinc>, <immcraft:chest>, <ore:ingotZinc>],
-                                       [null, <ore:ingotZinc>, null]]);
-
-recipes.addShaped(<immersiveengineering:material:3> * 4, [[<ore:ingotAluminium>, null],
-                                                      [<ore:ingotAluminium>, null]]);
 
 <minecraft:banner:*>.addTooltip(format.white("(Press 'U' to see banner customization)"));
 
@@ -130,6 +80,9 @@ recipes.addShaped(<chisel:auto_chisel>, [[<ore:blockGlass>, <ore:blockGlass>, <o
 
 recipes.addShaped(<chisel:chisel_iron>, [[null, <stevescarts:modulecomponents:83>],
                                          [<minecraft:stick>, null]]);
+                                         
+recipes.addShaped(<chisel:ironpane>, [[<minecraft:iron_bars>, <minecraft:iron_bars>],
+                                      [<minecraft:iron_bars>, <minecraft:iron_bars>]]);
 
 recipes.addShapeless(<chisel:chisel_hitech>, 
 [<immersiveengineering:wirecoil:5>, <immersiveengineering:wirecoil:1>, <minecraft:stick>]);
@@ -146,6 +99,28 @@ recipes.addShaped(<demagnetize:demagnetizer>, [[<ore:fabricHemp>, <ore:ingotReds
 recipes.addShaped(<malisisdoors:rustyladder> * 4, [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
                                                    [null, null, null],
                                                    [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>]]);
+
+//Minecraft
+recipes.addShaped(<minecraft:furnace>, [[<ore:plateSteel>, <minecraft:cobblestone>, <ore:plateSteel>],
+                                        [<minecraft:cobblestone>, null, <minecraft:cobblestone>], 
+                                        [<ore:plateSteel>, <minecraft:cobblestone>, <ore:plateSteel>]]);
+
+recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>, <minecraft:gravel>]);
+
+recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotCobalt>, <ore:ingotIron>],
+                                          [<ore:ingotCobalt>, <ore:ingotIron>, <ore:ingotCobalt>]]);
+
+recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
+                                       [<ore:ingotZinc>, <immcraft:chest>, <ore:ingotZinc>],
+                                       [null, <ore:ingotZinc>, null]]);
+
+recipes.addShaped(<minecraft:chest>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+                                      [<ore:plankWood>, <ore:nuggetSteel>, <ore:plankWood>], 
+                                      [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+
+recipes.addShaped(<minecraft:purple_shulker_box>, [[null, <ore:shulkerShell>, null],
+                                                   [null, <immcraft:chest>, null], 
+                                                   [null, <ore:shulkerShell>, null]]);
 
 //Mob grinding utils 
 recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[null, <minecraft:ender_eye>, null],
@@ -190,6 +165,35 @@ recipes.addShaped(<ropebridge:bridge_builder_material.handle>, [[<ore:ingotTitan
 recipes.addShaped(<stevescarts:cartmodule:32>, [[<tp:reinforced_obsidian_ingot>, null, <tp:reinforced_obsidian_ingot>],
                                                 [<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
                                                 [null,  <stevescarts:modulecomponents:22>, null]]);
+
+//Useful Nullifiers
+recipes.addShaped(<usefulnullifiers:overflownullifieritem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
+                                                             [null, <storagedrawers:upgrade_void>, <ore:cobblestone>], 
+                                                             [<immersiveengineering:material>, <usefulnullifiers:voidnullifierblock>, null]]);
+
+recipes.addShaped(<usefulnullifiers:aionitem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
+                                                [null, <storagedrawers:upgrade_void>, <ore:cobblestone>], 
+                                                [<immersiveengineering:material>, <usefulnullifiers:aion>, null]]);
+
+recipes.addShaped(<usefulnullifiers:voidnullifieritem>, [[null, null, <usefulnullifiers:voidnullifierblock>],
+                                                         [null, <ore:stickStone>, null], 
+                                                         [<ore:stickStone>, null, null]]);
+
+recipes.addShaped(<usefulnullifiers:fluidvoidnullifieritem>, [[null, null, <usefulnullifiers:fluidvoidnullifierblock>],
+                                                         [null, <ore:stickStone>, null], 
+                                                         [<ore:stickStone>, null, null]]);
+
+recipes.addShaped(<usefulnullifiers:energyvoidnullifierblock>, [[<ore:stone>, <ore:cobblestone>, <ore:stone>],
+                                                                [<ore:cobblestone>, <ore:wireElectrum>, <ore:cobblestone>], 
+                                                                [<ore:stone>, <ore:cobblestone>, <ore:stone>]]);
+
+recipes.addShaped(<usefulnullifiers:fluidvoidnullifierblock>, [[<ore:stone>, <ore:cobblestone>, <ore:stone>],
+                                                               [<ore:cobblestone>, <immersiveengineering:metal_device0:6>, <ore:cobblestone>], 
+                                                               [<ore:stone>, <ore:cobblestone>, <ore:stone>]]);
+
+recipes.addShaped(<usefulnullifiers:aion>, [[<ore:plateLead>, <usefulnullifiers:voidnullifierblock>, <ore:plateLead>],
+                                            [<usefulnullifiers:fluidvoidnullifierblock>, <ore:stickStone>, <usefulnullifiers:energyvoidnullifierblock>], 
+                                            [<ore:plateLead>, <corail_pillar:minecraft_block_0>, <ore:plateLead>]]);
 
 recipes.addShaped(<stevescarts:cartmodule:95>, 
 [[null, <minecraft:redstone>, null],

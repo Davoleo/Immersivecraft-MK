@@ -46,7 +46,14 @@ val baseMetalCrackHammers = [
     <basemetals:cupronickel_crackhammer>
 ] as IItemStack[];
 
+//Useful Nullifiers ---------------
 recipes.remove(<usefulnullifiers:overflownullifieritem>);
+recipes.remove(<usefulnullifiers:voidnullifieritem>);
+recipes.remove(<usefulnullifiers:fluidvoidnullifieritem>);
+recipes.remove(<usefulnullifiers:aion>);
+recipes.remove(<usefulnullifiers:energyvoidnullifierblock>);
+recipes.remove(<usefulnullifiers:fluidvoidnullifierblock>);
+// ---------------
 recipes.remove(<trapcraft:magnetic_chest>);
 recipes.remove(<endercompass:ender_compass>);
 recipes.remove(<simplemagnet:simple_magnet>);

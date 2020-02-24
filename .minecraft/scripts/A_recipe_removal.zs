@@ -51,6 +51,7 @@ recipes.remove(<usefulnullifiers:overflownullifieritem>);
 recipes.remove(<usefulnullifiers:voidnullifieritem>);
 recipes.remove(<usefulnullifiers:fluidvoidnullifieritem>);
 recipes.remove(<usefulnullifiers:aion>);
+recipes.remove(<usefulnullifiers:aionitem>);
 recipes.remove(<usefulnullifiers:energyvoidnullifierblock>);
 recipes.remove(<usefulnullifiers:fluidvoidnullifierblock>);
 // ---------------

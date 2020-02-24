@@ -1,6 +1,6 @@
 /*************************************************
  * Author: Davoleo
- * Copyright - © - Davoleo - 2018
+ * Copyright - © - Davoleo - 2018-2020
 **************************************************/
 
 import mods.betterwithmods.Turntable;
@@ -92,6 +92,8 @@ Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<imm
 
 //Crucible Recipes --- 
 Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
+Crucible.remove([<betterwithmods:material:14>, <betterwithmods:urn>]);
+Crucible.addStoked([<ore:ingotSteel> * 4, <betterwithmods:material:38>, <ore:dustCoal>, <betterwithmods:urn:8>], [<betterwithmods:material:14> * 4, <betterwithmods:urn>]);
 
 //Cauldron Recipes ---
 Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer> * 5]);

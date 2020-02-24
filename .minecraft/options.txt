@@ -85,6 +85,17 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_ir_keys.increase_throttle:72
+key_ir_keys.zero_throttle:76
+key_ir_keys.decrease_throttle:80
+key_ir_keys.increase_brake:71
+key_ir_keys.zero_brake:75
+key_ir_keys.decrease_brake:79
+key_ir_keys.horn:156
+key_ir_keys.dead_mans_switch:55
+key_ir_keys.start_stop_engine:78
+key_ir_keys.bell:74
+key_ir_keys.config:181
 key_veinminer.key.enable:45
 key_keybind.baublesinventory:48
 key_cos.key.opencosarmorinventory:0

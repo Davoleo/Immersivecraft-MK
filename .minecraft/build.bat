@@ -1,5 +1,5 @@
 set PACKNAME=Immersivecraft-MK
-set VERSION=1.5.5
+set VERSION=2.0.0
 set FILENAME=%PACKNAME%-%VERSION%.zip
 set BUILD_JSON=./build/general.json
 

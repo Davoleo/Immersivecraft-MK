@@ -143,8 +143,8 @@
         "posY" : 0,
         "width" : 20,
         "height" : 20,
-        "imageWidth": "100",
-        "imageHeight": "100",
+        "imageWidth": "40",
+        "imageHeight": "40",
         "texture" : "test:textures/gui/discord.png",
         "alignment" : "top_left",
         "action" : 
@@ -195,7 +195,7 @@
         },
         "packver":
         {
-            "text" : "§62.0",
+            "text" : "§62.0.0",
             "posX" : -10,
             "posY" : -10,
             "color" : 43520,

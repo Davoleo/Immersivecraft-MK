@@ -159,7 +159,7 @@
         "M":
         {
             "text" : "§2Inspired by MarcusKron's Youtube series",
-            "hoverText" : "§2§oInspired by MarcusKron Youtube series",
+            "hoverText" : "§2§oInspired by MarcusKron's Youtube series",
             "posX" : -213,
             "posY" : -10,
             "color" : -1,
@@ -231,7 +231,7 @@
             "images" : "test:textures/gui/background/panorama_%c.png",
             "animate" : true,
             "animationSpeed" : 1,
-            "blur" : false,
+            "blur" : true,
             "gradient" : false
         }
     }

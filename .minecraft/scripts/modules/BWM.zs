@@ -39,18 +39,10 @@ val baseMaterials = [
     "silver",
     "tin",
     "zinc",
-    "brass",
-    "bronze",
-    "electrum",
-    "invar",
-    "pewter",
-    "steel",
     "adamantine",
     "coldiron",
     "platinum",
-    "starsteel",
-    "aquarium",
-    "mithril"
+    "starsteel"
 ] as string[];
 
 //Base Metals

@@ -210,3 +210,9 @@ recipes.remove(<demagnetize:demagnetizer>);
 //Natura -----------
 recipes.remove(<natura:respawn_obelisk>);
 recipes.remove(<natura:netherrack_furnace>);
+
+//Engineer's Decor ---------
+recipes.remove(<engineersdecor:small_block_breaker>);
+recipes.remove(<engineersdecor:factory_hopper>);
+recipes.remove(<engineersdecor:small_tree_cutter>);
+recipes.remove(<engineersdecor:small_waste_incineretor>);

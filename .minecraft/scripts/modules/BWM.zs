@@ -22,7 +22,7 @@ recipes.addShaped(<betterwithmods:material:24>, [[<ore:plateIron>, <ore:stickIro
                                                  [<ore:plateIron>, <ore:stickIron>, null]]);
 
 recipes.addShaped(<betterwithmods:cooking_pot:1>, [[<ore:ingotCopper>, <minecraft:bone>, <ore:ingotCopper>],
-                                                   [<ore:ingotCopper>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}), <ore:ingotCopper>],
+                                                   [<ore:ingotCopper>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "fresh_water", Amount: 1000}}), <ore:ingotCopper>],
                                                    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]]);
 
 recipes.addShaped(<betterwithmods:material:4>, [[null, null, null],
@@ -83,7 +83,7 @@ Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<cerami
 Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
 //Crucible Recipes --- 
-Crucible.addStoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
+Crucible.addUnstoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 
 Crucible.remove([<betterwithmods:material:14>, <betterwithmods:urn>]);
 Crucible.addStoked([<ore:ingotSteel> * 4, <betterwithmods:material:38>, <ore:dustCoal>, <betterwithmods:urn:8>], [<betterwithmods:material:14> * 4, <betterwithmods:urn>]);

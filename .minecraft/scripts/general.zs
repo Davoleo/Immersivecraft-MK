@@ -107,8 +107,8 @@ recipes.addShaped(<minecraft:furnace>, [[<ore:plateSteel>, <minecraft:cobbleston
 
 recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>, <minecraft:gravel>]);
 
-recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotCobalt>, <ore:ingotIron>],
-                                          [<ore:ingotCobalt>, <ore:ingotIron>, <ore:ingotCobalt>]]);
+recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotNickel>, <ore:ingotIron>],
+                                          [<ore:ingotNickel>, <ore:ingotIron>, <ore:ingotNickel>]]);
 
 recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
                                        [<ore:ingotZinc>, <immcraft:chest>, <ore:ingotZinc>],

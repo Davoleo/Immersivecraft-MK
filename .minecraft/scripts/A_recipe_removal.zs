@@ -215,3 +215,6 @@ recipes.remove(<natura:netherrack_furnace>);
 recipes.remove(<engineersdecor:small_block_breaker>);
 recipes.remove(<engineersdecor:factory_hopper>);
 recipes.remove(<engineersdecor:small_tree_cutter>);
+
+//Immersive Railroading
+recipes.remove(<immersiverailroading:item_manual>.withTag({}));

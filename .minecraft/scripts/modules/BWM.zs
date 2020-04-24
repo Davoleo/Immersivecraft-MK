@@ -83,13 +83,12 @@ Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<cerami
 Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 
 //Crucible Recipes --- 
-Crucible.addUnstoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
-
 //Crucible.removeAll();
 Crucible.remove([<betterwithmods:material:14>, <betterwithmods:urn>]);
 Crucible.addStoked([<ore:ingotSteel> * 4, <betterwithmods:material:38>, <ore:dustCoal>, <betterwithmods:urn:8>], [<betterwithmods:material:14> * 4, <betterwithmods:urn>]);
 
 //Cauldron Recipes ---
+Cauldron.addUnstoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
 Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer> * 5]);
 
 //Furnace & cauldron migrated to Aqua munda cooker

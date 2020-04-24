@@ -4,6 +4,7 @@
 **************************************************/
 
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IItemStack;
 
 furnace.remove(<minecraft:baked_potato>);
 
@@ -26,3 +27,13 @@ val flourOreDict = <ore:foodFlour>;
 val dustWheatOreDict = <ore:dustWheat>;
 flourOreDict.add(<aquamunda:flour>);
 dustWheatOreDict.add(<aquamunda:flour>);
+
+val freshWaterStuff = [
+    <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}),
+    <ceramics:clay_bucket>.withTag({fluids: {FluidName: "fresh_water", Amount: 1000}}),
+    <aquamunda:fresh_water>
+] as IItemStack[];
+
+for stack in freshWaterStuff {
+    stack.addTooltip(format.aqua("(Check out Aqua Munda's Guide Book to know how to make Fresh Water)"));
+}

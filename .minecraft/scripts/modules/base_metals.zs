@@ -4,6 +4,7 @@
 **************************************************/
 
 import mods.betterwithmods.Cauldron;
+import mods.jei.JEI;
 
 recipes.remove(<basemetals:iron_fishing_rod>);
 recipes.remove(<basemetals:gold_fishing_rod>);
@@ -32,9 +33,17 @@ recipes.remove(<basemetals:lead_fishing_rod>);
 recipes.remove(<basemetals:bronze_fishing_rod>);
 recipes.remove(<basemetals:cupronickel_fishing_rod>);
 recipes.remove(<basemetals:electrum_fishing_rod>);
-recipes.remove(<basemetals:steel_blend>);
 
 
 Cauldron.addUnstoked([<ore:ingotIron>, <minecraft:vine>, <floricraft:bottle_brown_water>], [<basemetals:aquarium_ingot>]);
 
-//TODO Fresh Water bucket tooltip
+//Remove all BaseMetal Blends
+JEI.removeAndHide(<basemetals:brass_blend>);
+JEI.removeAndHide(<basemetals:bronze_blend>);
+JEI.removeAndHide(<basemetals:cupronickel_blend>);
+JEI.removeAndHide(<basemetals:electrum_blend>);
+JEI.removeAndHide(<basemetals:invar_blend>);
+JEI.removeAndHide(<basemetals:pewter_blend>);
+JEI.removeAndHide(<basemetals:steel_blend>);
+JEI.removeAndHide(<basemetals:aquarium_blend>);
+JEI.removeAndHide(<basemetals:mithril_blend>);

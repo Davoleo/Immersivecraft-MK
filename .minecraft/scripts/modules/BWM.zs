@@ -106,5 +106,4 @@ furnace.remove(<minecraft:pumpkin_pie>);
 furnace.remove(<minecraft:cookie>);
 furnace.remove(<betterwithmods:apple_pie>);
 
-//TODO fix this thing
 Mill.remove([<betterwithmods:raw_pastry:3>]);

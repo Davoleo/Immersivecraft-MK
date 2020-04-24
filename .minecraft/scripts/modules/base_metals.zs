@@ -32,6 +32,7 @@ recipes.remove(<basemetals:lead_fishing_rod>);
 recipes.remove(<basemetals:bronze_fishing_rod>);
 recipes.remove(<basemetals:cupronickel_fishing_rod>);
 recipes.remove(<basemetals:electrum_fishing_rod>);
+recipes.remove(<basemetals:steel_blend>);
 
 
 Cauldron.addUnstoked([<ore:ingotIron>, <minecraft:vine>, <floricraft:bottle_brown_water>], [<basemetals:aquarium_ingot>]);

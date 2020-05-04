@@ -7,7 +7,7 @@ recipes.addShaped(<rustic:condenser>, [[null, <earthworks:item_adobe>, null],
                                        [<earthworks:item_adobe>, <minecraft:bucket>, <earthworks:item_adobe>],
                                        [<earthworks:item_adobe>,  <minecraft:stained_hardened_clay>, <earthworks:item_adobe>]]);
 
-mods.rustic.Condenser.addRecipe(<minecraft:leather>, <minecraft:magma>, [<minecraft:rotten_flesh>.withTag({oiled: 0 as byte}), <floricraft:dust_salt>, <chisel:waterstone1:5>]);
+mods.rustic.Condenser.addRecipe(<minecraft:leather>, [<minecraft:rotten_flesh>.withTag({oiled: 0 as byte}), <floricraft:dust_salt>]);
 
 recipes.addShaped(<rustic:iron_lattice> *16, [[null, <ore:stickIron>, null],
                                               [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],

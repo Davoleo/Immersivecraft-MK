@@ -65,3 +65,6 @@ recipes.addShaped(<immersiveengineering:wooden_device1>, [[<immersiveengineering
 recipes.addShaped(<immersiveengineering:wooden_device0>, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
                                                           [<ore:plankTreatedWood>, <ore:nuggetSteel>, <ore:plankTreatedWood>],
                                                           [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);
+
+//Charging station tooltip
+<immersiveengineering:metal_device1:5>.addTooltip(format.gold("(Necessary to charge electric wands)"));

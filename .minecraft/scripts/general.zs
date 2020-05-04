@@ -44,19 +44,14 @@ recipes.addShaped(<betterbuilderswands:wandiron>, [[null, null, <ore:ingotIron>]
                                                     [null, <betterbuilderswands:wandstone>, null],
                                                     [<tp:bsc_rod>, null, null]]);
 
-recipes.addShaped(<betterbuilderswands:wandunbreakable>, [[null, <vc:modules/item_module_type:22>, <minecraft:nether_star>],
-                                                          [null, <notenoughwands:building_wand>,<tp:infin_bucket>],
-                                                          [<immersiveengineering:material:2>, null, null]]);
+recipes.addShaped(<betterbuilderswands:wandunbreakable:13>, [[null, <vc:modules/item_module_type:22>, <minecraft:nether_star>],
+                                                             [null, <notenoughwands:building_wand>,<tp:infin_bucket>],
+                                                             [<immersiveengineering:material:2>, null, null]]);
 
 //Bibliocraft
-
 recipes.addShaped(<bibliocraft:framedchest>, [[<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>],
                                               [<earthworks:block_cordwood>, <bibliocraft:label>, <earthworks:block_cordwood>],
                                         [<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>]]);
-
-/*recipes.addShaped(<betterwithmods:single_machine>, [[<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>],
-                                                [<earthworks:block_cordwood>, <bibliocraft:label:6>, <earthworks:block_cordwood>],
-                                        [<earthworks:block_cordwood>, <earthworks:block_cordwood>, <earthworks:block_cordwood>]]);*/
 
 //Chicken chunks
 recipes.addShaped(<chickenchunks:chunk_loader>, [[null, <immersiveengineering:speedloader>, null],
@@ -74,8 +69,8 @@ recipes.addShaped(<chisel:chisel_iron>, [[null, <stevescarts:modulecomponents:83
 recipes.addShaped(<chisel:ironpane>, [[<minecraft:iron_bars>, <minecraft:iron_bars>],
                                       [<minecraft:iron_bars>, <minecraft:iron_bars>]]);
 
-recipes.addShapeless(<chisel:chisel_hitech>, 
-[<immersiveengineering:wirecoil:5>, <immersiveengineering:wirecoil:1>, <minecraft:stick>]);
+recipes.addShaped(<chisel:chisel_hitech>, [[<immersiveengineering:wirecoil:5>, <stevescarts:modulecomponents:15>], 
+                                           [<minecraft:stick>, <immersiveengineering:wirecoil:1>]]);
 
 //Ceramics
 mods.rustic.EvaporatingBasin.addRecipe(<ceramics:unfired_clay:5>, <liquid:concrete> * 250);
@@ -98,6 +93,22 @@ recipes.addShaped(<ironchest:iron_chest:7>, [[<minecraft:dirt:*>, <minecraft:dir
                                              [<minecraft:dirt:*>, <immcraft:chest>, <minecraft:dirt:*>], 
                                              [<minecraft:dirt:*>, <minecraft:dirt:*>, <minecraft:dirt:*>]]);
 
+recipes.addShaped(<ironchest:iron_chest:1>, [[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>],
+                                             [<ore:plateGold>, <ironchest:iron_chest>, <ore:plateGold>], 
+                                             [<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]]);
+
+recipes.addShaped(<ironchest:iron_chest:4>, [[<ore:plateSilver>, <ore:plateSilver>, <ore:plateSilver>],
+                                             [<ore:plateSilver>, <ironchest:iron_chest:3>, <ore:plateSilver>], 
+                                             [<ore:plateSilver>, <ore:plateSilver>, <ore:plateSilver>]]);
+
+recipes.addShaped(<ironchest:iron_chest:1>, [[<ore:plateGold>, <ore:blockGlass>, <ore:plateGold>],
+                                             [<ore:blockGlass>, <ironchest:iron_chest:4>, <ore:blockGlass>], 
+                                             [<ore:plateGold>, <ore:blockGlass>, <ore:plateGold>]]);
+
+recipes.addShaped(<ironchest:iron_chest:4>, [[<ore:plateSilver>, <ore:blockGlass>, <ore:plateSilver>],
+                                             [<ore:blockGlass>, <ironchest:iron_chest>, <ore:blockGlass>], 
+                                             [<ore:plateSilver>, <ore:blockGlass>, <ore:plateSilver>]]);
+
 //Malisis Doors
 recipes.addShaped(<malisisdoors:rustyladder> * 4, [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
                                                    [null, null, null],
@@ -111,7 +122,7 @@ recipes.addShaped(<minecraft:furnace>, [[<ore:plateSteel>, <minecraft:cobbleston
 recipes.addShapeless(<minecraft:flint>, [<waterstrainer:net>.reuse(), <minecraft:gravel>, <minecraft:gravel>]);
 
 recipes.addShaped(<minecraft:iron_bars>*8, [[<ore:ingotIron>, <ore:ingotNickel>, <ore:ingotIron>],
-                                          [<ore:ingotNickel>, <ore:ingotIron>, <ore:ingotNickel>]]);
+                                            [<ore:ingotNickel>, <ore:ingotIron>, <ore:ingotNickel>]]);
 
 recipes.addShaped(<minecraft:hopper>, [[<ore:ingotZinc>, null, <ore:ingotZinc>],
                                        [<ore:ingotZinc>, <immcraft:chest>, <ore:ingotZinc>],
@@ -127,7 +138,7 @@ recipes.addShaped(<minecraft:purple_shulker_box>, [[null, <ore:shulkerShell>, nu
 
 //Mob grinding utils 
 recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[null, <minecraft:ender_eye>, null],
-                                                           [null, <betterwithmods:material:28>, null],
+                                                           [null, <betterwithmods:material:19>, null],
                                                            [<ore:obsidian>, <hopperducts:gratedhopper>, <ore:obsidian>]]);
 
 //Natura
@@ -141,20 +152,19 @@ recipes.addShaped(<natura:netherrack_furnace>, [[<ore:netherrack>, <ore:netherra
 
 <natura:netherrack_furnace>.addTooltip(format.darkRed("(100% more efficient than a normal furnace)"));
 
-<natura:flint_and_blaze>.maxDamage = 128;
+<natura:flint_and_blaze>.maxDamage = 250;
 
 //Open Glider
 recipes.addShaped(<openglider:hang_glider_basic>, [[null, <vc:upgrades/item_upgrade_airship_balloon:1>, null],
                                                    [<openglider:hang_glider_part>, <openglider:hang_glider_part:2>, <openglider:hang_glider_part:1>]]);
 
 recipes.addShaped(<openglider:hang_glider_advanced>, [[null, <vc:upgrades/item_upgrade_airship_balloon:4>, null],
-                                                      [<openglider:hang_glider_part>, <openglider:hang_glider_basic>, <openglider:hang_glider_part:1>],
-                                                      [null,  <minecraft:elytra>, null]]);
+                                                      [<openglider:hang_glider_part>, <openglider:hang_glider_basic>, <openglider:hang_glider_part:1>]]);
 
 //Rope Bridge
-recipes.addShaped(<ropebridge:rope> *3, [[null, <betterwithmods:rope>, null],
-                                      [null, <betterwithmods:rope>, null],
-                                      [null,  <betterwithmods:rope>, null]]);
+recipes.addShaped(<ropebridge:rope>*8, [[null, <betterwithmods:rope>, null],
+                                        [null, <betterwithmods:rope>, null],
+                                        [null,  <betterwithmods:rope>, null]]);
 
 recipes.addShaped(<ropebridge:bridge_builder_material.barrel>, [[<ore:ingotSteel>, <ore:ingotLead>, <ore:ingotSteel>],
                                                                 [<ropebridge:rope>, <ropebridge:rope>, <ropebridge:rope>],
@@ -169,44 +179,16 @@ recipes.addShaped(<stevescarts:cartmodule:32>, [[<tp:reinforced_obsidian_ingot>,
                                                 [<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
                                                 [null,  <stevescarts:modulecomponents:22>, null]]);
 
-//Useful Nullifiers
-recipes.addShaped(<usefulnullifiers:overflownullifieritem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
-                                                             [null, <storagedrawers:upgrade_void>, <ore:cobblestone>], 
-                                                             [<immersiveengineering:material>, <usefulnullifiers:voidnullifierblock>, null]]);
-
-recipes.addShaped(<usefulnullifiers:aionitem>, [[null, <ore:cobblestone>, <ore:cobblestone>],
-                                                [null, <storagedrawers:upgrade_void>, <ore:cobblestone>], 
-                                                [<immersiveengineering:material>, <usefulnullifiers:aion>, null]]);
-
-recipes.addShaped(<usefulnullifiers:voidnullifieritem>, [[null, null, <usefulnullifiers:voidnullifierblock>],
-                                                         [null, <ore:stickStone>, null], 
-                                                         [<ore:stickStone>, null, null]]);
-
-recipes.addShaped(<usefulnullifiers:fluidvoidnullifieritem>, [[null, null, <usefulnullifiers:fluidvoidnullifierblock>],
-                                                         [null, <ore:stickStone>, null], 
-                                                         [<ore:stickStone>, null, null]]);
-
-recipes.addShaped(<usefulnullifiers:energyvoidnullifierblock>, [[<ore:stone>, <ore:cobblestone>, <ore:stone>],
-                                                                [<ore:cobblestone>, <ore:wireElectrum>, <ore:cobblestone>], 
-                                                                [<ore:stone>, <ore:cobblestone>, <ore:stone>]]);
-
-recipes.addShaped(<usefulnullifiers:fluidvoidnullifierblock>, [[<ore:stone>, <ore:cobblestone>, <ore:stone>],
-                                                               [<ore:cobblestone>, <immersiveengineering:metal_device0:6>, <ore:cobblestone>], 
-                                                               [<ore:stone>, <ore:cobblestone>, <ore:stone>]]);
-
-recipes.addShaped(<usefulnullifiers:aion>, [[<ore:plateLead>, <usefulnullifiers:voidnullifierblock>, <ore:plateLead>],
-                                            [<usefulnullifiers:fluidvoidnullifierblock>, <ore:stickStone>, <usefulnullifiers:energyvoidnullifierblock>], 
-                                            [<ore:plateLead>, <corail_pillar:minecraft_block_0>, <ore:plateLead>]]);
-
-recipes.addShaped(<stevescarts:cartmodule:95>, 
-[[null, <minecraft:redstone>, null],
-[<minecraft:glass>, <minecraft:glass>, <minecraft:glass>],
-[<stevescarts:modulecomponents:9>,  <minecraft:cauldron>, <stevescarts:modulecomponents:9>]]);
+recipes.addShaped(<stevescarts:cartmodule:95>, [[null, <minecraft:redstone>, null],
+                                                [<minecraft:glass>, <minecraft:glass>, <minecraft:glass>],
+                                                [<stevescarts:modulecomponents:9>,  <minecraft:cauldron>, <stevescarts:modulecomponents:9>]]);
 
 //Water Strainers
 recipes.addShaped(<waterstrainer:strainer_base>, [[<chisel:ironpane>, <chisel:ironpane>, <chisel:ironpane>],
                                                   [<ore:plankWood>, <minecraft:hopper>, <ore:plankWood>],
                                                   [<ore:plankWood>, <rustic:barrel>, <ore:plankWood>]]);
+
+//- TODO
 
 //Waystones
 recipes.addShaped(<waystones:warp_stone>, [[<immersiveengineering:fluorescent_tube>, <betterwithmods:aesthetic:8>, <immersiveengineering:fluorescent_tube>],

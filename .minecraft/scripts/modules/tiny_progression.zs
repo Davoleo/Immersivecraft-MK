@@ -64,3 +64,11 @@ furnace.remove(<tp:cooked_apple>);
 recipes.addShaped(<tp:repair_tablet>, [[<betterwithmods:material:14>, <minecraft:nether_star>, <betterwithmods:material:14>],
                                        [<minecraft:ghast_tear>, <tp:redstone_ingot>, <minecraft:ghast_tear>],
                                        [<betterwithmods:material:48>, <minecraft:ghast_tear>, <betterwithmods:material:48>]]);
+
+//Buff Flint Pick Durability
+<tp:flint_pickaxe>.maxDamage = 150;
+<tp:flint_sword>.maxDamage = 150;
+<tp:flint_multi>.maxDamage = 150;
+<tp:flint_spade>.maxDamage = 150;
+<tp:flint_hoe>.maxDamage = 150;
+<tp:flint_axe>.maxDamage = 150;

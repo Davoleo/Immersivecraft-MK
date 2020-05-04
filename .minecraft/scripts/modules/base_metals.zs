@@ -34,8 +34,14 @@ recipes.remove(<basemetals:bronze_fishing_rod>);
 recipes.remove(<basemetals:cupronickel_fishing_rod>);
 recipes.remove(<basemetals:electrum_fishing_rod>);
 
-
 Cauldron.addUnstoked([<ore:ingotIron>, <minecraft:vine>, <floricraft:bottle_brown_water>], [<basemetals:aquarium_ingot>]);
+
+//Buff Emerald Pick Durability
+<basemetals:emerald_pickaxe>.maxDamage = 1000;
+<basemetals:bronze_pickaxe>.maxDamage = 450;
+<basemetals:cupronickel_pickaxe>.maxDamage = 250;
+<basemetals:coldiron_pickaxe>.maxDamage = 750;
+<basemetals:platinum_pickaxe>.maxDamage = 750;
 
 //Remove all BaseMetal Blends
 JEI.removeAndHide(<basemetals:brass_blend>);
@@ -47,3 +53,14 @@ JEI.removeAndHide(<basemetals:pewter_blend>);
 JEI.removeAndHide(<basemetals:steel_blend>);
 JEI.removeAndHide(<basemetals:aquarium_blend>);
 JEI.removeAndHide(<basemetals:mithril_blend>);
+
+//Remove quartz tools and armor
+//JEI.removeAndHide(<basemetals:quartz_helmet>);
+//JEI.removeAndHide(<basemetals:quartz_chestplate>);
+//JEI.removeAndHide(<basemetals:quartz_leggings>);
+//JEI.removeAndHide(<basemetals:quartz_boots>);
+//JEI.removeAndHide(<basemetals:quartz_sword>);
+//JEI.removeAndHide(<basemetals:quartz_pickaxe>);
+//JEI.removeAndHide(<basemetals:quartz_hoe>);
+//JEI.removeAndHide(<basemetals:quartz_axe>);
+//JEI.removeAndHide(<basemetals:quartz_shovel>);

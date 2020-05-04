@@ -230,3 +230,5 @@ recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.remove(<ironchest:iron_chest>);
 recipes.remove(<ironchest:iron_chest:3>);
 recipes.remove(<ironchest:iron_chest:7>);
+recipes.remove(<ironchest:iron_chest:1>);
+recipes.remove(<ironchest:iron_chest:4>);

@@ -10,21 +10,19 @@ import mods.betterwithmods.Cauldron;
 print("MAIN_SCRIPT IS LOADING RIGHT NOW!");
 
 //General
-recipes.addShaped(<endercompass:ender_compass>, [[null, <minecraft:end_crystal>, null],
-                                                [<minecraft:end_crystal>, <naturescompass:naturescompass>, <minecraft:end_crystal>], 
-                                                [null, <minecraft:end_crystal>, null]]);
+recipes.addShapeless(<endercompass:ender_compass>, [<minecraft:end_crystal>, <naturescompass:naturescompass>]);
 
-recipes.addShaped(<hopperducts:hopperduct>, [[null, null, null],
-                                             [<ore:ingotZinc>, <ore:plankWood>, <ore:ingotZinc>], 
-                                             [null, <ore:ingotZinc>, null]]);
+recipes.addShaped(<hopperducts:hopperduct> * 8, [[null, null, null],
+                                                 [<ore:ingotZinc>, <ore:plankWood>, <ore:ingotZinc>], 
+                                                 [null, <ore:ingotZinc>, null]]);
 
 recipes.addShaped(<simplemagnet:simple_magnet>, [[<ore:ingotConstantan>, null, <ore:ingotElectrum>],
                                                 [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>], 
                                                 [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
 
-recipes.addShaped(<naturescompass:naturescompass>, [[<minecraft:sapling:3>, <minecraft:log:2>, <minecraft:sapling:2>],
-                                                    [<minecraft:log:3>, <sereneseasons:season_clock>, <minecraft:log:1>], 
-                                                    [<minecraft:sapling>, <minecraft:log>, <minecraft:sapling:1>]]);
+recipes.addShaped(<naturescompass:naturescompass>, [[<ore:treeSapling>, <ore:logWood>, <ore:treeSapling>],
+                                                    [<ore:logWood>, <sereneseasons:season_clock>, <ore:logWood>], 
+                                                    [<ore:treeSapling>, <ore:logWood>, <ore:treeSapling>]]);
 
 recipes.addShaped(<ironchest:iron_chest>, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
                                            [<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 

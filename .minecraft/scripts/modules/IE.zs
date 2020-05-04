@@ -39,31 +39,29 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1>*3, [[<minecraft:neth
                                                                 [<minecraft:netherbrick>, <betterwithmods:material:17>, <minecraft:netherbrick>]]);
 
 recipes.addShaped(<immersiveengineering:material:3> * 4, [[<ore:ingotAluminium>, null],
-                                                      [<ore:ingotAluminium>, null]]);
+                                                          [<ore:ingotAluminium>, null]]);
 
 
-recipes.addShaped(<immersiveengineering:wooden_device0:2>, 
-[[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
-[<bibliocraft:fancyworkbench>,  null, <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "ironwood"}, Name: "rustic:planks"}})]]);
+recipes.addShaped(<immersiveengineering:wooden_device0:2>, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+                                                            [<bibliocraft:fancyworkbench>,  null, <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "ironwood"}, Name: "rustic:planks"}})]]);
 
 mods.rustic.CrushingTub.addRecipe(<liquid:concrete> * 125, null, <earthworks:item_adobe>);
 
-recipes.addShaped(<immersiveengineering:tool>, 
-[[null, <ore:ingotLead>, <betterwithmods:rope>],
-[null, <ore:stickAluminum>, <ore:ingotLead>],
-[<ore:stickAluminum>,  null, null]]);
+recipes.addShaped(<immersiveengineering:tool>, [[null, <ore:ingotLead>, <betterwithmods:rope>],
+                                                [null, <ore:stickAluminum>, <ore:ingotLead>],
+                                                [<ore:stickAluminum>,  null, null]]);
 
-recipes.addShaped(<immersiveengineering:stone_decoration:10>, 
-[[<ore:sandstone>, <earthworks:item_adobe>],
- [<earthworks:item_adobe>, <ore:sandstone>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:10>, [[<ore:sandstone>, <earthworks:item_adobe>],
+                                                               [<earthworks:item_adobe>, <ore:sandstone>]]);
 
-recipes.addShaped(<immersiveengineering:wooden_device1:1>, 
-[[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
- [<immersiveengineering:material:11>, <betterwithmods:axle_generator>, <immersiveengineering:material:11>],
- [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]]);
+recipes.addShaped(<immersiveengineering:wooden_device1:1>, [[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
+                                                            [<immersiveengineering:material:11>, <betterwithmods:axle_generator>, <immersiveengineering:material:11>],
+                                                            [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]]);
 
-recipes.addShaped(<immersiveengineering:wooden_device1>, 
-[[<immersiveengineering:material:2>, <immersiveengineering:material:10>, <immersiveengineering:material:2>],
- [<immersiveengineering:material:10>, <betterwithmods:axle_generator:1>, <immersiveengineering:material:10>],
- [<immersiveengineering:material:2>, <immersiveengineering:material:10>, <immersiveengineering:material:2>]]);
+recipes.addShaped(<immersiveengineering:wooden_device1>, [[<immersiveengineering:material:2>, <immersiveengineering:material:10>, <immersiveengineering:material:2>],
+                                                          [<immersiveengineering:material:10>, <betterwithmods:axle_generator:1>, <immersiveengineering:material:10>],
+                                                          [<immersiveengineering:material:2>, <immersiveengineering:material:10>, <immersiveengineering:material:2>]]);
 
+recipes.addShaped(<immersiveengineering:wooden_device0>, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+                                                          [<ore:plankTreatedWood>, <ore:nuggetSteel>, <ore:plankTreatedWood>],
+                                                          [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);

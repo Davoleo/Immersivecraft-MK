@@ -66,8 +66,6 @@ recipes.remove(<minecraft:flint_and_steel>);
 recipes.removeShapeless(<minecraft:flint_and_steel>);
 recipes.remove(<immcraft:furnace>);
 recipes.remove(<minecraft:purple_shulker_box>);
-recipes.remove(<ironchest:iron_chest>);
-recipes.remove(<ironchest:iron_chest:3>);
 recipes.remove(<adfinders:minerals_finder>);
 recipes.remove(<adfinders:metals_finder>);
 recipes.remove(<adfinders:gems_finder>);
@@ -77,8 +75,6 @@ recipes.remove(<betterbuilderswands:wandiron>);
 recipes.remove(<betterbuilderswands:wandstone>);
 recipes.remove(<ceramics:unfired_clay:5>);
 furnace.remove(<minecraft:brick>);
-recipes.remove(<immersiveengineering:stone_decoration>);
-recipes.remove(<immersiveengineering:stone_decoration:1>);
 furnace.remove(<ceramics:unfired_clay:5>);
 recipes.remove(<chickenchunks:chunk_loader>);
 recipes.remove(<chisel:auto_chisel>);
@@ -92,15 +88,10 @@ recipes.remove(<immersivehempcraft:oil>);
 recipes.remove(<immersivehempcraft:hempstone_sheet>);
 furnace.remove(<immersivehempcraft:hempstone_plate>);
 recipes.remove(<immersivehempcraft:butter>);
-recipes.remove(<immersiveengineering:tool>);
 recipes.remove(<minecraft:hopper>);
 recipes.remove(<betterwithmods:unfired_pottery:4>);
 furnace.remove(<minecraft:netherbrick>);
 recipes.remove(<immersivetech:stone_decoration>);
-recipes.remove(<immersiveengineering:wooden_device0:2>);
-recipes.remove(<immersiveengineering:wooden_device0:1>);
-recipes.remove(<rustic:condenser>);
-recipes.remove(<immersiveengineering:stone_decoration:10>);
 recipes.remove(<betterwithmods:bucket>);
 recipes.remove(<minecraft:bucket>);
 recipes.remove(<openglider:hang_glider_basic>);
@@ -132,7 +123,6 @@ recipes.remove(<bibliocraft:framedchest:5>);
 recipes.remove(<ropebridge:rope>);
 recipes.remove(<ore:drawerBasic>);
 recipes.remove(<tp:infin_bucket>);
-recipes.remove(<immersiveengineering:wooden_device1>);
 recipes.remove(<tp:pouch>);
 recipes.remove(<tp:mycelium_seeds>);
 recipes.remove(<tp:tiny_coal>);
@@ -147,8 +137,6 @@ recipes.remove(<tp:redstone_ingot>);
 recipes.remove(<tp:lapis_ingot>);
 recipes.remove(<tp:quartz_ingot>);
 recipes.remove(<tp:flint_ingot>);
-recipes.remove(<rustic:rope>);
-recipes.remove(<rustic:iron_lattice>);
 recipes.remove(<ropebridge:bridge_builder_material.handle>);
 recipes.remove(<ropebridge:bridge_builder_material.barrel>);
 recipes.remove(<waystones:warp_scroll>);
@@ -218,3 +206,27 @@ recipes.remove(<engineersdecor:small_tree_cutter>);
 
 //Immersive Railroading
 recipes.remove(<immersiverailroading:item_manual>.withTag({}));
+
+//Water Strainers
+recipes.remove(<waterstrainer:strainer_base>);
+
+//Rustic
+recipes.remove(<rustic:rope>);
+recipes.remove(<rustic:iron_lattice>);
+recipes.remove(<rustic:condenser>);
+recipes.remove(<rustic:barrel>);
+
+//Immersive Engineering
+recipes.remove(<immersiveengineering:wooden_device0>);
+recipes.remove(<immersiveengineering:wooden_device1>);
+recipes.remove(<immersiveengineering:wooden_device0:2>);
+recipes.remove(<immersiveengineering:wooden_device0:1>);
+recipes.remove(<immersiveengineering:stone_decoration:10>);
+recipes.remove(<immersiveengineering:tool>);
+recipes.remove(<immersiveengineering:stone_decoration>);
+recipes.remove(<immersiveengineering:stone_decoration:1>);
+
+//Iron Chest
+recipes.remove(<ironchest:iron_chest>);
+recipes.remove(<ironchest:iron_chest:3>);
+recipes.remove(<ironchest:iron_chest:7>);

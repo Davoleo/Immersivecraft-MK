@@ -24,14 +24,6 @@ recipes.addShaped(<naturescompass:naturescompass>, [[<ore:treeSapling>, <ore:log
                                                     [<ore:logWood>, <sereneseasons:season_clock>, <ore:logWood>], 
                                                     [<ore:treeSapling>, <ore:logWood>, <ore:treeSapling>]]);
 
-recipes.addShaped(<ironchest:iron_chest>, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
-                                           [<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 
-                                           [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
-
-recipes.addShaped(<ironchest:iron_chest:3>, [[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
-                                             [<ore:plateCopper>, <minecraft:chest>, <ore:plateCopper>], 
-                                             [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
-
 recipes.addShaped(<sereneseasons:season_clock>, [[null, <ore:gemQuartz>, null],
                                                 [<ore:gemQuartz>, <bibliocraft:compass>, <ore:gemQuartz>],
                                                 [null, <ore:gemQuartz>, null]]);
@@ -92,6 +84,19 @@ mods.rustic.EvaporatingBasin.addRecipe(<ceramics:unfired_clay:5>, <liquid:concre
 recipes.addShaped(<demagnetize:demagnetizer>, [[<ore:fabricHemp>, <ore:ingotRedstone>, <ore:fabricHemp>],
                                                [<ore:ingotIron>, <simplemagnet:simple_magnet>, <ore:ingotIron>],
                                                [<ore:fabricHemp>, <ore:ingotRedstone>, <ore:fabricHemp>]]);
+
+//Iron Chest
+recipes.addShaped(<ironchest:iron_chest>, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
+                                           [<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 
+                                           [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+
+recipes.addShaped(<ironchest:iron_chest:3>, [[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+                                             [<ore:plateCopper>, <minecraft:chest>, <ore:plateCopper>], 
+                                             [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
+
+recipes.addShaped(<ironchest:iron_chest:7>, [[<minecraft:dirt:*>, <minecraft:dirt:*>, <minecraft:dirt:*>],
+                                             [<minecraft:dirt:*>, <immcraft:chest>, <minecraft:dirt:*>], 
+                                             [<minecraft:dirt:*>, <minecraft:dirt:*>, <minecraft:dirt:*>]]);
 
 //Malisis Doors
 recipes.addShaped(<malisisdoors:rustyladder> * 4, [[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],

@@ -14,7 +14,11 @@ recipes.addShaped(<rustic:iron_lattice> *16, [[null, <ore:stickIron>, null],
                                               [null,  <ore:stickIron>, null]]);
 
 recipes.addShaped(<rustic:rope> *3, [[null, <betterwithmods:shaft>, <betterwithmods:rope>],
-                                  [<betterwithmods:rope>, <betterwithmods:shaft>, null],
-                                  [null,  <betterwithmods:shaft>, <betterwithmods:rope>]]);
+                                     [<betterwithmods:rope>, <betterwithmods:shaft>, null],
+                                     [null,  <betterwithmods:shaft>, <betterwithmods:rope>]]);
+
+recipes.addShaped(<rustic:barrel>, [[<ore:plankWood>, <ore:slabWood>, <ore:plankWood>],
+                                    [<minecraft:iron_bars>, null, <minecraft:iron_bars>],
+                                    [<ore:plankWood>,  <ore:slabWood>, <ore:plankWood>]]);
 
 <rustic:grape_stem>.addTooltip(format.yellow("(Will only drop from grass if you're using hoes)"));

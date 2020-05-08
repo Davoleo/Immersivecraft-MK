@@ -8,8 +8,6 @@ import crafttweaker.item.IItemStack;
 
 furnace.remove(<minecraft:baked_potato>);
 
-recipes.remove(<betterwithmods:cooking_pot:1>);
-recipes.remove(<jaff:tank>);
 recipes.remove(<forge:bucketfilled>.withTag({FluidName: "alewort", Amount: 1000}));
 recipes.remove(<tp:watering_can>);
 recipes.remove(<prefab:item_basic_structure>.withTag({ForgeCaps: {"prefab:structuresconfiguration": {configuration: {wareHouseFacing: "north", structureEnumName: "GreenHouse"}}}, id: "prefab:item_basic_structure", Count: 1 as byte, Damage: 0 as short}));

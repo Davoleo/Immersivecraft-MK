@@ -6,6 +6,7 @@
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.CokeOven;
 import mods.betterwithmods.Cauldron;
+import mods.jei.JEI;
 
 //Immersive Hempcraft
 mods.rustic.Condenser.addRecipe(<immersivehempcraft:oil>, <immersiveengineering:seed>, <immersiveengineering:material:4>);
@@ -27,3 +28,7 @@ recipes.addShaped(<immersivehempcraft:seed_base>, [[<ceramics:clay_hard:6>, <cer
 
 <immersivehempcraft:seed_base>.addTooltip(format.darkRed("(grows on a light-mix farmland)"));
 <immersivehempcraft:hempstone_ball>.addTooltip(format.darkGreen("(obtainable by breaking hempstone)"));
+
+//Remove Hempcraft fabricHemp recipes
+JEI.removeAndHide(<immersivehempcraft:fabric>);
+JEI.removeAndHide(<immersivehempcraft:fabric_rf>);

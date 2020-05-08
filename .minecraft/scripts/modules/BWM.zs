@@ -25,9 +25,7 @@ recipes.addShaped(<betterwithmods:cooking_pot:1>, [[<ore:ingotCopper>, <minecraf
                                                    [<ore:ingotCopper>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "fresh_water", Amount: 1000}}), <ore:ingotCopper>],
                                                    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]]);
 
-recipes.addShaped(<betterwithmods:material:4>, [[null, null, null],
-                                                [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>],
-                                                [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]]);
+recipes.addShapeless(<betterwithmods:material:45> * 2, [<ore:ingotIron>, <ore:gemDiamond>, <betterwithmods:creeper_oyster>]);
 
 //Kiln Recipes
 val baseMaterials = [
@@ -84,12 +82,12 @@ Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<imm
 
 //Crucible Recipes --- 
 //Crucible.removeAll();
-Crucible.remove([<betterwithmods:material:14>, <betterwithmods:urn>]);
+Crucible.remove([<betterwithmods:material:14>]);
 Crucible.addStoked([<ore:ingotSteel> * 4, <betterwithmods:material:38>, <ore:dustCoal>, <betterwithmods:urn:8>], [<betterwithmods:material:14> * 4, <betterwithmods:urn>]);
 
 //Cauldron Recipes ---
 Cauldron.addUnstoked([<ore:ingotIron>, <ore:ingotSilver> , <ore:ingotLead>, <betterwithmods:bucket>, <ceramics:clay_bucket>], [<minecraft:bucket> * 16]);
-Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer> * 5]);
+Cauldron.addUnstoked([<rustic:core_root>, <rustic:ginseng>, <rustic:marsh_mallow>, <ore:cropFruit>, <ore:fabricHemp>],[<betterwithmods:fertilizer> * 8]);
 
 //Furnace & cauldron migrated to Aqua munda cooker
 furnace.remove(<betterwithmods:cooked_egg>);

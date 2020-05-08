@@ -86,10 +86,8 @@ recipes.remove(<immersivehempcraft:hempstone_sheet>);
 furnace.remove(<immersivehempcraft:hempstone_plate>);
 recipes.remove(<immersivehempcraft:butter>);
 recipes.remove(<minecraft:hopper>);
-recipes.remove(<betterwithmods:unfired_pottery:4>);
 furnace.remove(<minecraft:netherbrick>);
 recipes.remove(<immersivetech:stone_decoration>);
-recipes.remove(<betterwithmods:bucket>);
 recipes.remove(<minecraft:bucket>);
 recipes.remove(<openglider:hang_glider_basic>);
 recipes.remove(<openglider:hang_glider_advanced>);
@@ -136,18 +134,10 @@ recipes.remove(<xpbook:xp_book:1395>);
 recipes.remove(<wearablebackpacks:backpack>);
 recipes.remove(<stevescarts:cartmodule:95>);
 recipes.remove(<tp:bsc_rod>);
-recipes.remove(<betterwithmods:hibachi>);
-recipes.remove(<betterwithmods:single_machine>);
-recipes.remove(<betterwithmods:material:24>);
 recipes.remove(<immcraft:chest>);
 recipes.remove(<immcraft:shelf>);
 recipes.remove(<immcraft:cupboard>);
 recipes.remove(<trapcraft:igniter>);
-recipes.remove(<betterwithmods:raw_pastry:3>);
-recipes.remove(<betterwithmods:beef_dinner>);
-recipes.remove(<betterwithmods:pork_dinner>);
-recipes.remove(<betterwithmods:beef_potatoes>);
-recipes.remove(<betterwithmods:tasty_sandwich>);
 recipes.remove(<tp:juicer>);
 recipes.remove(<tp:bacon_sandwhich>);
 recipes.remove(<tp:chicken_sandwhich>);
@@ -155,7 +145,8 @@ recipes.remove(<tp:rabbit_sandwhich>);
 recipes.remove(<tp:beef_sandwhich>);
 recipes.remove(<tp:bacon_eggs_sandwhich>);
 recipes.remove(<tp:bacon_eggs>);
-recipes.remove(<betterwithmods:material:4>);
+recipes.remove(<jaff:tank>);
+
 for plate in baseMetalPlates {
     recipes.remove(plate);
 }
@@ -236,3 +227,18 @@ recipes.remove(<waystones:warp_stone>);
 recipes.remove(<mob_grinding_utils:tank_sink>);
 recipes.remove(<mob_grinding_utils:absorption_hopper>);
 recipes.remove(<mob_grinding_utils:entity_conveyor>);
+
+//Better With Mods
+recipes.remove(<betterwithmods:material:45>);
+recipes.remove(<betterwithmods:material:4>);
+recipes.remove(<betterwithmods:raw_pastry:3>);
+recipes.remove(<betterwithmods:beef_dinner>);
+recipes.remove(<betterwithmods:pork_dinner>);
+recipes.remove(<betterwithmods:beef_potatoes>);
+recipes.remove(<betterwithmods:tasty_sandwich>);
+recipes.remove(<betterwithmods:hibachi>);
+recipes.remove(<betterwithmods:single_machine>);
+recipes.remove(<betterwithmods:material:24>);
+recipes.remove(<betterwithmods:bucket>);
+recipes.remove(<betterwithmods:unfired_pottery:4>);
+recipes.remove(<betterwithmods:cooking_pot:1>);

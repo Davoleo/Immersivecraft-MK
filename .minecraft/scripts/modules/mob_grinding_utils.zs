@@ -11,4 +11,5 @@ recipes.addShaped(<mob_grinding_utils:tank_sink>, [[null, <minecraft:iron_bars>,
                                                    [<minecraft:ender_pearl>, <minecraft:hopper>, <minecraft:ender_pearl>], 
                                                    [null, <mob_grinding_utils:tank>, null]]);  
 
-<forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000}).addTooltip(format.yellow("(You can use an XP Drain Singularity Tank to transform your experience in liquid form)"))
+<forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000})
+.addTooltip(format.yellow("(You can use an XP Drain Singularity Tank to transform your experience in liquid form)"));

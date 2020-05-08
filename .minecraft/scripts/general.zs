@@ -191,7 +191,7 @@ recipes.addShaped(<waterstrainer:strainer_base>, [[<chisel:ironpane>, <chisel:ir
 //- TODO
 
 //Waystones
-recipes.addShaped(<waystones:warp_stone>, [[<immersiveengineering:fluorescent_tube>, <betterwithmods:aesthetic:8>, <immersiveengineering:fluorescent_tube>],
+recipes.addShaped(<waystones:warp_stone>, [[null, <minecraft:ender_pearl>, null],
                                             [<minecraft:ender_pearl>, <immersiveengineering:material:27>, <minecraft:ender_pearl>],
                                             [<ore:dyePurple>,  <notenoughwands:teleportation_wand>, <ore:dyePurple>]]);
 
@@ -199,16 +199,13 @@ recipes.addShaped(<waystones:waystone>, [[null, <minecraft:stonebrick>, null],
                                          [<minecraft:stonebrick>, <betterwithmods:material:40>, <minecraft:stonebrick>],
                                             [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
 
-recipes.addShaped(<waystones:return_scroll>*3, [[<minecraft:gold_nugget>, <minecraft:ender_pearl>, <minecraft:gold_nugget>],
-                                                [<tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>]]);
-
 recipes.addShaped(<waystones:warp_scroll>*3, [[<minecraft:ender_pearl>, <stevescarts:modulecomponents:5>, <minecraft:ender_pearl>],
-                                              [<tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>, <tombstone:crafting_ingredient>],
+                                              [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
                                               [<minecraft:gold_nugget>, <stevescarts:modulecomponents:5>, <minecraft:gold_nugget>]]);
 
 //Wearable Backpack
 recipes.addShaped(<wearablebackpacks:backpack>, [[<betterwithmods:material:8>, <betterwithmods:material:32>, <betterwithmods:material:8>],
-                                                 [<betterwithmods:material:32>, <ironchest:iron_chest:4>, <betterwithmods:material:32>],
+                                                 [<betterwithmods:material:32>, <rustic:barrel>, <betterwithmods:material:32>],
                                                  [<betterwithmods:material:32>,<betterwithmods:material:9>, <betterwithmods:material:32>]]);
 
 //XP Book

@@ -81,7 +81,6 @@ recipes.remove(<chisel:chisel_hitech>);
 recipes.remove(<bibliocraft:framedchest>);
 recipes.remove(<bibliocraft:framedchest:6>);
 recipes.remove(<minecraft:iron_bars>);
-recipes.remove(<mob_grinding_utils:absorption_hopper>);
 recipes.remove(<immersivehempcraft:oil>);
 recipes.remove(<immersivehempcraft:hempstone_sheet>);
 furnace.remove(<immersivehempcraft:hempstone_plate>);
@@ -133,10 +132,6 @@ recipes.remove(<tp:quartz_ingot>);
 recipes.remove(<tp:flint_ingot>);
 recipes.remove(<ropebridge:bridge_builder_material.handle>);
 recipes.remove(<ropebridge:bridge_builder_material.barrel>);
-recipes.remove(<waystones:warp_scroll>);
-recipes.remove(<waystones:return_scroll>);
-recipes.remove(<waystones:waystone>);
-recipes.remove(<waystones:warp_stone>);
 recipes.remove(<xpbook:xp_book:1395>);
 recipes.remove(<wearablebackpacks:backpack>);
 recipes.remove(<stevescarts:cartmodule:95>);
@@ -147,7 +142,6 @@ recipes.remove(<betterwithmods:material:24>);
 recipes.remove(<immcraft:chest>);
 recipes.remove(<immcraft:shelf>);
 recipes.remove(<immcraft:cupboard>);
-recipes.remove(<mob_grinding_utils:entity_conveyor>);
 recipes.remove(<trapcraft:igniter>);
 recipes.remove(<betterwithmods:raw_pastry:3>);
 recipes.remove(<betterwithmods:beef_dinner>);
@@ -232,3 +226,13 @@ recipes.remove(<betterbuilderswands:wanddiamond>);
 recipes.remove(<betterbuilderswands:wandunbreakable:12>);
 recipes.remove(<betterbuilderswands:wandiron>);
 recipes.remove(<betterbuilderswands:wandstone>);
+
+//WayStones
+recipes.remove(<waystones:warp_scroll>);
+recipes.remove(<waystones:waystone>);
+recipes.remove(<waystones:warp_stone>);
+
+//mob_grinding_utils
+recipes.remove(<mob_grinding_utils:tank_sink>);
+recipes.remove(<mob_grinding_utils:absorption_hopper>);
+recipes.remove(<mob_grinding_utils:entity_conveyor>);

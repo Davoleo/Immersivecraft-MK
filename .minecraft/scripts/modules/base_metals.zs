@@ -52,14 +52,3 @@ JEI.removeAndHide(<basemetals:pewter_blend>);
 JEI.removeAndHide(<basemetals:steel_blend>);
 JEI.removeAndHide(<basemetals:aquarium_blend>);
 JEI.removeAndHide(<basemetals:mithril_blend>);
-
-//Remove quartz tools and armor
-//JEI.removeAndHide(<basemetals:quartz_helmet>);
-//JEI.removeAndHide(<basemetals:quartz_chestplate>);
-//JEI.removeAndHide(<basemetals:quartz_leggings>);
-//JEI.removeAndHide(<basemetals:quartz_boots>);
-//JEI.removeAndHide(<basemetals:quartz_sword>);
-//JEI.removeAndHide(<basemetals:quartz_pickaxe>);
-//JEI.removeAndHide(<basemetals:quartz_hoe>);
-//JEI.removeAndHide(<basemetals:quartz_axe>);
-//JEI.removeAndHide(<basemetals:quartz_shovel>);

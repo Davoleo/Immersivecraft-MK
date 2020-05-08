@@ -71,8 +71,6 @@ recipes.remove(<adfinders:metals_finder>);
 recipes.remove(<adfinders:gems_finder>);
 recipes.remove(<sereneseasons:season_clock>);
 recipes.remove(<aroma1997sdimension:miningmultitool>);
-recipes.remove(<betterbuilderswands:wandiron>);
-recipes.remove(<betterbuilderswands:wandstone>);
 recipes.remove(<ceramics:unfired_clay:5>);
 furnace.remove(<minecraft:brick>);
 furnace.remove(<ceramics:unfired_clay:5>);
@@ -96,9 +94,6 @@ recipes.remove(<betterwithmods:bucket>);
 recipes.remove(<minecraft:bucket>);
 recipes.remove(<openglider:hang_glider_basic>);
 recipes.remove(<openglider:hang_glider_advanced>);
-recipes.removeShaped(<betterbuilderswands:wandunbreakable>, [[null,null,<minecraft:nether_star>],
-                                                             [null, <ore:stickWood>, null],
-                                                             [<ore:stickWood>, null, null]]);
 recipes.remove(<notenoughwands:moving_wand>);
 recipes.remove(<notenoughwands:acceleration_wand>);
 recipes.remove(<notenoughwands:illumination_wand>);
@@ -111,7 +106,6 @@ recipes.remove(<notenoughwands:capturing_wand>);
 recipes.remove(<stevescarts:cartmodule:32>);
 recipes.remove(<extrarails:teleporting_rail>);
 recipes.remove(<chesttransporter:chesttransporter_copper>);
-recipes.remove(<betterbuilderswands:wanddiamond>);
 recipes.remove(<chesttransporter:chesttransporter>);
 recipes.remove(<chesttransporter:chesttransporter_tin>);
 recipes.remove(<chesttransporter:chesttransporter_iron>);
@@ -232,3 +226,9 @@ recipes.remove(<ironchest:iron_chest:3>);
 recipes.remove(<ironchest:iron_chest:7>);
 recipes.remove(<ironchest:iron_chest:1>);
 recipes.remove(<ironchest:iron_chest:4>);
+
+//Better Builder Wands
+recipes.remove(<betterbuilderswands:wanddiamond>);
+recipes.remove(<betterbuilderswands:wandunbreakable:12>);
+recipes.remove(<betterbuilderswands:wandiron>);
+recipes.remove(<betterbuilderswands:wandstone>);

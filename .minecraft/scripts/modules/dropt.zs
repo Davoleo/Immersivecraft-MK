@@ -8,9 +8,9 @@ import mods.dropt.Dropt;
 Dropt.list("immcraftmk_drop_list")
 
     .add(Dropt.rule()
-        .matchBlocks(["immersiveengineering:hemp"])
-        .replaceStrategy("REPLACE_ITEMS")
+        .matchBlocks(["immersiveengineering:hemp:4", "immersiveengineering:hemp:5"])
         .matchDrops([<immersiveengineering:material:4>])
+        .replaceStrategy("REPLACE_ITEMS")
         .addDrop(Dropt.drop()
             .items([<betterwithmods:material:2>], Dropt.range(2, 4))
     ))

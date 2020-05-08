@@ -10,7 +10,6 @@ recipes.remove(<basemetals:iron_fishing_rod>);
 recipes.remove(<basemetals:gold_fishing_rod>);
 recipes.remove(<basemetals:diamond_fishing_rod>);
 recipes.remove(<basemetals:emerald_fishing_rod>);
-recipes.remove(<basemetals:quartz_fishing_rod>);
 recipes.remove(<basemetals:obsidian_fishing_rod>);
 recipes.remove(<basemetals:antimony_fishing_rod>);
 recipes.remove(<basemetals:bismuth_fishing_rod>);

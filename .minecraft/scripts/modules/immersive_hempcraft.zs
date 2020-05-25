@@ -16,9 +16,7 @@ recipes.addShaped(<immersivehempcraft:hempstone_block>*8, [[<ore:stone>, <ore:st
                                                            [<ore:stone>, <ore:stone>, <ore:stone>]]);
 
 MetalPress.addRecipe(<immersivehempcraft:hempstone_sheet>, <immersivehempcraft:hempstone_ball>, <immersiveengineering:mold>, 1000);
-
 CokeOven.addRecipe(<immersivehempcraft:hempstone_plate>, 0, <immersivehempcraft:hempstone_sheet>,1500);
-
 
 Cauldron.addUnstoked([<immersivehempcraft:oil>*2, <minecraft:milk_bucket>], [<immersivehempcraft:butter>]);
 

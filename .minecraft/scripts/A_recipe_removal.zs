@@ -5,6 +5,8 @@ import crafttweaker.item.IItemStack;
  * Copyright - © - Davoleo - 2018
 **************************************************/
 
+// Base Metals
+
 val baseMetalPlates = [
     <basemetals:iron_plate>,
     <basemetals:gold_plate>,
@@ -45,6 +47,16 @@ val baseMetalCrackHammers = [
     <basemetals:invar_crackhammer>,
     <basemetals:cupronickel_crackhammer>
 ] as IItemStack[];
+
+for plate in baseMetalPlates {
+    recipes.remove(plate);
+}
+for hammer in baseMetalCrackHammers {
+    recipes.remove(hammer);
+}
+
+furnace.remove(<basemetals:redstone_ingot>);
+
 
 //Useful Nullifiers ---------------
 recipes.remove(<usefulnullifiers:overflownullifieritem>);
@@ -147,13 +159,6 @@ recipes.remove(<tp:bacon_eggs_sandwhich>);
 recipes.remove(<tp:bacon_eggs>);
 recipes.remove(<jaff:tank>);
 
-for plate in baseMetalPlates {
-    recipes.remove(plate);
-}
-for hammer in baseMetalCrackHammers {
-    recipes.remove(hammer);
-}
-
 //Simple Network Storage -----------------
 recipes.remove(<storagenetwork:master>);
 recipes.remove(<storagenetwork:request>);
@@ -184,7 +189,8 @@ recipes.remove(<engineersdecor:factory_hopper>);
 recipes.remove(<engineersdecor:small_tree_cutter>);
 
 //Immersive Railroading
-recipes.remove(<immersiverailroading:item_manual>.withTag({}));
+recipes.remove(<immersiverailroading:item_manual>);
+recipes.remove(<immersiverailroading:item_conductor_whistle>);
 
 //Water Strainers
 recipes.remove(<waterstrainer:strainer_base>);
@@ -204,6 +210,7 @@ recipes.remove(<immersiveengineering:stone_decoration:10>);
 recipes.remove(<immersiveengineering:tool>);
 recipes.remove(<immersiveengineering:stone_decoration>);
 recipes.remove(<immersiveengineering:stone_decoration:1>);
+recipes.remove(<immersiveengineering:wooden_device1:1>);
 
 //Iron Chest
 recipes.remove(<ironchest:iron_chest>);

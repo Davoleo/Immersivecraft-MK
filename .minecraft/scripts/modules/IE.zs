@@ -38,10 +38,6 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1>*3, [[<minecraft:neth
                                                                 [<betterwithmods:material:17>, <rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 3600, Amplifier: 0}]}), <betterwithmods:material:17>],
                                                                 [<minecraft:netherbrick>, <betterwithmods:material:17>, <minecraft:netherbrick>]]);
 
-recipes.addShaped(<immersiveengineering:material:3> * 4, [[<ore:ingotAluminium>, null],
-                                                          [<ore:ingotAluminium>, null]]);
-
-
 recipes.addShaped(<immersiveengineering:wooden_device0:2>, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
                                                             [<bibliocraft:fancyworkbench>,  null, <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "ironwood"}, Name: "rustic:planks"}})]]);
 

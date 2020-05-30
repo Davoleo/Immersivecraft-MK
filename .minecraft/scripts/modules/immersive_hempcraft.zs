@@ -27,6 +27,14 @@ recipes.addShaped(<immersivehempcraft:seed_base>, [[<ceramics:clay_hard:6>, <cer
 <immersivehempcraft:seed_base>.addTooltip(format.darkRed("(grows on a light-mix farmland)"));
 <immersivehempcraft:hempstone_ball>.addTooltip(format.darkGreen("(obtainable by breaking hempstone)"));
 
+<minecraft:lapis_ore>.addTooltip(format.aqua("(Has a 75% chance to drop Apatite)"));
+<basemetals:bismuth_ore>.addTooltip(format.aqua("(Has a 75% chance to drop Apatite)"));
+<basemetals:zinc_ore>.addTooltip(format.aqua("(Has a 75% chance to drop Apatite)"));
+<basemetals:mercury_ore>.addTooltip(format.aqua("(Has a 75% chance to drop Apatite)"));
+<minecraft:iron_ore>.addTooltip(format.aqua("(Has a 75% chance to drop Apatite)"));
+
+<immersivehempcraft:apatite>.addTooltip(format.aqua("(Chance drop of Lapis, Bismuth, Zinc, Mercury, Iron ore)"));
+
 //Remove Hempcraft fabricHemp recipes
 JEI.removeAndHide(<immersivehempcraft:fabric>);
 JEI.removeAndHide(<immersivehempcraft:fabric_rf>);

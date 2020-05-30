@@ -205,7 +205,6 @@ recipes.remove(<rustic:barrel>);
 recipes.remove(<immersiveengineering:wooden_device0>);
 recipes.remove(<immersiveengineering:wooden_device1>);
 recipes.remove(<immersiveengineering:wooden_device0:2>);
-recipes.remove(<immersiveengineering:wooden_device0:1>);
 recipes.remove(<immersiveengineering:stone_decoration:10>);
 recipes.remove(<immersiveengineering:tool>);
 recipes.remove(<immersiveengineering:stone_decoration>);

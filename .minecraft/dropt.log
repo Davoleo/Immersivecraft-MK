@@ -1,1 +1,4 @@
 [INFO]  No rule files loaded.
+[ERROR] [PARSE] Unable to find registered block: minecraft:mercury_ore:0
+[ERROR] [PARSE] Unable to find registered block: minecraft:zinc_ore:0
+[ERROR] [PARSE] Unable to find registered block: minecraft:bismuth_ore:0

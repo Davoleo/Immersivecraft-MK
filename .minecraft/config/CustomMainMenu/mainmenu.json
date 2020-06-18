@@ -26,8 +26,8 @@
         "singleplayer":
         {
             "texture": "test:textures/gui/shortbutton.png",
-            "text" : "ï¿½6Singleplayer",
-            "hoverText" : "ï¿½aï¿½nPlay Alone!",
+            "text" : "§6Singleplayer",
+            "hoverText" : "$a$nPlay Alone!",
             "posX" : -200,
             "posY" : 20,
             "width" : 100,
@@ -44,8 +44,8 @@
         "multiplayer":
         {
             "texture": "test:textures/gui/shortbutton.png",
-            "text" : "ï¿½6Multiplayer",
-            "hoverText" : "ï¿½aï¿½nPlay With Friends!",
+            "text" : "§6Multiplayer",
+            "hoverText" : "§a§nPlay With Friends!",
             "posX" : 100,
             "posY" : 20,
             "width" : 100,
@@ -60,8 +60,8 @@
         "mods":
         {
             "texture": "test:textures/gui/shortbutton.png",
-            "text" : "ï¿½6Mods",
-            "hoverText" : "ï¿½aï¿½nMods",
+            "text" : "§6Mods",
+            "hoverText" : "§a§nMods",
             "posX" : -50,
             "posY" : 20,
             "width" : 100,
@@ -76,8 +76,8 @@
         "options":
         {
             "texture": "test:textures/gui/midbutton.png",
-            "text" : "ï¿½6Settings",
-            "hoverText" : "ï¿½aï¿½oCustomise MC to your liking",
+            "text" : "§6Settings",
+            "hoverText" : "§a§oCustomise MC to your liking",
             "posX" : -230,
             "posY" : 55,
             "width" : 150,
@@ -92,8 +92,8 @@
         "report":
         {
             "texture": "test:textures/gui/midbutton.png",
-            "text" : "ï¿½6Bug reports and Ideas!",
-            "hoverText" : "ï¿½aï¿½oI really appreciate it!",
+            "text" : "§6Bug reports and Ideas!",
+            "hoverText" : "§a§oI really appreciate it!",
             "posX" : 80,
             "posY" : 55,
             "width" : 150,
@@ -107,8 +107,8 @@
         "quit":
         {
             "texture": "test:textures/gui/shortbutton.png",
-            "text" : "ï¿½6Quit",
-            "hoverText" : "ï¿½aï¿½oFade Away",
+            "text" : "§6Quit",
+            "hoverText" : "§a§oFade Away",
             "posX" : -50,
             "posY" : 55,
             "width" : 100,
@@ -158,8 +158,8 @@
     {
         "M":
         {
-            "text" : "ï¿½2Inspired by MarcusKron's Youtube series",
-            "hoverText" : "ï¿½2ï¿½oInspired by MarcusKron's Youtube series",
+            "text" : "§2Inspired by MarcusKron's Youtube series",
+            "hoverText" : "§2§oInspired by MarcusKron's Youtube series",
             "posX" : -213,
             "posY" : -10,
             "color" : -1,
@@ -172,8 +172,8 @@
         },
         "D":
         {
-            "text" : "ï¿½2Developed by Davoleo",
-            "hoverText" : "ï¿½2ï¿½oDeveloped by Davoleo",
+            "text" : "§2Developed by Davoleo",
+            "hoverText" : "§2§oDeveloped by Davoleo",
             "posX" : -112,
             "posY" : -20,
             "color" : -1,
@@ -187,7 +187,7 @@
         "fml":
         {
             "text" : "",
-            "hoverText" : "ï¿½2ï¿½o",
+            "hoverText" : "§2§o",
             "posX" : 2,
             "posY" : -38,
             "color" : 43520,
@@ -195,7 +195,7 @@
         },
         "packver":
         {
-            "text" : "ï¿½62.0.1",
+            "text" : "§62.0.1",
             "posX" : -10,
             "posY" : -10,
             "color" : 43520,

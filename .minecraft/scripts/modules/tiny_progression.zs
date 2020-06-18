@@ -18,12 +18,14 @@ recipes.addShaped(<tp:bsc_rod>, [[null, null, <minecraft:reeds>],
                                  [null, <tp:dead_reed>, null],
                                  [<minecraft:reeds>,  null, null]]);
 
-recipes.addShaped(<tp:mycelium_seeds> * 4, [[<ore:seed>, <ore:seed>, <ore:seed>],
+recipes.addShaped(<tp:mycelium_seeds> * 8, [[<ore:seed>, <ore:seed>, <ore:seed>],
                                             [<ore:seed>, <betterwithmods:nether_growth>, <ore:seed>],
                                             [<ore:seed>,  <ore:seed>, <ore:seed>]]);
 
 recipes.addShapeless(<tp:tiny_coal> * 8, [<minecraft:coal>]);
 recipes.addShapeless(<tp:tiny_charcoal> * 8, [<minecraft:coal:1>]);
+<ore:dustCoal>.remove(<tp:tiny_coal>);
+<ore:dustCharcoal>.remove(<tp:tiny_charcoal>);
 
 recipes.addShaped(<tp:redstone_apple>, [[<tp:redstone_ingot>, <tp:redstone_ingot>, <tp:redstone_ingot>],
                                         [<tp:redstone_ingot>, <minecraft:apple>, <tp:redstone_ingot>],
@@ -45,9 +47,9 @@ recipes.addShaped(<tp:diamond_apple>, [[<ore:ingotDiamond>, <ore:ingotDiamond>, 
                                        [<ore:ingotDiamond>, <tp:emerald_apple>, <ore:ingotDiamond>],
                                        [<ore:ingotDiamond>,  <ore:ingotDiamond>, <ore:ingotDiamond>]]);
 
-recipes.addShaped(<minecraft:golden_apple:1>, [[<chisel:gold>, <chisel:gold>, <chisel:gold>],
-                                               [<chisel:gold>, <tp:diamond_apple>, <chisel:gold>],
-                                               [<chisel:gold>,  <chisel:gold>, <chisel:gold>]]);
+recipes.addShaped(<minecraft:golden_apple:1>, [[<ore:blockGold>, <ore:blockGold>, <ore:blockGold>],
+                                               [<ore:blockGold>, <tp:diamond_apple>, <ore:blockGold>],
+                                               [<ore:blockGold>,  <ore:blockGold>, <ore:blockGold>]]);
 
 recipes.addShaped(<tp:lava_infused_stone>, [[<tp:hardened_stone>, <betterwithmods:material:16>, <tp:hardened_stone>],
                                             [<betterwithmods:material:16>, <chisel:lavastone>, <betterwithmods:material:16>],

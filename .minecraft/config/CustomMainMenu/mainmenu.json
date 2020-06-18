@@ -27,7 +27,7 @@
         {
             "texture": "test:textures/gui/shortbutton.png",
             "text" : "§6Singleplayer",
-            "hoverText" : "$a$nPlay Alone!",
+            "hoverText" : "§a§nPlay Alone!",
             "posX" : -200,
             "posY" : 20,
             "width" : 100,

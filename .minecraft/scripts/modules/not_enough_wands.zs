@@ -4,7 +4,7 @@
 **************************************************/
 
 //Not Enough Wands
-recipes.addShaped(<notenoughwands:acceleration_wand>,  [[<immersivehempcraft:fertilizer>, <betterwithmods:fertilizer>, null],
+recipes.addShaped(<notenoughwands:acceleration_wand>,  [[<betterwithmods:fertilizer>, <betterwithmods:fertilizer>, null],
                                                         [<minecraft:dye:15>, <notenoughwands:advanced_wandcore>, null],
                                                         [null,  null, <notenoughwands:advanced_wandcore>]]);
 

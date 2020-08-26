@@ -4,4 +4,4 @@
 **************************************************/
 
 //Immersive tech
-recipes.addShapeless(<immersivetech:stone_decoration>, [<immersiveengineering:stone_decoration>, <immersivehempcraft:hempstone_plate>]);
+recipes.addShapeless(<immersivetech:stone_decoration>, [<immersiveengineering:stone_decoration>, <ore:plateLead>]);

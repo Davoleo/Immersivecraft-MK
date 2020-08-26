@@ -20,16 +20,4 @@ Dropt.list("immcraftmk_drop_list")
         .replaceStrategy("REPLACE_ALL")
         .addDrop(Dropt.drop().items([<betterwithmods:unfired_pottery:4>]))
     )
-
-    //Apatite Drop
-    .add(Dropt.rule()
-        .matchBlocks(["minecraft:lapis_ore"])
-        .replaceStrategy("ADD")
-        .addDrop(Dropt.drop()
-            .selector(Dropt.weight(75))
-        )
-        .addDrop(Dropt.drop()
-            .selector(Dropt.weight(25))
-            .items([<immersivehempcraft:apatite>])
-        )
-    );
+);

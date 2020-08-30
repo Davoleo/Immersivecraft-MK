@@ -29,4 +29,4 @@ recipes.addShaped(<usefulnullifiers:fluidvoidnullifierblock>, [[<ore:stone>, <or
 
 recipes.addShaped(<usefulnullifiers:aion>, [[<ore:plateLead>, <usefulnullifiers:voidnullifierblock>, <ore:plateLead>],
                                             [<usefulnullifiers:fluidvoidnullifierblock>, <ore:stickStone>, <usefulnullifiers:energyvoidnullifierblock>], 
-                                            [<ore:plateLead>, <corail_pillar:minecraft_block_0>, <ore:plateLead>]]);
+                                            [<ore:plateLead>, <rustic:stone_pillar>, <ore:plateLead>]]);

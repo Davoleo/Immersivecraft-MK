@@ -8,7 +8,7 @@ recipes.addShaped(<notenoughwands:acceleration_wand>,  [[<betterwithmods:fertili
                                                         [<minecraft:dye:15>, <notenoughwands:advanced_wandcore>, null],
                                                         [null,  null, <notenoughwands:advanced_wandcore>]]);
 
-recipes.addShaped(<notenoughwands:building_wand>,[[<chisel:blockbronze:6>, <corail_pillar_extension_chisel:lapis_0:9>, null],
+recipes.addShaped(<notenoughwands:building_wand>,[[<chisel:blockbronze:6>, <minecraft:quartz_block:2>, null],
                                                   [<betterbuilderswands:wandiron>, <earthworks:item_adobe>, null],
                                                   [null, null, <notenoughwands:wandcore>]]);
 

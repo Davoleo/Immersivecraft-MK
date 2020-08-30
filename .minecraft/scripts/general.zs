@@ -176,7 +176,7 @@ recipes.addShaped(<ropebridge:bridge_builder_material.handle>, [[<ore:ingotTitan
 
 //Steve's Carts
 recipes.addShaped(<stevescarts:cartmodule:32>, [[<tp:reinforced_obsidian_ingot>, null, <tp:reinforced_obsidian_ingot>],
-                                                [<corail_pillar:minecraft_gem_0>, <immersiveengineering:shield>, <corail_pillar:minecraft_gem_0>],
+                                                [<ore:plateAquarium>, <immersiveengineering:shield>, <ore:plateAquarium>],
                                                 [null,  <stevescarts:modulecomponents:22>, null]]);
 
 recipes.addShaped(<stevescarts:cartmodule:95>, [[null, <minecraft:redstone>, null],

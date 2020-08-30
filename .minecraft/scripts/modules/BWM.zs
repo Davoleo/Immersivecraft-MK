@@ -76,7 +76,7 @@ Kiln.remove([<minecraft:coal>]);
 Kiln.add(<ore:oreCoal>, [<minecraft:coal> * 3]);
 
 //Turntable Recipes
-Turntable.add( <corail_pillar:minecraft_block_0>, [<tp:juicer>]);
+Turntable.add(<rustic:stone_pillar>, [<tp:juicer>]);
 Turntable.add(<ceramics:clay_soft>, <betterwithmods:unfired_pottery:4>, [<ceramics:unfired_clay:4>]);
 Turntable.add(<immersiveengineering:sheetmetal:1>, <betterwithmods:bucket>,[<immersiveengineering:metal:31>]);
 

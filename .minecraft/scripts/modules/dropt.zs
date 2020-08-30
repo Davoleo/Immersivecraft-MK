@@ -19,5 +19,4 @@ Dropt.list("immcraftmk_drop_list")
         .matchBlocks(["betterwithmods:unfired_pottery:4"])
         .replaceStrategy("REPLACE_ALL")
         .addDrop(Dropt.drop().items([<betterwithmods:unfired_pottery:4>]))
-    )
-);
+    );

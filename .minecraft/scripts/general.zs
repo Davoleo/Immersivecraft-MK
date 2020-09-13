@@ -9,6 +9,10 @@ import mods.betterwithmods.Cauldron;
 
 print("MAIN_SCRIPT IS LOADING RIGHT NOW!");
 
+//Buff Vanilla pickaxes a bit (BWM Nerfs are a bit excessive)
+<minecraft:wooden_pickaxe>.maxDamage = 10;
+<minecraft:stone_pickaxe>.maxDamage = 25;
+
 //General
 recipes.addShapeless(<endercompass:ender_compass>, [<minecraft:end_crystal>, <naturescompass:naturescompass>]);
 

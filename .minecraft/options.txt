@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:60
 fboEnable:true
-difficulty:0
+difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:false
@@ -112,9 +112,6 @@ key_vc.key.moveDown:0
 key_vc.key.openInventory:19
 key_vc.key.dropbomb:46
 key_key.wearablebackpacks.open:48
-key_Strip World:211
-key_Dress World:210
-key_Inspect Block:199
 key_key.pickup.item:0
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
@@ -147,7 +144,8 @@ key_key.itemzoom.toggle:44:SHIFT
 key_key.itemzoom.hold:0
 key_key.itemzoom.zoom.in:0
 key_key.itemzoom.zoom.out:0
-key_Mo'Bends Menu:34
+key_Mo' Bends Menu:34
+key_Refresh Animations:68
 key_key.modifier:13
 key_key.submode:0
 key_signpic.key.gui:43

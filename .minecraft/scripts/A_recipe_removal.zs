@@ -247,3 +247,10 @@ recipes.remove(<tp:cooked_bacon>);
 recipes.remove(<tp:cooked_mushroom_brown>);
 recipes.remove(<tp:cooked_mushroom_red>);
 recipes.remove(<tp:raw_bacon>);
+
+//Engineer's Tools
+recipes.remove(<engineerstools:ariadne_coal>);
+recipes.remove(<engineerstools:redia_tool>);
+recipes.remove(<engineerstools:crushing_hammer>);
+//Removes all the default crushing recipes
+recipes.removeShapeless(<ore:dustIron>, [<engineerstools:crushing_hammer>], true);
